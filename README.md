@@ -1,6 +1,8 @@
 <div align="center">
 
-# Personal Portfolio Website
+# Portfolio Website
+
+<img src="https://custom-icon-badges.demolab.com/badge/Portfolio%20Website-282A36.svg?style=for-the-badge&logo=file-badge&logoColor=FF79C6" width="100%"/>
 
 My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy UI, HTML, CSS, JavaScript and Node.js
 
