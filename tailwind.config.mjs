@@ -6,6 +6,18 @@ export default {
 	},
 	plugins: [require("daisyui")],
 	daisyui: {
-		themes: ["dracula", "fantasy"],
+		themes: [
+			"dracula",
+			"fantasy",
+			{
+				"dracula-light": {
+					primary: "#FF79C6",
+					secondary: "#BD93F9",
+					accent: "#FFB86C",
+					neutral: "#6272A4",
+					"base-100": "#F8F8F2",
+				},
+			},
+		],
 	},
 };
