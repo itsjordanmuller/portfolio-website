@@ -66,9 +66,9 @@ import { Icon } from "astro-icon";
 				</ul>
 			</div>
 		</div>
-		<div class="navbar-center">
+		<div class="xs-hide navbar-center">
 			<a href="/" class="btn btn-ghost
-			mr-4 text-xl active:bg-base-300"
+			 mr-4 text-xl active:bg-base-300"
 				><Icon name="signature" class="h-8 w-8" />Jordan Muller</a
 			>
 		</div>
@@ -91,3 +91,15 @@ import { Icon } from "astro-icon";
 		</div>
 	</div>
 </header>
+
+<style>
+	.xs-hide {
+		display: none;
+	}
+
+	@media (min-width: 400px) {
+		.xs-hide {
+			display: block;
+		}
+	}
+</style>
