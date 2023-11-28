@@ -1,0 +1,72 @@
+---
+import { Image } from "astro:assets";
+import AvatarImage from "../images/Jordan-Muller.jpeg";
+import { Icon } from "astro-icon";
+---
+
+<div class="full-svh hero bg-base-200">
+	<div class="hero-content flex-col lg:flex-row-reverse lg:gap-16">
+		<Image
+			src={AvatarImage}
+			alt="A bird sitting on a nest of eggs."
+			class="h-4/5 w-4/5 max-w-sm rounded-2xl shadow-2xl"
+		/>
+		<div class="flex flex-col justify-center">
+			<h1 class="text-center text-4xl font-bold lg:text-5xl">
+				Hi 👋, my name is<br />Jordan Muller
+			</h1>
+			<h2 class="my-4 text-center text-xl font-normal lg:text-2xl">
+				I am a Full Stack Developer,<br />based in California
+			</h2>
+			<ul class="mb-2 flex justify-center gap-2">
+				<li>
+					<a
+						><button class="btn btn-primary btn-sm"
+							><Icon name="mdi:briefcase-account-outline" class="h-4 w-4" />Portfolio</button
+						></a
+					>
+				</li>
+				<li>
+					<a
+						><button class="btn btn-secondary btn-sm"
+							><Icon name="mdi:file-account-outline" class="h-4 w-4" />Resume</button
+						></a
+					>
+				</li>
+				<li>
+					<a
+						><button class="btn btn-accent btn-sm"
+							><Icon name="mdi:phone-message-outline" class="h-4 w-4" />Contact</button
+						></a
+					>
+				</li>
+			</ul>
+			<ul class="flex justify-center gap-2">
+				<li>
+					<a class="btn btn-outline btn-neutral btn-sm"
+						><Icon name="mdi:github" class="h-4 w-4" />GitHub</a
+					>
+				</li>
+				<li>
+					<a class="btn btn-outline btn-neutral btn-sm"
+						><Icon name="mdi:linkedin" class="h-4 w-4" />LinkedIn</a
+					>
+				</li>
+			</ul>
+			<div class="flex justify-center">
+				<Icon name="mdi:arrow-down-bold-circle-outline" class="mb-8 mt-8 h-8 w-8 animate-bounce" />
+			</div>
+			<!-- <div class="flex justify-center gap-4">
+				<button class="btn btn-primary">Portfolio</button>
+				<button class="btn btn-secondary">Blog</button>
+				<button class="btn btn-accent">Resume</button>
+			</div> -->
+		</div>
+
+		<style>
+			.full-svh {
+				min-height: calc(100svh);
+			}
+		</style>
+	</div>
+</div>
