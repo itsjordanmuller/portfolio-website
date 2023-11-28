@@ -3,69 +3,45 @@ import { Icon } from "astro-icon";
 ---
 
 <header>
-	<div class="container navbar mx-auto bg-base-100">
+	<div class="container navbar mx-auto justify-between bg-base-100">
 		<div class="navbar-start">
 			<div class="dropdown z-30">
-				<div tabindex="0" role="button" class="btn btn-circle btn-ghost">
+				<div tabindex="0" role="button" class="btn btn-square btn-ghost active:bg-base-300">
 					<Icon name="mdi:menu" class="h-6 w-6" />
 				</div>
-				<ul class="menu dropdown-content rounded-box bg-base-300 xl:menu-horizontal lg:min-w-max">
+				<ul
+					class="menu dropdown-content mt-6 rounded-box bg-base-300 xl:menu-horizontal lg:min-w-max"
+				>
 					<li>
-						<a>
+						<a href="/">
 							<Icon name="mdi:home-outline" class="h-5 w-5" />
 							 Home
-							<span class="badge badge-info badge-xs bg-accent"></span>
+							<span class="badge badge-info badge-xs animate-pulse bg-accent"></span>
 						</a>
 					</li>
 					<li>
-						<a>
+						<a href="/portfolio">
 							<Icon name="mdi:briefcase-account-outline" class="h-5 w-5" />
 							 Portfolio
 						</a>
 					</li>
 					<li>
-						<a>
+						<a href="/blog">
 							<Icon name="mdi:book-edit-outline" class="h-5 w-5" />
 							 Blog
 						</a>
 					</li>
 					<li>
-						<a>
+						<a href="/about">
 							<Icon name="mdi:information-outline" class="h-5 w-5" />
 							 About
 						</a>
 					</li>
 					<li>
-						<a>
+						<a href="/contact">
 							<Icon name="mdi:phone-message-outline" class="h-5 w-5" />
 							 Contact
 						</a>
-					</li>
-					<li>
-						<a
-							><Icon name="mdi:account-group-outline" class="h-5 w-5" />
-							 Social
-						</a>
-						<ul>
-							<li>
-								<a
-									><Icon name="mdi:github" class="h-5 w-5" />
-									 GitHub
-								</a>
-							</li>
-							<li>
-								<a
-									><Icon name="mdi:linkedin" class="h-5 w-5" />
-									 LinkedIn
-								</a>
-							</li>
-							<li>
-								<a
-									><Icon name="mdi:codepen" class="h-5 w-5" />
-									 CodePen
-								</a>
-							</li>
-						</ul>
 					</li>
 					<li>
 						<a
@@ -91,47 +67,27 @@ import { Icon } from "astro-icon";
 			</div>
 		</div>
 		<div class="navbar-center">
-			<a class="btn btn-ghost text-xl">Jordan Muller</a>
+			<a href="/" class="btn btn-ghost
+			mr-4 text-xl active:bg-base-300"
+				><Icon name="signature" class="h-8 w-8" />Jordan Muller</a
+			>
 		</div>
-		<div class="navbar-end">
-			<button class="btn btn-circle btn-ghost">
+		<div class="navbar-end ml-4">
+			<button class="btn btn-square btn-ghost active:bg-base-300">
 				<Icon name="mdi:magnify" class="h-6 w-6" />
 			</button>
-			<label class="ml-2 grid cursor-pointer place-items-center">
-				<input
-					type="checkbox"
-					value="dracula"
-					class="theme-controller toggle col-span-2 col-start-1 row-start-1 bg-base-content"
-				/>
-				<svg
-					class="col-start-1 row-start-1 fill-base-100 stroke-base-100"
-					xmlns="http://www.w3.org/2000/svg"
-					width="14"
-					height="14"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					><circle cx="12" cy="12" r="5"></circle><path
-						d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
-					></path></svg
-				>
-				<svg
-					class="col-start-2 row-start-1 fill-base-100 stroke-base-100"
-					xmlns="http://www.w3.org/2000/svg"
-					width="14"
-					height="14"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg
-				>
-			</label>
+			<button class="btn btn-square btn-ghost active:bg-base-300">
+				<label class="swap swap-rotate">
+					<!-- this hidden checkbox controls the state -->
+					<input type="checkbox" value="dracula" class="theme-controller" />
+
+					<!-- sun icon -->
+					<Icon name="ph:sun-bold" class="swap-on h-6 w-6 fill-current" />
+
+					<!-- moon icon -->
+					<Icon name="ph:moon-bold" class="swap-off h-6 w-6 fill-current" />
+				</label>
+			</button>
 		</div>
 	</div>
 </header>
