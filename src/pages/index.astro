@@ -1,16 +1,30 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<html lang="en" data-theme="dracula">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1 class="text-primary text-4xl font-bold underline">Astro</h1>
-	</body>
-</html>
+<Layout title="Jordan Muller - Portfolio">
+	<section class="bg-200 container mx-auto px-6 py-10">
+		<article class="prose max-w-full">
+			<h1 class="text-center">Hi 👋, my name is Jordan Muller</h1>
+			<p class="text-center">
+				Bachelor of Science in Computer Science<br />
+				 New Graduate in the California SF Bay Area<br />
+				 Passion for Helping People & Solving Problems
+			</p>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptates itaque assumenda
+				ipsam ab, quaerat eum quisquam natus esse qui, repudiandae facilis eligendi. Nostrum autem
+				alias cupiditate debitis voluptatibus quia iste sunt tempora in consequuntur quam
+				necessitatibus, sed recusandae impedit asperiores, et facere suscipit. Enim ratione sunt
+				maxime minus eos.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta hic dolore eligendi,
+				repudiandae placeat ab debitis explicabo. Consectetur sunt a, qui magni deleniti placeat
+				quis libero, architecto hic culpa veritatis? Cumque, architecto unde. Quae quasi rerum sed
+				quas ab a? Distinctio rem perspiciatis consequatur, molestiae dolore quam eum labore hic.
+			</p>
+		</article>
+	</section>
+</Layout>

@@ -1,0 +1,49 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<footer class="container footer z-20 mx-auto bg-base-300 px-6 py-10 text-base-content">
+	<nav>
+		<header class="footer-title">Pages</header>
+		<a class="link-hover link">Home</a>
+		<a class="link-hover link">Portfolio</a>
+		<a class="link-hover link">Blog</a>
+		<a class="link-hover link">About</a>
+		<a class="link-hover link">Contact</a>
+	</nav>
+	<nav>
+		<header class="footer-title">Social</header>
+		<a class="link-hover link">GitHub</a>
+		<a class="link-hover link">LinkedIn</a>
+		<a class="link-hover link">CodePen</a>
+		<a class="link-hover link">Press kit</a>
+	</nav>
+	<nav>
+		<header class="footer-title">Projects</header>
+		<a class="link-hover link">100 Days of Python</a>
+		<a class="link-hover link">50 Projects in 50 Days</a>
+		<a class="link-hover link">100 Days CSS Challenge</a>
+	</nav>
+	<nav>
+		<header class="footer-title">Resources</header>
+		<a class="link-hover link">Resume</a>
+		<a class="link-hover link">Certificates</a>
+	</nav>
+</footer>
+<footer
+	class="container footer z-20 mx-auto border-t border-base-300 bg-base-300 px-6 py-4 text-base-content"
+>
+	<aside class="grid-flow-col items-center">
+		<Icon name="signature" class="h-10 w-10 hover:text-accent" />
+		<p>Copyright © 2023 Jordan Muller<br />All Rights Reserved</p>
+	</aside>
+	<nav class="md:place-self-center md:justify-self-end">
+		<div class="grid grid-flow-col gap-4">
+			<a><Icon name="mdi:github" class="h-6 w-6 hover:text-accent" /></a>
+			<a><Icon name="mdi:linkedin" class="h-6 w-6 hover:text-accent" /></a>
+			<a><Icon name="mdi:codepen" class="h-6 w-6 hover:text-accent" /></a>
+		</div>
+	</nav>
+</footer>
+
+<style></style>
