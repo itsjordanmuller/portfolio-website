@@ -1,131 +1,21 @@
 ---
-import { Icon } from "astro-icon";
+import DropdownMenu from "./Header/DropdownMenu.astro";
+import ThemeToggle from "./Header/ThemeToggle.astro";
+import LogoName from "./Header/LogoName.astro";
+import SearchBtn from "./Header/SearchBtn.astro";
 ---
 
 <header>
 	<div class="container navbar mx-auto justify-between bg-base-100">
 		<div class="navbar-start">
-			<div class="dropdown z-30">
-				<div tabindex="0" role="button" class="btn btn-square btn-ghost active:bg-base-300">
-					<Icon name="mdi:menu" class="h-6 w-6" />
-				</div>
-				<ul
-					class="menu dropdown-content mt-4 rounded-box bg-base-300 text-base lg:min-w-max lg:text-xl"
-				>
-					<li>
-						<a href="/">
-							<Icon name="mdi:home-outline" class="h-5 w-5" />
-							 Home
-							<span class="badge badge-info badge-xs animate-pulse bg-accent"></span>
-						</a>
-					</li>
-					<li>
-						<a href="/portfolio">
-							<Icon name="mdi:briefcase-account-outline" class="h-5 w-5" />
-							 Portfolio
-						</a>
-					</li>
-					<li>
-						<a href="/blog">
-							<Icon name="mdi:book-edit-outline" class="h-5 w-5" />
-							 Blog
-						</a>
-					</li>
-					<li>
-						<a href="/about">
-							<Icon name="mdi:information-outline" class="h-5 w-5" />
-							 About
-						</a>
-					</li>
-					<li>
-						<a href="/contact">
-							<Icon name="mdi:phone-message-outline" class="h-5 w-5" />
-							 Contact
-						</a>
-					</li>
-					<li>
-						<a href="/resources"
-							><Icon name="mdi:archive-star-outline" class="h-5 w-5" />
-							 Resources
-						</a>
-						<ul>
-							<li>
-								<a href="/resources/resume"
-									><Icon name="mdi:file-account-outline" class="h-5 w-5" />
-									 Resume
-								</a>
-							</li>
-							<li>
-								<a href="/resources/certificates"
-									><Icon name="mdi:certificate-outline" class="h-5 w-5" />
-									 Certificates
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="/social"
-							><Icon name="mdi:account-group-outline" class="h-5 w-5" />
-							 Social
-						</a>
-						<ul>
-							<li>
-								<a href="https://github.com/itsjordanmuller"
-									><Icon name="mdi:github" class="h-5 w-5" />
-									 GitHub
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/in/itsjordanmuller"
-									><Icon name="mdi:linkedin" class="h-5 w-5" />
-									 LinkedIn
-								</a>
-							</li>
-							<li>
-								<a href="https://codepen.io/itsjordanmuller"
-									><Icon name="mdi:codepen" class="h-5 w-5" />
-									 CodePen
-								</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+			<DropdownMenu />
 		</div>
 		<div class="navbar-center">
-			<a href="/" class="btn btn-ghost
-			 mr-4 text-xl active:bg-base-300"
-				><Icon name="signature" class="h-8 w-8" /><span id="xs-hide">Jordan Muller</span></a
-			>
+			<LogoName />
 		</div>
 		<div class="navbar-end ml-4">
-			<button class="btn btn-square btn-ghost active:bg-base-300">
-				<Icon name="mdi:magnify" class="h-6 w-6" />
-			</button>
-			<button class="btn btn-square btn-ghost active:bg-base-300">
-				<label class="swap swap-rotate">
-					<!-- this hidden checkbox controls the state -->
-					<input type="checkbox" value="dracula" class="theme-controller" />
-
-					<!-- sun icon -->
-					<Icon name="ph:sun-bold" class="swap-on h-6 w-6 fill-current" />
-
-					<!-- moon icon -->
-					<Icon name="ph:moon-bold" class="swap-off h-6 w-6 fill-current" />
-				</label>
-			</button>
+			<SearchBtn />
+			<ThemeToggle />
 		</div>
 	</div>
 </header>
-
-<style>
-	.xs-hide {
-		display: none;
-	}
-
-	@media (min-width: 400px) {
-		.xs-hide {
-			display: block;
-		}
-	}
-</style>
