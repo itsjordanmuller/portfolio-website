@@ -1,0 +1,5 @@
+---
+const { isActive, children } = Astro.props;
+---
+
+{isActive && <span class="badge badge-info badge-xs animate-pulse bg-accent">{children}</span>}
