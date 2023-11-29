@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 
 import Layout from "../../layouts/Layout.astro";
 import Post from "../../components/Post.astro";
-import TagList from "../../components/TagList.astro";
+import TagList from "../../components/Utilities/TagList.astro";
 
 export async function getStaticPaths() {
 	const allPosts = await getCollection("posts");
@@ -26,11 +26,28 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 ---
 
 <Layout pageTitle={tag}>
-	<section class="bg-200 container prose mx-auto px-6 py-10">
+	<section
+		class="lg-px-[6rem] container prose max-w-none bg-base-200 px-[4rem] py-12 sm:px-[5rem] md:px-[9rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[14rem]"
+	>
+		<h1 class="mb-1 text-center lg:text-left">Blog Posts</h1>
+		<p class="mt-1 text-center leading-[32px] lg:text-left">
+			Tagged with <span class="btn btn-outline btn-sm px-1">{tag.toUpperCase()}</span>
+		</p>
+		<p class="my-8 text-center font-bold">
+			<a href="/blog" class="btn btn-outline btn-sm">View All Posts</a>
+		</p>
 		<TagList tags={uniqueTags} />
-		<p>Posts tagged with {tag}</p>
-		<ul>
-			{posts.map((post) => <Post url={`/posts/${post.slug}/`} title={post.data.title} />)}
+		<ul class="grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
+			{
+				posts.map((post) => (
+					<Post
+						title={post.data.title}
+						description={post.data.description}
+						url={`/posts/${post.slug}/`}
+						images={post.data.images}
+					/>
+				))
+			}
 		</ul>
 	</section>
 </Layout>

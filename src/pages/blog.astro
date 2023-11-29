@@ -5,13 +5,31 @@ const pageTitle = "Blog - Jordan Muller";
 
 import Post from "../components/Post.astro";
 const allPosts = await getCollection("posts");
+const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+import TagList from "../components/Utilities/TagList.astro";
 ---
 
 <Layout pageTitle={pageTitle}>
-	<section class="bg-200 container prose mx-auto px-6 py-10">
-		<p>This is where I will post about my journey learning Astro.</p>
-		<ul>
-			{allPosts.map((post) => <Post url={`/posts/${post.slug}/`} title={post.data.title} />)}
+	<section
+		class="lg-px-[6rem] container prose max-w-none bg-base-200 px-[4rem] py-12 sm:px-[5rem] md:px-[9rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[14rem]"
+	>
+		<h1 class="mb-1 text-center lg:text-left">Blog Posts</h1>
+		<p class="mt-1 text-center leading-[32px] lg:text-left">
+			<span class="px-1">All Blog Posts</span>
+		</p>
+		<p class="my-8 text-center font-bold leading-[30px]">Filter Posts by Tag</p>
+		<TagList tags={uniqueTags} />
+		<ul class="grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
+			{
+				allPosts.map((post) => (
+					<Post
+						title={post.data.title}
+						description={post.data.description}
+						url={`/posts/${post.slug}/`}
+						images={post.data.images}
+					/>
+				))
+			}
 		</ul>
 	</section>
 </Layout>

@@ -1,4 +1,28 @@
 ---
-const { title, url } = Astro.props
+const { title, url, description, images } = Astro.props;
 ---
-<li><a href={url}>{title}</a></li>
+
+<!-- <li><a href={url}>{title}</a></li> -->
+<div class="s rounded-2xl bg-[#a61168] p-2 shadow-2xl shadow-[#00000080]">
+	<div class="card h-[100%] rounded-2xl bg-base-100 shadow-xl">
+		<figure class="m-0 w-full">
+			<img
+				src={images[0].url}
+				alt={images[0].alt}
+				class="mb-0 aspect-[5/2] max-h-[300px] object-cover"
+			/>
+		</figure>
+		<div class="prose card-body w-full max-w-none">
+			<h2 class="card-title mb-0">{title}</h2>
+			<p>{description}</p>
+			<div class="card-actions justify-end">
+				<a href={url}><button class="btn btn-accent">View Post</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	.gradient-border {
+		background: linear-gradient(45deg, #ca7879 0%, #a61168 65%, #1c0056 100%);
+	}
+</style>
