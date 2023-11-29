@@ -1,74 +1,17 @@
 ---
-import { Image } from "astro:assets";
-import AvatarImage from "../images/Jordan-Muller.jpeg";
-import { Icon } from "astro-icon";
+import BouncingHeroArrow from "./Hero/HeroBouncingArrow.astro";
+import HeroButtons from "./Hero/HeroButtons.astro";
+import HeroText from "./Hero/HeroText.astro";
+import HeroImage from "./Hero/HeroImage.astro";
 ---
 
-<div class="full-svh hero bg-base-200">
+<div class="hero min-h-[100svh] bg-base-200">
 	<div class="hero-content flex-col lg:flex-row-reverse lg:gap-16">
-		<Image
-			src={AvatarImage}
-			alt="A bird sitting on a nest of eggs."
-			class="h-4/5 w-4/5 max-w-sm rounded-2xl shadow-2xl lg:mb-12"
-		/>
+		<HeroImage />
 		<div class="flex flex-col justify-center">
-			<h1 class="text-center text-4xl font-bold lg:text-5xl">
-				Hi 👋, my name is<br />Jordan Muller
-			</h1>
-			<p class="my-4 text-center text-xl font-normal lg:text-2xl">
-				I am a Full Stack Developer,<br />based in California
-			</p>
-			<ul class="mb-2 flex flex-wrap justify-center gap-2">
-				<li>
-					<a href="/portfolio"
-						><button class="btn btn-primary btn-sm"
-							><Icon name="mdi:briefcase-account-outline" class="h-4 w-4" />Portfolio</button
-						></a
-					>
-				</li>
-				<li>
-					<a href="resources/resume"
-						><button class="btn btn-secondary btn-sm"
-							><Icon name="mdi:file-account-outline" class="h-4 w-4" />Resume</button
-						></a
-					>
-				</li>
-				<li>
-					<a href="/contact"
-						><button class="btn btn-accent btn-sm"
-							><Icon name="mdi:phone-message-outline" class="h-4 w-4" />Contact</button
-						></a
-					>
-				</li>
-			</ul>
-			<ul class="flex justify-center gap-2">
-				<li>
-					<a href="https://github.com/itsjordanmuller" class="btn btn-outline btn-neutral btn-sm"
-						><Icon name="mdi:github" class="h-4 w-4" />GitHub</a
-					>
-				</li>
-				<li>
-					<a
-						href="https://www.linkedin.com/in/itsjordanmuller"
-						class="btn btn-outline btn-neutral btn-sm"
-						><Icon name="mdi:linkedin" class="h-4 w-4" />LinkedIn</a
-					>
-				</li>
-			</ul>
-			<div class="flex justify-center">
-				<a href="#introduction" class="pointer"
-					><Icon
-						name="mdi:arrow-down-bold-circle-outline"
-						class="mb-8 mt-8 h-8 w-8 animate-bounce"
-					/></a
-				>
-			</div>
+			<HeroText />
+			<HeroButtons />
+			<BouncingHeroArrow />
 		</div>
-
-		<style>
-			.full-svh {
-				min-height: calc(100svh);
-			}
-		</style>
 	</div>
 </div>
