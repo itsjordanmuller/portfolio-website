@@ -1,10 +1,17 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 const pageTitle = "Blog - Jordan Muller";
+
+import Post from "../components/Post.astro";
+const allPosts = await getCollection("posts");
 ---
 
 <Layout pageTitle={pageTitle}>
 	<section class="bg-200 container prose mx-auto px-6 py-10">
-		<h1>Blog</h1>
+		<p>This is where I will post about my journey learning Astro.</p>
+		<ul>
+			{allPosts.map((post) => <Post url={`/posts/${post.slug}/`} title={post.data.title} />)}
+		</ul>
 	</section>
 </Layout>
