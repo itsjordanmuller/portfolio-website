@@ -1,0 +1,69 @@
+---
+import { Icon } from "astro-icon";
+
+const { tags } = Astro.props;
+
+interface TagStyle {
+	displayText: string;
+	btnClasses: string;
+	icon?: string;
+	iconClasses?: string;
+}
+
+interface TagStyles {
+	[key: string]: TagStyle;
+}
+
+const tagStyles: TagStyles = {
+	astro: {
+		displayText: "Astro",
+		btnClasses: "bg-[#3f4252] text-[#fff]",
+		icon: "astro",
+	},
+	html: {
+		displayText: "HTML",
+		btnClasses: "bg-[#E34F26] text-[#fff]",
+		icon: "simple-icons:html5",
+	},
+	javascript: {
+		displayText: "JavaScript",
+		btnClasses: "bg-[#F7DF1E] text-[#000]",
+		icon: "simple-icons:javascript",
+	},
+	typescript: {
+		displayText: "TypeScript",
+		btnClasses: "bg-[#007ACC] text-[#fff]",
+		icon: "simple-icons:typescript",
+	},
+	css: { displayText: "CSS", btnClasses: "bg-[#1572B6] text-[#fff]", icon: "simple-icons:css3" },
+	python: {
+		displayText: "Python",
+		btnClasses: "bg-[#1572B6] text-[#fff]",
+		icon: "simple-icons:python",
+		iconClasses: "text-[#FFDD54]",
+	},
+};
+
+function getTagDisplayAndClass(tag: string): TagStyle {
+	const lowerCaseTag = tag.toLowerCase();
+	return tagStyles[lowerCaseTag] || { displayText: tag, btnClasses: "btn-outline" };
+}
+---
+
+<div class="flex flex-wrap justify-center gap-2">
+	{
+		tags.map((tag: string) => {
+			const { displayText, btnClasses, icon, iconClasses } = getTagDisplayAndClass(tag);
+
+			return (
+				<a
+					href={`/tags/${tag}`}
+					class={`btn ${btnClasses} btn-sm ${iconClasses ? `text-[${iconClasses}]` : ""}`}
+				>
+					{icon && <Icon name={icon} class={`mr-0 h-4 w-4 ${iconClasses}`} />}
+					{displayText}
+				</a>
+			);
+		})
+	}
+</div>
