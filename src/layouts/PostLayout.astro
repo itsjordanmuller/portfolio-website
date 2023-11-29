@@ -11,9 +11,10 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 		<div class="mb-6 flex flex-col items-center">
 			<h1 class="mb-0">{frontmatter.title}</h1>
 			<img
+				id="cover-image"
 				src={coverImage.url}
 				alt={coverImage.alt}
-				class="contain mb-0 aspect-[5/3] w-2/3 max-w-[800px] rounded-2xl object-cover"
+				class="contain mb-0 aspect-[2/1] max-h-[300px] max-w-full rounded-2xl object-cover"
 			/>
 			<p class="text-xs sm:text-sm">
 				Created by <strong>{frontmatter.author}</strong> on <a
@@ -25,3 +26,11 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 		<slot />
 	</article>
 </Layout>
+<style>
+	@media (max-width: 599px) {
+		#cover-image {
+			max-height: 160px;
+			height: 160px;
+		}
+	}
+</style>
