@@ -1,10 +1,10 @@
 ---
 title: 'My Third Blog Post'
 publishDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
+description: 'This is the third post of my new Astro blog.'
 author: 'Jordan Muller'
 images:
-  - url: '/images/agile.jpg'
+  - url: '/images/Kubuntu.jpg'
     alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
 ---

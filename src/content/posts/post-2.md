@@ -1,10 +1,10 @@
 ---
 title: 'My Second Blog Post'
 publishDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
+description: 'This is the second post of my new Astro blog.'
 author: 'Jordan Muller'
 images:
-  - url: '/images/agile.jpg'
+  - url: '/images/commencement.jpg'
     alt: 'The full Astro logo.'
   - url: '/images/agile.jpg'
     alt: 'Another descriptive alt text.'
