@@ -1,61 +1,16 @@
 ---
 import { Icon } from "astro-icon";
+import FooterLinks from "./Footer/FooterLinks.astro";
+import FooterCopyright from "./Footer/FooterCopyright.astro";
+import FooterSocialLinks from "./Footer/FooterSocialLinks.astro";
 ---
 
 <footer class="container footer z-20 mx-auto bg-base-300 px-6 py-10 text-base-content">
-	<nav>
-		<header class="footer-title">Pages</header>
-		<a href="/" class="link-hover link">Home</a>
-		<a href="/portfolio" class="link-hover link">Portfolio</a>
-		<a href="/blog" class="link-hover link">Blog</a>
-		<a href="/about" class="link-hover link">About</a>
-		<a href="/contact" class="link-hover link">Contact</a>
-	</nav>
-	<nav>
-		<header class="footer-title">Social</header>
-		<a href="https://github.com/itsjordanmuller" class="link-hover link">GitHub</a>
-		<a href="https://www.linkedin.com/in/itsjordanmuller" class="link-hover link">LinkedIn</a>
-		<a href="https://codepen.io/itsjordanmuller" class="link-hover link">CodePen</a>
-	</nav>
-	<nav>
-		<header class="footer-title">Projects</header>
-		<a href="https://github.com/itsjordanmuller/2023-python-100-days" class="link-hover link"
-			>100 Days of Python</a
-		>
-		<a
-			href="https://github.com/itsjordanmuller/50-in-50-html-css-javascript"
-			class="link-hover link">50 Projects in 50 Days</a
-		>
-		<a href="https://github.com/itsjordanmuller/css-100-days-challenge" class="link-hover link"
-			>100 Days CSS Challenge</a
-		>
-	</nav>
-	<nav>
-		<header class="footer-title">Resources</header>
-		<a href="/resources/resume" class="link-hover link">Resume</a>
-		<a href="/resources/certificate" class="link-hover link">Certificates</a>
-	</nav>
+	<FooterLinks />
 </footer>
 <footer
 	class="container footer z-20 mx-auto border-t border-base-300 bg-base-300 px-6 py-4 text-base-content"
 >
-	<aside class="grid-flow-col items-center">
-		<Icon name="signature" class="h-10 w-10 hover:text-accent" />
-		<p>Copyright © 2023 Jordan Muller<br />All Rights Reserved</p>
-	</aside>
-	<nav class="md:place-self-center md:justify-self-end">
-		<div class="w-50 grid grid-flow-col gap-4">
-			<a href="https://github.com/itsjordanmuller"
-				><Icon name="mdi:github" class="h-6 w-6 hover:text-accent" /></a
-			>
-			<a href="https://www.linkedin.com/in/itsjordanmuller"
-				><Icon name="mdi:linkedin" class="h-6 w-6 hover:text-accent" /></a
-			>
-			<a href="https://codepen.io/itsjordanmuller"
-				><Icon name="mdi:codepen" class="h-6 w-6 hover:text-accent" /></a
-			>
-		</div>
-	</nav>
+	<FooterCopyright />
+	<FooterSocialLinks />
 </footer>
-
-<style></style>
