@@ -17,9 +17,10 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 				class="contain mb-0 aspect-[2/1] max-h-[300px] max-w-full rounded-2xl object-cover"
 			/>
 			<p class="text-xs sm:text-sm">
-				Created by <strong>{frontmatter.author}</strong> on <a
-					class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a
-				>
+				Created by <a class="link link-accent" href="/about"
+					><strong>{frontmatter.author}</strong></a
+				> on
+				<a class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a>
 			</p>
 			<TagList tags={frontmatter.tags} />
 		</div>
