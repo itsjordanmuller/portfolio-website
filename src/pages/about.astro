@@ -1,10 +1,93 @@
 ---
+import Question from "../components/Question.astro";
+import Timeline from "../components/Timeline.astro";
 import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon";
 const pageTitle = "About - Jordan Muller";
 ---
 
 <Layout pageTitle={pageTitle}>
 	<section class="bg-200 container prose mx-auto px-6 py-10">
 		<h1>About</h1>
+		<h2>FAQ - Frequently Asked Questions</h2>
+		<p>Select a topic below to see my answers to a variety of common questions!</p>
+		<div class="flex flex-col gap-2">
+			<div class="collapse bg-base-300">
+				<input type="checkbox" />
+				<div class="collapse-title flex text-xl font-medium">
+					<Icon name="mdi:heart-flash" class="ml-1 mr-4 h-7 w-7 text-[#a61168]" />Passions &
+					Inspirations
+				</div>
+				<div class="collapse-content">
+					<div class="flex flex-col gap-2">
+						<Question
+							question="What are you passionate about?"
+							answer="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore et porro aspernatur facilis quisquam corrupti fugit iusto ullam nihil voluptatum debitis in, quibusdam, cum, quae quidem quos blanditiis recusandae."
+						/>
+						<Question
+							question="What inspired you to pursue a career in web development?"
+							answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta dolor facere minima incidunt repudiandae accusantium! Nulla libero, fugit suscipit dolores corrupti, asperiores voluptates voluptatibus alias perspiciatis vitae exercitationem nobis?"
+						/>
+						<Question
+							question="How did you start your journey into this field?"
+							answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse iure molestias, iste enim nam accusamus nisi deleniti aliquid illum minus adipisci error, totam vitae dolorum. Et quaerat reprehenderit sint quia!"
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="collapse bg-base-300">
+				<input type="checkbox" />
+				<div class="collapse-title flex text-xl font-medium">
+					<Icon name="mdi:book-education" class="ml-1 mr-4 h-7 w-7 text-[#a61168]" />Education &
+					Expertise
+				</div>
+				<div class="collapse-content">
+					<div class="flex flex-col gap-2">
+						<Question
+							question="What is your educational background?"
+							answer="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore et porro aspernatur facilis quisquam corrupti fugit iusto ullam nihil voluptatum debitis in, quibusdam, cum, quae quidem quos blanditiis recusandae."
+						/>
+						<Question
+							question="What programming languages & tech do you specialize in?"
+							answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta dolor facere minima incidunt repudiandae accusantium! Nulla libero, fugit suscipit dolores corrupti, asperiores voluptates voluptatibus alias perspiciatis vitae exercitationem nobis?"
+						/>
+						<Question
+							question="Do you have any certifications in software development or related fields?"
+							answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse iure molestias, iste enim nam accusamus nisi deleniti aliquid illum minus adipisci error, totam vitae dolorum. Et quaerat reprehenderit sint quia!"
+						/>
+						<Question
+							question="Beyond formal education, what other skills/experiences have you found most valuable?"
+							answer="Answer 4"
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="collapse bg-base-300">
+				<input type="checkbox" />
+				<div class="collapse-title flex text-xl font-medium">
+					<Icon name="mdi:briefcase-search" class="ml-1 mr-4 h-7 w-7 text-[#a61168]" />Location,
+					Availability & Role
+				</div>
+				<div class="collapse-content">
+					<div class="flex flex-col gap-2">
+						<Question
+							question="What is your current professional role, & what kind of projects are you working on?"
+							answer="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore et porro aspernatur facilis quisquam corrupti fugit iusto ullam nihil voluptatum debitis in, quibusdam, cum, quae quidem quos blanditiis recusandae."
+						/>
+						<Question
+							question="Where are you currently located, & are you willing to relocate?"
+							answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta dolor facere minima incidunt repudiandae accusantium! Nulla libero, fugit suscipit dolores corrupti, asperiores voluptates voluptatibus alias perspiciatis vitae exercitationem nobis?"
+						/>
+						<Question
+							question="Are you open to exploring new opportunities, projects, or collaborations in web development?"
+							answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse iure molestias, iste enim nam accusamus nisi deleniti aliquid illum minus adipisci error, totam vitae dolorum. Et quaerat reprehenderit sint quia!"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3>Still have questions?</h3>
+		<h4 class="mb-12">Let's get in touch!</h4>
+		<Timeline />
 	</section>
 </Layout>
