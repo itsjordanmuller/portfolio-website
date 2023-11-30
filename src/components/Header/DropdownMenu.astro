@@ -36,7 +36,7 @@ const activeBadge = getActiveBadge(currentUrl);
 ---
 
 <div class="dropdown z-40">
-	<div tabindex="0" role="button" class="btn btn-square btn-ghost active:bg-base-300">
+	<div tabindex="0" role="button" class="btn btn-square btn-ghost mr-4 active:bg-base-300">
 		<Icon name="mdi:menu" class="h-6 w-6" />
 	</div>
 	<ul
@@ -125,3 +125,10 @@ const activeBadge = getActiveBadge(currentUrl);
 		</li>
 	</ul>
 </div>
+<style>
+	@media only screen and (max-width: 400px) {
+		li {
+			font-size: 12px;
+		}
+	}
+</style>
