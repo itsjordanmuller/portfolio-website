@@ -6,7 +6,7 @@ author: 'Jordan Muller'
 images:
   - url: '/images/Kubuntu.jpg'
     alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["community", "education", "blogging", "learning in public"]
 ---
 # My First Blog Post
 

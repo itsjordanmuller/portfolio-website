@@ -8,7 +8,7 @@ images:
     alt: 'The full Astro logo.'
   - url: '/images/agile.jpg'
     alt: 'Another descriptive alt text.'
-tags: ["astro", "setbacks", "community"]
+tags: ["hobbies", "setbacks", "community", "university"]
 ---
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.

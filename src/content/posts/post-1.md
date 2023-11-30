@@ -14,7 +14,7 @@ images:
     alt: 'Another descriptive alt text.'
   - url: '/images/agile.jpg'
     alt: 'Another descriptive alt text.'
-tags: ["astro", "html", "css",  "typescript", "javascript","python"]
+tags: ["leadership", "computer science", "education"]
 ---
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
