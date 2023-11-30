@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon";
 
-const { tags } = Astro.props;
+const { tags, contentType } = Astro.props;
 
 interface TagStyle {
 	displayText: string;
@@ -50,14 +50,15 @@ function getTagDisplayAndClass(tag: string): TagStyle {
 }
 ---
 
-<div class="mb-12 flex flex-wrap justify-center gap-2">
+<div class="my-6 flex flex-wrap justify-center gap-2">
 	{
 		tags.map((tag: string) => {
 			const { displayText, btnClasses, icon, iconClasses } = getTagDisplayAndClass(tag);
+			const urlPrefix = contentType === "projects" ? "/portfolio/tags/" : "/blog/tags/";
 
 			return (
 				<a
-					href={`/tags/${tag}`}
+					href={`${urlPrefix}${tag}`}
 					class={`btn ${btnClasses} btn-sm ${iconClasses ? `text-[${iconClasses}]` : ""}`}
 				>
 					{icon && <Icon name={icon} class={`mr-0 h-4 w-4 ${iconClasses}`} />}
