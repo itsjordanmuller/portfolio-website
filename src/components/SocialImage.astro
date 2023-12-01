@@ -1,0 +1,14 @@
+---
+import { Image } from "astro:assets";
+import AvatarImage from "../images/Jordan-Muller.jpeg";
+---
+
+<div class="flex w-full justify-center">
+	<div class="mask mask-circle max-w-[12rem] rounded-[50%] bg-accent p-2">
+		<Image
+			src={AvatarImage}
+			alt="Jordan Muller Profile Picture"
+			class="mask mask-circle my-4 max-w-[10rem] shadow-xl shadow-[#00000080]"
+		/>
+	</div>
+</div>
