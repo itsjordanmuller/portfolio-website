@@ -1,0 +1,36 @@
+---
+import TagList from "../components/Utilities/TagList.astro";
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+const [coverImage, ...otherImages] = frontmatter.images;
+const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")[0];
+---
+
+<Layout pageTitle={frontmatter.title}>
+	<article class="container prose mx-auto max-w-4xl p-6">
+		<div class="mb-6 flex flex-col items-center">
+			<h1 class="mb-0">{frontmatter.title}</h1>
+			<img
+				id="cover-image"
+				src={coverImage.url}
+				alt={coverImage.alt}
+				class="my-0 max-h-[450px] max-w-full rounded-2xl object-cover"
+			/>
+			<p class="text-xs sm:text-sm">
+				Created by <a class="link link-accent" href="/about"
+					><strong>{frontmatter.author}</strong></a
+				> on <a class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a>
+			</p>
+			<TagList tags={frontmatter.tags} contentType="resources" />
+		</div>
+		<slot />
+	</article>
+</Layout>
+<style>
+	@media (max-width: 599px) {
+		#cover-image {
+			max-height: 300px;
+			height: 300px;
+		}
+	}
+</style>
