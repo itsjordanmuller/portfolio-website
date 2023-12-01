@@ -3,8 +3,10 @@ import { Image } from "astro:assets";
 import AvatarImage from "../../images/Jordan-Muller.jpeg";
 ---
 
-<Image
-	src={AvatarImage}
-	alt="Jordan Muller Profile Picture"
-	class="h-4/5 w-4/5 max-w-sm rounded-2xl shadow-xl shadow-[#00000080] lg:mb-12"
-/>
+<div class="max-w-[18rem] rounded-2xl bg-[#a61168] p-2 shadow-xl">
+	<Image
+		src={AvatarImage}
+		alt="Jordan Muller Profile Picture"
+		class="max-w-[16rem] rounded-2xl shadow-md shadow-[#00000080] lg:mb-12"
+	/>
+</div>
