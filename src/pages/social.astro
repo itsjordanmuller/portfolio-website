@@ -1,10 +1,108 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import SocialImage from "../components/SocialImage.astro";
+import { Icon } from "astro-icon";
 const pageTitle = "Social - Jordan Muller";
 ---
 
 <Layout pageTitle={pageTitle}>
 	<section class="bg-200 container prose mx-auto px-6 py-10">
-		<h1>Social</h1>
+		<h1 class="my-0 text-center text-3xl">Social Links</h1>
+		<h2 class="mt-6 text-center text-lg">If we aren't already,<br />I'd love to get connected!</h2>
+		<SocialImage />
+		<p class="mb-8 text-center font-bold">You can find me on the following sites:</p>
+		<ul class="menu w-full rounded-box bg-base-300">
+			<li>
+				<a
+					href="https://github.com/itsjordanmuller"
+					class="link my-0 flex w-full items-center justify-center rounded-box bg-[#181717] py-4 text-xl font-bold text-[#ffffff] no-underline transition-all duration-300 hover:bg-[#a61168]"
+				>
+					<Icon name="mdi:github" class="mr-2 h-7 w-7" />GitHub Portfolio
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://www.linkedin.com/in/itsjordanmuller"
+					class="link my-0 flex w-full items-center justify-center rounded-box bg-[#0E76A8] py-4 text-xl font-bold text-[#ffffff] no-underline transition-all duration-300 hover:bg-[#a61168]"
+				>
+					<Icon name="mdi:linkedin" class="mr-2 h-7 w-7" />Connect on LinkedIn
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://codepen.io/itsjordanmuller"
+					class="link my-0 flex w-full items-center justify-center rounded-box bg-[#000000] py-4 text-xl font-bold text-[#ffffff] no-underline transition-all duration-300 hover:bg-[#a61168]"
+				>
+					<Icon name="mdi:codepen" class="mr-2 h-7 w-7" />CodePen Snippets
+				</a>
+			</li>
+			<!-- <li>
+				<a
+					href="https://www.youtube.com/@itsjordanmuller"
+					class="link my-0 flex w-full items-center justify-center rounded-box bg-[#FF0000] py-4 text-xl font-bold text-[#ffffff] no-underline transition-all duration-300 hover:bg-[#a61168]"
+				>
+					<Icon name="mdi:youtube" class="h-7 w-7" />YouTube Channel
+				</a>
+			</li> -->
+			<!-- <li>
+				<a
+					href="https://twitter.com/itsjordanmuller"
+					class="link my-0 flex w-full items-center justify-center rounded-box bg-[#1D9BF0] py-4 text-xl font-bold text-[#ffffff] no-underline transition-all duration-300 hover:bg-[#a61168]"
+				>
+					<Icon name="mdi:twitter" class="h-7 w-7" />/<Icon
+						name="x-twitter"
+						class="mr-2 h-6 w-6"
+					/>My Twitter Profile
+				</a>
+			</li> -->
+			<!-- <li>
+				<a
+					href="https://mastodon.social/@itsjordanmuller"
+					class="link my-0 flex w-full items-center justify-center rounded-box bg-[#6364FF] py-4 text-xl font-bold text-[#ffffff] no-underline transition-all duration-300 hover:bg-[#a61168]"
+				>
+					<Icon name="mdi:mastodon" class="h-7 w-7" />My Mastodon Handle
+				</a>
+			</li> -->
+			<!-- <li>
+				<a
+					href="https://www.reddit.com/user/itsjordanmuller"
+					class="link my-0 flex w-full items-center justify-center rounded-box bg-[#FF4500] py-4 text-xl font-bold text-[#ffffff] no-underline transition-all duration-300 hover:bg-[#a61168]"
+				>
+					<Icon name="mdi:reddit" class="h-7 w-7" />My Reddit Account
+				</a>
+			</li> -->
+			<!-- <li>
+				<a
+					href="https://www.pinterest.com/itsjordanmuller/"
+					class="link my-0 flex w-full items-center justify-center rounded-box bg-[#CA2A33] py-4 text-xl font-bold text-[#ffffff] no-underline transition-all duration-300 hover:bg-[#a61168]"
+				>
+					<Icon name="mdi:pinterest" class="h-7 w-7" />My Pinterest Boards
+				</a>
+			</li> -->
+			<!-- <li>
+				<a
+					href="https://www.youtube.com/@itsjordanmuller"
+					class="link my-0 flex w-full items-center justify-center rounded-box bg-[#324F6C] py-4 text-xl font-bold text-[#ffffff] no-underline transition-all duration-300 hover:bg-[#a61168]"
+				>
+					<Icon name="mdi:tumblr" class="h-7 w-7" />View Tumblr Blog
+				</a>
+			</li> -->
+			<!-- <li>
+				<a
+					href="#"
+					class="link my-0 flex w-full items-center justify-center rounded-box bg-[#000000] py-4 text-xl font-bold text-[#ffffff] no-underline transition-all duration-300 hover:bg-[#a61168]"
+				>
+					<Icon name="threads" class="h-7 w-7" />View My Threads
+				</a>
+			</li> -->
+			<!-- <li>
+				<a
+					href="#"
+					class="link my-0 flex w-full items-center justify-center rounded-box bg-[#E2306C] py-4 text-xl font-bold text-[#ffffff] no-underline transition-all duration-300 hover:bg-[#a61168]"
+				>
+					<Icon name="mdi:instagram" class="h-7 w-7" />Follow on Instagram
+				</a>
+			</li> -->
+		</ul>
 	</section>
 </Layout>
