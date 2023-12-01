@@ -2,12 +2,83 @@
 import { Icon } from "astro-icon";
 ---
 
-<button class="btn btn-square btn-ghost active:bg-base-300">
-	<label class="swap swap-rotate">
-		<input type="checkbox" value="dracula" class="theme-controller" />
+<label id="theme-toggle-label" class="btn btn-square btn-ghost swap swap-rotate active:bg-base-300">
+	<div class="tooltip tooltip-bottom absolute right-20 top-10" id="tooltip-text" data-tip="hello">
+		<input type="checkbox" id="theme-checkbox" value="dracula" class="theme-controller" />
+	</div>
+	<Icon name="ph:sun-bold" class="swap-on h-6 w-6 fill-current" />
+	<Icon name="ph:moon-bold" class="swap-off h-6 w-6 fill-current" />
+</label>
 
-		<Icon name="ph:sun-bold" class="swap-on h-6 w-6 fill-current" />
+<script is:inline>
+	let tooltipTimeout;
 
-		<Icon name="ph:moon-bold" class="swap-off h-6 w-6 fill-current" />
-	</label>
-</button>
+	const getInitialTheme = () => {
+		if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+			return localStorage.getItem("theme");
+		}
+		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+			return "dark";
+		}
+		return "light";
+	};
+
+	const setThemeAttribute = (theme) => {
+		document.documentElement.setAttribute(
+			"data-theme",
+			theme === "dark" ? "dracula" : "dracula-light",
+		);
+		document
+			.getElementById("tooltip-text")
+			.setAttribute("data-tip", theme === "dark" ? "Dark Mode Activated" : "Light Mode Activated");
+	};
+
+	const applyInitialThemeClass = (theme) => {
+		const element = document.documentElement;
+		element.classList.remove("dark", "light");
+		element.classList.add(theme);
+
+		const toggleLabel = document.getElementById("theme-toggle-label");
+		if (theme === "dark") {
+			toggleLabel.classList.add("swap-active");
+		} else {
+			toggleLabel.classList.remove("swap-active");
+		}
+	};
+
+	const theme = getInitialTheme();
+	setThemeAttribute(theme);
+	applyInitialThemeClass(theme);
+
+	const showTooltipTemporarily = () => {
+		const tooltip = document.getElementById("tooltip-text");
+		tooltip.classList.add("tooltip-open");
+
+		clearTimeout(tooltipTimeout);
+
+		tooltipTimeout = setTimeout(() => {
+			tooltip.classList.remove("tooltip-open");
+		}, 1000);
+	};
+
+	const handleToggleClick = () => {
+		const element = document.documentElement;
+		const isDark = !element.classList.contains("dark");
+		const newTheme = isDark ? "dark" : "light";
+		localStorage.setItem("theme", newTheme);
+		setThemeAttribute(newTheme);
+		applyInitialThemeClass(newTheme);
+		showTooltipTemporarily();
+	};
+
+	const themeCheckbox = document.getElementById("theme-checkbox");
+	themeCheckbox.checked = theme === "dark";
+	themeCheckbox.addEventListener("change", handleToggleClick);
+</script>
+
+<style>
+	.tooltip:after {
+		transform: translateX(-50%);
+		left: 55px;
+	}
+</style>
