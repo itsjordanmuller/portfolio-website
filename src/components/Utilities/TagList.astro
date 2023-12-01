@@ -44,6 +44,19 @@ const tagStyles: TagStyles = {
 	},
 };
 
+function getUrlPrefix(contentType: string): string {
+	switch (contentType) {
+		case "projects":
+			return "/portfolio/tags/";
+		case "posts":
+			return "/blog/tags/";
+		case "resources":
+			return "/resources/tags/";
+		default:
+			return "/blog/tags/"; // Default case
+	}
+}
+
 function getTagDisplayAndClass(tag: string): TagStyle {
 	const lowerCaseTag = tag.toLowerCase();
 	return tagStyles[lowerCaseTag] || { displayText: tag, btnClasses: "btn-outline" };
@@ -54,7 +67,7 @@ function getTagDisplayAndClass(tag: string): TagStyle {
 	{
 		tags.map((tag: string) => {
 			const { displayText, btnClasses, icon, iconClasses } = getTagDisplayAndClass(tag);
-			const urlPrefix = contentType === "projects" ? "/portfolio/tags/" : "/blog/tags/";
+			const urlPrefix = getUrlPrefix(contentType);
 
 			return (
 				<a
