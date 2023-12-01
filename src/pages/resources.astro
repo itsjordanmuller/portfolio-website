@@ -1,10 +1,36 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 const pageTitle = "Resources - Jordan Muller";
+
+import Resource from "../components/Resource.astro";
+const allResources = await getCollection("resources");
+const uniqueTags = [...new Set(allResources.map((resource) => resource.data.tags).flat())];
+import TagList from "../components/Utilities/TagList.astro";
 ---
 
 <Layout pageTitle={pageTitle}>
-	<section class="bg-200 container prose mx-auto px-6 py-10">
-		<h1>Resources</h1>
+	<section
+		class="lg-px-[6rem] container prose max-w-none bg-base-200 px-[2rem] py-12 sm:px-[5rem] md:px-[9rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[14rem]"
+	>
+		<h1 class="mb-1 text-center">Resources & Documents</h1>
+		<p class="mt-1 text-center leading-[32px]">
+			<span class="px-1">All Resources</span>
+		</p>
+		<p class="my-8 text-center font-bold leading-[30px]">Filter Resources by Tag</p>
+		<TagList tags={uniqueTags} contentType="resources" />
+		<ul class="mt-12 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
+			{
+				allResources.map((resource) => (
+					<Resource
+						title={resource.data.title}
+						description={resource.data.description}
+						url={`/resources/${resource.slug}/`}
+						images={resource.data.images}
+						type={resource.data.type}
+					/>
+				))
+			}
+		</ul>
 	</section>
 </Layout>
