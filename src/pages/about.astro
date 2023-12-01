@@ -2,13 +2,15 @@
 import Question from "../components/Question.astro";
 import Timeline from "../components/Timeline.astro";
 import Layout from "../layouts/Layout.astro";
+import AboutImage from "../components/AboutImage.astro";
 import { Icon } from "astro-icon";
 const pageTitle = "About - Jordan Muller";
 ---
 
 <Layout pageTitle={pageTitle}>
 	<section class="bg-200 container prose mx-auto px-6 py-10">
-		<h1>About</h1>
+		<h1 class="text-center">About Me</h1>
+		<AboutImage />
 		<h2>FAQ - Frequently Asked Questions</h2>
 		<p>Select a topic below to see my answers to a variety of common questions!</p>
 		<div class="flex flex-col gap-2">
