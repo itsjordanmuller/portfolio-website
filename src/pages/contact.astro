@@ -7,7 +7,7 @@ const pageTitle = "Contact - Jordan Muller";
 <Layout pageTitle={pageTitle}>
 	<section class="bg-200 container prose mx-auto px-6 py-10">
 		<h1 class="my-0 text-center text-3xl">Contact Me</h1>
-		<ul class="menu menu-horizontal w-full rounded-box bg-base-300">
+		<!-- <ul class="menu menu-horizontal w-full rounded-box bg-base-300">
 			<li class="w-1/2">
 				<a
 					href="mailto:itsjordanmuller@gmail.com"
@@ -24,7 +24,18 @@ const pageTitle = "Contact - Jordan Muller";
 					<Icon name="mdi:phone-message" class="mr-2 h-5 w-5" />Call/Text Me
 				</a>
 			</li>
-		</ul>
+		</ul> -->
+		<div class="card join my-4 flex flex-row justify-center bg-base-100 p-4">
+			<button class="btn btn-primary join-item w-1/3"
+				><Icon name="mdi:email" class="mr-2 h-5 w-5" />Email Me</button
+			>
+			<button class="btn btn-secondary join-item w-1/3"
+				><Icon name="mdi:phone" class="mr-2 h-5 w-5" />Call Me</button
+			>
+			<button class="btn btn-accent join-item w-1/3"
+				><Icon name="mdi:message" class="mr-2 h-5 w-5" />Text Me</button
+			>
+		</div>
 		<form>
 			<label class="form-control w-full max-w-none">
 				<div class="label">
@@ -51,7 +62,9 @@ const pageTitle = "Contact - Jordan Muller";
 				<textarea class="textarea textarea-bordered h-48" placeholder="Write a detailed message"
 				></textarea>
 			</label>
-			<button type="submit" class="btn btn-outline btn-accent mt-8 w-full max-w-none"
+			<button
+				type="submit"
+				class="btn mt-8 w-full max-w-none bg-[#a61168] text-[#fff] hover:bg-neutral"
 				>Send Message</button
 			>
 		</form>
