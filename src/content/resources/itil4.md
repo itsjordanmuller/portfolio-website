@@ -6,6 +6,6 @@ author: 'Jordan Muller'
 images:
   - url: '/images/itil4.png'
     alt: 'The full Astro logo.'
-tags: ["PDF", "Certificates", "ITIL4", "IT"]
+tags: ["PDF", "certificates", "ITIL4", "IT"]
 type: "certificate"
 ---
