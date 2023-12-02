@@ -72,7 +72,9 @@ function getTagDisplayAndClass(tag: string): TagStyle {
 			return (
 				<a
 					href={`${urlPrefix}${tag}`}
-					class={`btn ${btnClasses} btn-sm ${iconClasses ? `text-[${iconClasses}]` : ""}`}
+					class={`btn ${btnClasses} btn-sm capitalize ${
+						iconClasses ? `text-[${iconClasses}]` : ""
+					}`}
 				>
 					{icon && <Icon name={icon} class={`mr-0 h-4 w-4 ${iconClasses}`} />}
 					{displayText}
