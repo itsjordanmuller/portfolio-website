@@ -6,7 +6,7 @@ const allProjects = (await getCollection("projects"))
 	.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
 	.slice(0, 3);
 
-const uniqueTags = [...new Set(allProjects.map((project) => project.data.tags).flat())];
+const uniqueProjectTags = [...new Set(allProjects.map((project) => project.data.tags).flat())];
 ---
 
 <section class="mb-12">
@@ -39,11 +39,15 @@ const uniqueTags = [...new Set(allProjects.map((project) => project.data.tags).f
 	</p>
 	<div class="flex flex-wrap justify-center gap-6">
 		<div class="join">
-			<select id="tagSelect" class="join-item select select-bordered" onchange="updateButtonLink()">
-				<option value="View All Tags" selected>All Project Tags</option>
-				{uniqueTags.map((tag) => <option value={tag}>{tag.toUpperCase()}</option>)}
+			<select
+				id="projectsTagSelect"
+				class="join-item select select-bordered"
+				onchange="updateProjectButtonLink()"
+			>
+				<option value="All Project Tags" selected>All Project Tags</option>
+				{uniqueProjectTags.map((tag) => <option value={tag}>{tag.toUpperCase()}</option>)}
 			</select>
-			<a id="tagLink" href="/portfolio">
+			<a id="projectTagLink" href="/portfolio">
 				<button class="btn btn-secondary join-item">Filter Portfolio Projects by Tag</button>
 			</a>
 		</div>
@@ -53,15 +57,15 @@ const uniqueTags = [...new Set(allProjects.map((project) => project.data.tags).f
 </section>
 
 <script is:inline>
-	function updateButtonLink() {
-		const selectElement = document.getElementById("tagSelect");
-		const link = document.getElementById("tagLink");
-		const selectedTag = selectElement.value;
+	function updateProjectButtonLink() {
+		const selectProjectsElement = document.getElementById("projectsTagSelect");
+		const projectsLink = document.getElementById("projectTagLink");
+		const selectedProjectTag = selectProjectsElement.value;
 
-		if (selectedTag === "All Portfolio Project Tags") {
-			link.href = `/portfolio`;
+		if (selectedProjectTag === "All Project Tags") {
+			projectsLink.href = `/portfolio`;
 		} else {
-			link.href = `/portfolio/tags/${selectedTag}`;
+			projectsLink.href = `/portfolio/tags/${selectedProjectTag}`;
 		}
 	}
 </script>
