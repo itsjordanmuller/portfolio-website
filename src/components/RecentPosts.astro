@@ -7,13 +7,13 @@ const allPosts = (await getCollection("posts"))
 	.slice(0, 3);
 ---
 
-<section>
+<section class="mb-12">
 	<h1 class="text-center">Recent Blog Posts</h1>
 	<p class="text-center lg:text-left">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque aliquid distinctio
 		cumque sapiente esse quam minima quaerat laudantium, minus, magni rem, est expedita eius
 	</p>
-	<ul class="mt-12 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
+	<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 		{
 			allPosts.map((post) => (
 				<Post
