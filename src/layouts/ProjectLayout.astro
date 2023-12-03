@@ -4,6 +4,7 @@ import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 const [coverImage, ...otherImages] = frontmatter.images;
 const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")[0];
+import { Icon } from "astro-icon";
 ---
 
 <Layout pageTitle={frontmatter.title}>
@@ -16,6 +17,13 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 				alt={coverImage.alt}
 				class="my-0 max-h-[450px] max-w-full rounded-2xl object-cover"
 			/>
+			<div>
+				<a href="#" class="btn btn-error"><Icon name="gridicons:site" class="h-6 w-6" />Live Demo</a
+				>
+				<a href="#" class="btn btn-secondary"
+					><Icon name="mdi:github" class="h-6 w-6" />GitHub Repository</a
+				>
+			</div>
 			<p class="text-xs sm:text-sm">
 				Created by <a class="link link-accent" href="/about"
 					><strong>{frontmatter.author}</strong></a
