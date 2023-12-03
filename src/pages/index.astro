@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import RecentPosts from "../components/RecentPosts.astro";
+import RecentProjects from "../components/RecentProjects.astro";
 const pageTitle = "Jordan Muller - Welcome";
 ---
 
@@ -22,14 +23,7 @@ const pageTitle = "Jordan Muller - Welcome";
 					quos assumenda aliquam.
 				</p>
 			</section>
-			<section>
-				<h2 id="recent-projects">Recent Projects</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus suscipit, exercitationem
-					porro aperiam ut, consectetur repudiandae nesciunt reiciendis dicta tempore amet impedit
-					reprehenderit corporis aspernatur!
-				</p>
-			</section>
+			<RecentProjects />
 			<RecentPosts />
 		</div>
 	</div>
