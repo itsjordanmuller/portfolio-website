@@ -6,7 +6,7 @@ const allPosts = (await getCollection("posts"))
 	.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
 	.slice(0, 3);
 
-const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+const uniquePostTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 ---
 
 <section class="mb-12">
@@ -34,15 +34,19 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 	</p>
 	<div class="flex flex-wrap justify-center gap-6">
 		<div class="join">
-			<select id="tagSelect" class="join-item select select-bordered" onchange="updateButtonLink()">
-				<option value="View All Tags" selected>All Blog Post Tags</option>
+			<select
+				id="postsTagSelect"
+				class="join-item select select-bordered"
+				onchange="updatePostButtonLink()"
+			>
+				<option value="All Blog Post Tags" selected>All Blog Post Tags</option>
 				{
-					uniqueTags.map((tag) => (
+					uniquePostTags.map((tag) => (
 						<option value={tag}>{tag.charAt(0).toUpperCase() + tag.slice(1)}</option>
 					))
 				}
 			</select>
-			<a id="tagLink" href="/blog">
+			<a id="postTagLink" href="/blog">
 				<button class="btn btn-secondary join-item">Filter Blog Posts by Tag</button>
 			</a>
 		</div>
@@ -51,15 +55,15 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 </section>
 
 <script is:inline>
-	function updateButtonLink() {
-		const selectElement = document.getElementById("tagSelect");
-		const link = document.getElementById("tagLink");
-		const selectedTag = selectElement.value;
+	function updatePostButtonLink() {
+		const selectPostsElement = document.getElementById("postsTagSelect");
+		const postLink = document.getElementById("postTagLink");
+		const selectedPostTag = selectPostsElement.value;
 
-		if (selectedTag === "All Blog Post Tags") {
-			link.href = `/blog`;
+		if (selectedPostTag === "All Blog Post Tags") {
+			postLink.href = `/blog`;
 		} else {
-			link.href = `/blog/tags/${selectedTag}`;
+			postLink.href = `/blog/tags/${selectedPostTag}`;
 		}
 	}
 </script>
