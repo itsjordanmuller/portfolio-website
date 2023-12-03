@@ -1,0 +1,39 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+
+import Post from "../components/Post.astro";
+
+const allPosts = (await getCollection("posts"))
+	.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+	.slice(0, 3);
+
+const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+import TagList from "../components/Utilities/TagList.astro";
+---
+
+<section>
+	<h1 class="text-center">Recent Blog Posts</h1>
+	<p class="text-center lg:text-left">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque aliquid distinctio
+		cumque sapiente esse quam minima quaerat laudantium, minus, magni rem, est expedita eius
+	</p>
+	<ul class="mt-12 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
+		{
+			allPosts.map((post) => (
+				<Post
+					title={post.data.title}
+					description={post.data.description}
+					url={`/blog/${post.slug}/`}
+					images={post.data.images}
+				/>
+			))
+		}
+	</ul>
+	<p class="text-center lg:text-left">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus quod.
+		Consequatur obcaecati officiis maxime impedit, sapiente ipsa qui sit ad eius velit animi
+		reiciendis fuga quas tempore? Quod ipsam laudantium obcaecati voluptatem vero non iusto omnis
+		odio harum perspiciatis, vel unde sed ea inventore, saepe esse nostrum minus quia.
+	</p>
+</section>
