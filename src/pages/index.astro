@@ -1,39 +1,36 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+import RecentPosts from "../components/RecentPosts.astro";
 const pageTitle = "Jordan Muller - Welcome";
 ---
 
 <Layout pageTitle={pageTitle}>
-	<div class="mb-6 bg-base-100">
+	<div class="bg-base-100">
 		<Hero />
-		<section class="prose max-w-none px-6">
-			<h2 id="introduction" class="pt-6">A Brief Introduction</h2>
-			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quae deleniti quia, nihil
-				tenetur eligendi exercitationem repellat, error asperiores cum mollitia perferendis ipsam
-				iure repellendus suscipit incidunt est, architecto vero!
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores debitis, vero iste
-				fugit eligendi repellendus sunt ratione? Dolorum vero officia a optio unde aut sint! Illum
-				quos assumenda aliquam.
-			</p>
-		</section>
-		<section class="prose max-w-none px-6">
-			<h2 id="recent-projects" class="pt-6">Recent Projects</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus suscipit, exercitationem
-				porro aperiam ut, consectetur repudiandae nesciunt reiciendis dicta tempore amet impedit
-				reprehenderit corporis aspernatur!
-			</p>
-		</section>
-		<section class="prose max-w-none px-6">
-			<h2 id="recent-posts" class="pt-6">Recent Posts</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque aliquid distinctio
-				cumque sapiente esse quam minima quaerat laudantium, minus, magni rem, est expedita eius!
-			</p>
-		</section>
+		<div class="container prose mx-auto mb-12 max-w-none px-12">
+			<section>
+				<h2 id="introduction">A Brief Introduction</h2>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quae deleniti quia, nihil
+					tenetur eligendi exercitationem repellat, error asperiores cum mollitia perferendis ipsam
+					iure repellendus suscipit incidunt est, architecto vero!
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores debitis, vero iste
+					fugit eligendi repellendus sunt ratione? Dolorum vero officia a optio unde aut sint! Illum
+					quos assumenda aliquam.
+				</p>
+			</section>
+			<section>
+				<h2 id="recent-projects">Recent Projects</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus suscipit, exercitationem
+					porro aperiam ut, consectetur repudiandae nesciunt reiciendis dicta tempore amet impedit
+					reprehenderit corporis aspernatur!
+				</p>
+			</section>
+			<RecentPosts />
+		</div>
 	</div>
 </Layout>
