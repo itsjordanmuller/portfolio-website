@@ -1,7 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from "../layouts/Layout.astro";
-
 import Post from "../components/Post.astro";
 
 const allPosts = (await getCollection("posts"))
@@ -9,7 +7,6 @@ const allPosts = (await getCollection("posts"))
 	.slice(0, 3);
 
 const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
-import TagList from "../components/Utilities/TagList.astro";
 ---
 
 <section>
