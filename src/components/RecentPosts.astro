@@ -5,13 +5,16 @@ import Post from "../components/Post.astro";
 const allPosts = (await getCollection("posts"))
 	.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
 	.slice(0, 3);
+
+const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 ---
 
 <section class="mb-12">
 	<h1 class="text-center">Recent Blog Posts</h1>
-	<p class="text-center lg:text-left">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque aliquid distinctio
-		cumque sapiente esse quam minima quaerat laudantium, minus, magni rem, est expedita eius
+	<p class="text-center text-lg lg:text-left">
+		In my blog, I share my thoughts, experiences, and discoveries in the world of development.
+		Whether you're a fellow developer, a curious learner, or simply an enthusiast in the tech
+		sphere, I hope to provide you with valuable and personal insights from my life.
 	</p>
 	<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 		{
@@ -25,10 +28,38 @@ const allPosts = (await getCollection("posts"))
 			))
 		}
 	</ul>
-	<p class="text-center lg:text-left">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus quod.
-		Consequatur obcaecati officiis maxime impedit, sapiente ipsa qui sit ad eius velit animi
-		reiciendis fuga quas tempore? Quod ipsam laudantium obcaecati voluptatem vero non iusto omnis
-		odio harum perspiciatis, vel unde sed ea inventore, saepe esse nostrum minus quia.
+	<p class="text-center text-lg lg:text-left">
+		Feel free to filter my posts by specific tags that interest you, or simply choose to view all
+		blog posts to explore the full range of topics I cover.
 	</p>
+	<div class="flex flex-wrap justify-center gap-6">
+		<div class="join">
+			<select id="tagSelect" class="join-item select select-bordered" onchange="updateButtonLink()">
+				<option value="View All Tags" selected>All Blog Post Tags</option>
+				{
+					uniqueTags.map((tag) => (
+						<option value={tag}>{tag.charAt(0).toUpperCase() + tag.slice(1)}</option>
+					))
+				}
+			</select>
+			<a id="tagLink" href="/blog">
+				<button class="btn btn-secondary join-item">Filter Blog Posts by Tag</button>
+			</a>
+		</div>
+		<button class="btn btn-accent w-72">View All Blog Posts</button>
+	</div>
 </section>
+
+<script is:inline>
+	function updateButtonLink() {
+		const selectElement = document.getElementById("tagSelect");
+		const link = document.getElementById("tagLink");
+		const selectedTag = selectElement.value;
+
+		if (selectedTag === "All Blog Post Tags") {
+			link.href = `/blog`;
+		} else {
+			link.href = `/blog/tags/${selectedTag}`;
+		}
+	}
+</script>
