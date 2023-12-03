@@ -1,15 +1,14 @@
 ---
-title: 'My Second Blog Post'
-publishDate: 2023-11-02 12:30:00
-description: 'This is the second post of my new Astro blog.'
+title: 'My Fourth Blog Post'
+publishDate: 2023-11-04 12:30:00
+description: 'This is the third post of my new Astro blog.'
 author: 'Jordan Muller'
 images:
-  - url: '/images/commencement.jpg'
-    alt: 'The full Astro logo.'
   - url: '/images/agile.jpg'
-    alt: 'Another descriptive alt text.'
-tags: ["hobbies", "setbacks", "community", "university"]
+    alt: 'The full Astro logo.'
+tags: ["community", "education", "blogging", "learning in public"]
 ---
+# My First Blog Post
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 

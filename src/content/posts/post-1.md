@@ -1,6 +1,6 @@
 ---
 title: 'My First Blog Post'
-publishDate: 2023-07-02 17:38:00
+publishDate: 2023-11-01 12:30:00
 description: 'This is the first post of my new Astro blog.'
 author: 'Jordan Muller'
 images:

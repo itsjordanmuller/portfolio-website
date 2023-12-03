@@ -1,6 +1,6 @@
 ---
 title: 'My Third Blog Post'
-publishDate: 2022-07-01
+publishDate: 2023-11-03 12:30:00
 description: 'This is the third post of my new Astro blog.'
 author: 'Jordan Muller'
 images:
