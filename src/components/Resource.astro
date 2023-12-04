@@ -2,7 +2,7 @@
 const { title, url, description, images, type } = Astro.props;
 ---
 
-<div class="rounded-2xl bg-[#a61168] p-2 shadow-2xl shadow-[#00000080]">
+<div class="gradient-card-bg rounded-2xl p-2 shadow-2xl shadow-[#00000080]">
 	<div class="card h-[100%] rounded-2xl bg-base-100 shadow-xl">
 		<figure class="m-0 w-full">
 			<img src={images[0].url} alt={images[0].alt} class="mb-0" />
@@ -16,8 +16,3 @@ const { title, url, description, images, type } = Astro.props;
 		</div>
 	</div>
 </div>
-<style>
-	.gradient-border {
-		background: linear-gradient(45deg, #ca7879 0%, #a61168 65%, #1c0056 100%);
-	}
-</style>
