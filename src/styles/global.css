@@ -1,0 +1,9 @@
+.gradient-bg {
+	background: linear-gradient(45deg, #ffcf9b 15%, #ffa4d8 75%, #d2b6fb 100%);
+}
+.gradient-card-bg {
+	background: linear-gradient(45deg, #edb77e 0%, #a61168 60%, #5f458d 100%);
+}
+.gradient-img-bg {
+	background: linear-gradient(45deg, #edb77e 15%, #a61168 55%, #5f458d 90%);
+}
