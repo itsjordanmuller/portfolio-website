@@ -2,12 +2,12 @@
 const { title, url, description, images } = Astro.props;
 ---
 
-<div class="rounded-2xl bg-[#a61168] p-2 shadow-2xl shadow-[#00000080]">
-	<div class="card h-[100%] rounded-2xl bg-base-100 shadow-xl">
+<div class="gradient-border rounded-2xl p-2 shadow-2xl shadow-[#00000080]">
+	<div class="gradient-bg card h-[100%] rounded-2xl bg-base-100 shadow-xl">
 		<figure class="m-0 w-full">
 			<img src={images[0].url} alt={images[0].alt} class="mb-0" />
 		</figure>
-		<div class="prose card-body w-full max-w-none">
+		<div class="prose card-body w-full max-w-none rounded-b-2xl bg-base-100">
 			<h2 class="card-title mb-0">{title}</h2>
 			<p>{description}</p>
 			<div class="card-actions justify-end">
@@ -19,5 +19,8 @@ const { title, url, description, images } = Astro.props;
 <style>
 	.gradient-border {
 		background: linear-gradient(45deg, #ca7879 0%, #a61168 65%, #1c0056 100%);
+	}
+	.gradient-bg {
+		background: linear-gradient(45deg, #ffb86c 0%, #ff79c6 75%, #bd93f9 100%);
 	}
 </style>
