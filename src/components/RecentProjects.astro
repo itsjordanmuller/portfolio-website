@@ -37,21 +37,22 @@ const uniqueProjectTags = [...new Set(allProjects.map((project) => project.data.
 		my work. Dive in and explore the projects that have challenged, inspired, and honed my skills as
 		a developer.
 	</p>
-	<div class="flex flex-wrap justify-center gap-6">
-		<div class="join">
+	<div class="mx-auto flex flex-col flex-wrap items-center gap-6">
+		<div class="flex w-full max-w-3xl flex-col justify-center sm:join sm:flex-row">
 			<select
 				id="projectsTagSelect"
-				class="join-item select select-bordered"
+				class="join-item select select-bordered w-full"
 				onchange="updateProjectButtonLink()"
 			>
 				<option value="All Project Tags" selected>All Project Tags</option>
 				{uniqueProjectTags.map((tag) => <option value={tag}>{tag.toUpperCase()}</option>)}
 			</select>
-			<a id="projectTagLink" href="/portfolio">
-				<button class="btn btn-secondary join-item">Filter Portfolio Projects by Tag</button>
+			<a id="projectTagLink" href="/portfolio" class="btn btn-secondary join-item h-auto text-sm"
+				>Filter Projects by Tag
 			</a>
 		</div>
-		<a href="/portfolio"><button class="btn btn-accent w-72">View All Portfolio Projects</button></a
+		<a href="/portfolio" class="btn btn-accent h-auto w-full max-w-3xl text-lg"
+			>View All Portfolio Projects</a
 		>
 	</div>
 </section>
