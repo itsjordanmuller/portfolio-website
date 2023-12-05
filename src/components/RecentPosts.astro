@@ -32,11 +32,11 @@ const uniquePostTags = [...new Set(allPosts.map((post) => post.data.tags).flat()
 		Feel free to filter my posts by specific tags that interest you, or simply choose to view all
 		blog posts to explore the full range of topics I cover.
 	</p>
-	<div class="flex flex-wrap justify-center gap-6">
-		<div class="join">
+	<div class="mx-auto flex flex-col flex-wrap items-center gap-6">
+		<div class="flex w-full max-w-3xl flex-col justify-center sm:join sm:flex-row">
 			<select
 				id="postsTagSelect"
-				class="join-item select select-bordered"
+				class="join-item select select-bordered w-full"
 				onchange="updatePostButtonLink()"
 			>
 				<option value="All Blog Post Tags" selected>All Blog Post Tags</option>
@@ -46,11 +46,11 @@ const uniquePostTags = [...new Set(allPosts.map((post) => post.data.tags).flat()
 					))
 				}
 			</select>
-			<a id="postTagLink" href="/blog">
-				<button class="btn btn-secondary join-item">Filter Blog Posts by Tag</button>
+			<a id="postTagLink" href="/blog" class="btn btn-secondary join-item h-auto text-sm">
+				Filter Blog Posts by Tag
 			</a>
 		</div>
-		<a href="/blog"><button class="btn btn-accent w-72">View All Blog Posts</button></a>
+		<a href="/blog" class="btn btn-accent w-full max-w-3xl text-lg h-auto">View All Blog Posts</a>
 	</div>
 </section>
 
