@@ -8,11 +8,14 @@ const pageTitle = "Contact - Jordan Muller";
 <Layout pageTitle={pageTitle}>
 	<section class="bg-200 container prose mx-auto px-6 py-10">
 		<h1 class="my-0 text-center text-3xl">Contact Me</h1>
-		<p class="text-center text-lg">
-			If you're looking to connect with a web developer who is passionate about improving lives with
-			software, you are in the right place. Whether you have a question, an opportunity, a project
-			idea, or just want to say hello, I'd love to hear from you!<br /><br />Thanks for stopping by!
+		<p class="pt-4 text-center text-lg">
+			Thanks for stopping by!<br /><br />If you're looking to connect with a web developer who is
+			passionate about improving lives with software, you are in the right place. Whether you have a
+			question, an opportunity, a project idea, or just want to say hello, I'd love to hear from
+			you!
 		</p>
+		<hr />
+		<h2 class="mt-0 pt-4 text-center" id="contact-form">Contact Me Directly</h2>
 		<div class="card join my-4 flex flex-row justify-center bg-base-100 p-2">
 			<a href="mailto:itsjordanmuller@gmail.com" class="btn btn-primary join-item w-1/3"
 				><Icon name="mdi:email" class="mr-2 h-5 w-5" />Email</a
@@ -24,6 +27,7 @@ const pageTitle = "Contact - Jordan Muller";
 				><Icon name="mdi:message" class="mr-2 h-5 w-5" />Text</a
 			>
 		</div>
+		<h3 class="mt-0 pt-4" id="contact-form">Contact Form</h3>
 		<form>
 			<label class="form-control w-full max-w-none">
 				<div class="label">
@@ -47,8 +51,9 @@ const pageTitle = "Contact - Jordan Muller";
 				<div class="label">
 					<span class="label-text text-lg">Message:</span>
 				</div>
-				<textarea class="textarea textarea-bordered h-48" placeholder="Write a detailed message"
-				></textarea>
+				<textarea
+					class="textarea textarea-bordered h-48 text-base"
+					placeholder="Write me a detailed message"></textarea>
 			</label>
 			<button
 				type="submit"
@@ -56,6 +61,7 @@ const pageTitle = "Contact - Jordan Muller";
 				>Send Message</button
 			>
 		</form>
+		<hr />
 		<ContactToFAQCTA />
 	</section>
 </Layout>
