@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon";
+import Question from "../Question.astro";
+---
+
+<div class="collapse bg-base-300">
+	<input type="checkbox" />
+	<div class="collapse-title flex text-xl font-medium">
+		<Icon name="education" class="ml-1 mr-4 h-7 w-7 text-[#a61168]" />Education & Expertise
+	</div>
+	<div class="collapse-content">
+		<div class="flex flex-col gap-2">
+			<Question
+				question="What is your educational background?"
+				answer="I graduated with a Bachelor of Science in Computer Science from Western Governors University. My degree program covered a broad range of subjects including Software Engineering, Data Structures & Algorithms, Software Quality Assurance, and advanced courses in Artificial Intelligence and Machine Learning. My degree provided me with a strong foundation in computer science principles and practices."
+			/>
+			<Question
+				question="What programming languages & tech do you specialize in?"
+				answer="I specialize in full stack web and software development, with a focus on HTML, CSS, JavaScript, TypeScript, and Python. My technical stack includes Node.js, React, Express, MongoDB, and PostgreSQL. While my current focus is on frontend & fullstack web development, I'm also planning to expand into cross platform & native mobile development. However, at present, I'm fully focused on expanding & honing my skills as a full stack web devleoper."
+			/>
+			<Question
+				question="Do you have any certifications in software development or related fields?"
+				answer="In college, I earned two important certifications: the ITIL 4 Foundation in IT Service Management and the Professional Scrum Master I. The ITIL 4 Foundation certificate enriched my knowledge of IT service management, focusing on aligning IT services with business needs and improving customer satisfaction. On the other hand, my Professional Scrum Master I certification deepened my understanding of Agile methodologies, specifically Scrum, equipping me with the skills to effectively lead or contribute to Scrum teams. These certifications have been vital in complementing my theoretical education, providing practical, industry-relevant skills in software development and project management."
+			/>
+			<Question
+				question="Beyond formal education, what other skills/experiences have you found most valuable?"
+				answer="Beyond my formal education, the entrepreneurial experiences and skills I've gained from founding and managing Foundry Media Company during & after my gap year have been invaluable. This business venture taught me the intricacies of running a business, from client relations to project management. Foundry honed my skills in web development, graphic design, and professional photography, particularly from experiences on projects for two major construction companies. My hands-on experience in digital marketing, including creating websites and building marketing strategies, has been crucial in understanding the practical applications of technology in business. My upbringing, deeply connected to nature, has also played a significant role. It has instilled in me a respect for the environment and a unique perspective on technology's role in society. These experiences have fostered a sense of creativity, adaptability, and a commitment to ethical practices, which are essential in the ever-evolving field of technology."
+			/>
+		</div>
+	</div>
+</div>
