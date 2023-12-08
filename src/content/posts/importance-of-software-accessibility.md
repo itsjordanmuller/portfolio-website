@@ -1,6 +1,6 @@
 ---
 title: 'The Importance of Software Accessibility'
-publishDate: 2023-11-01 12:30:00
+publishDate: 2023-08-01 12:30:00
 description: 'The Importance of Software Accessibility.'
 author: 'Jordan Muller'
 images:

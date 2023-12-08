@@ -1,6 +1,6 @@
 ---
 title: 'Graduating with a Bachelors of Science in Computer Science'
-publishDate: 2023-10-01 12:00:00
+publishDate: 2023-05-01 12:00:00
 description: 'Graduating with a Bachelors of Science in Computer Science'
 author: 'Jordan Muller'
 images:

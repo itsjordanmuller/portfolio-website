@@ -1,6 +1,6 @@
 ---
 title: 'What is Agile & Scrum?'
-publishDate: 2023-10-01 12:00:00
+publishDate: 2023-07-01 12:00:00
 description: 'What is Agile & Scrum?'
 author: 'Jordan Muller'
 images:

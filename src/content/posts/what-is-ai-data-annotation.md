@@ -1,6 +1,6 @@
 ---
 title: 'What is AI Data Annotation?'
-publishDate: 2023-10-01 12:00:00
+publishDate: 2023-11-01 12:00:00
 description: 'What is AI Data Annotation?'
 author: 'Jordan Muller'
 images:
