@@ -1,11 +1,16 @@
 ---
-title: 'Why I Love Using Kubuntu Linux For Web Development'
+title: "Why I Use Kubuntu Linux for Development"
 publishDate: 2023-09-01 12:00:00
-description: 'A Personal Perspective on Why I Love Using Kubuntu Linux For Web Development'
-author: 'Jordan Muller'
+description: "A Personal Perspective on Why I Love Using Kubuntu Linux for Development"
+author: "Jordan Muller"
 images:
-  - url: '/images/Kubuntu.jpg'
-    alt: 'Kubuntu Image.'
+  - url: "/images/Kubuntu.jpg"
+    alt: "Kubuntu Linux desktop interface showing a stylized astronaut in a damaged suit with a butterfly on the helmet, with various application icons visible."
 tags: ["Linux", "Kubuntu"]
 ---
-# Why I Love Using Kubuntu Linux For Web Development
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Fames ac turpis egestas maecenas pharetra. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Viverra justo nec ultrices dui sapien eget mi proin. Habitant morbi tristique senectus et. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Enim tortor at auctor urna nunc id cursus metus. Nisl pretium fusce id velit ut tortor. Nec tincidunt praesent semper feugiat nibh. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Eget sit amet tellus cras adipiscing enim eu. Amet nisl purus in mollis nunc. Donec adipiscing tristique risus nec feugiat in fermentum posuere. Vulputate enim nulla aliquet porttitor lacus. Erat pellentesque adipiscing commodo elit at. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. Suspendisse in est ante in nibh mauris cursus. Purus sit amet luctus venenatis lectus.
+
+Libero enim sed faucibus turpis in eu. Vitae purus faucibus ornare suspendisse sed nisi lacus. Montes nascetur ridiculus mus mauris vitae ultricies. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. At lectus urna duis convallis convallis tellus. Arcu odio ut sem nulla pharetra diam sit amet nisl. Turpis in eu mi bibendum neque egestas. Feugiat scelerisque varius morbi enim nunc faucibus a. Ut tellus elementum sagittis vitae et leo duis. Non curabitur gravida arcu ac tortor dignissim convallis aenean. Feugiat scelerisque varius morbi enim nunc faucibus a. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Cras pulvinar mattis nunc sed. Ut pharetra sit amet aliquam id diam maecenas ultricies mi. Sed odio morbi quis commodo. A erat nam at lectus urna duis convallis convallis tellus. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Cras fermentum odio eu feugiat pretium nibh.
+
+A condimentum vitae sapien pellentesque habitant morbi. Dignissim diam quis enim lobortis scelerisque fermentum dui. Curabitur gravida arcu ac tortor. Nulla facilisi cras fermentum odio. Sem viverra aliquet eget sit amet tellus. Mattis enim ut tellus elementum sagittis vitae. Orci porta non pulvinar neque laoreet suspendisse interdum. Fermentum odio eu feugiat pretium nibh. Quis varius quam quisque id diam vel quam elementum pulvinar. Ullamcorper sit amet risus nullam eget felis. Sodales ut eu sem integer vitae justo eget magna. Leo integer malesuada nunc vel risus commodo viverra maecenas. At quis risus sed vulputate. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Diam in arcu cursus euismod quis viverra nibh cras pulvinar. Mauris rhoncus aenean vel elit scelerisque mauris. Netus et malesuada fames ac turpis. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Mauris pellentesque pulvinar pellentesque habitant morbi tristique. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a.
