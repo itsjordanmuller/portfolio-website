@@ -1,11 +1,16 @@
 ---
-title: 'Graduating with a Bachelors of Science in Computer Science'
+title: "Graduating With a Bachelors of Science in Computer Science"
 publishDate: 2023-05-01 12:00:00
-description: 'Graduating with a Bachelors of Science in Computer Science'
-author: 'Jordan Muller'
+description: "Reflections on Graduating With a Bachelors of Science in Computer Science"
+author: "Jordan Muller"
 images:
-  - url: '/images/Kubuntu.jpg'
-    alt: 'Kubuntu Image.'
+  - url: "/images/commencement.jpg"
+    alt: "Close-up of a thick stack of white pages with colorful sticky tabs protruding from the side, indicating marked sections in a document or book, with a blurred background emphasizing the tabs."
 tags: ["Graduation", "University", "Computer Science", "Accomplishments", "Milestones", "Degree"]
 ---
-# Graduating with a Bachelors of Science in Computer Science
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Et malesuada fames ac turpis egestas sed tempus. Natoque penatibus et magnis dis parturient. Integer vitae justo eget magna fermentum iaculis. Nibh tellus molestie nunc non blandit. Sed cras ornare arcu dui vivamus arcu. Vitae auctor eu augue ut lectus arcu. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Enim ut sem viverra aliquet eget sit amet tellus. Purus gravida quis blandit turpis cursus in hac habitasse. Quis hendrerit dolor magna eget est lorem. Scelerisque purus semper eget duis at tellus. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Nisi lacus sed viverra tellus in. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor. In eu mi bibendum neque egestas congue quisque.
+
+Tellus mauris a diam maecenas sed enim ut. Libero nunc consequat interdum varius. A diam maecenas sed enim ut sem viverra aliquet eget. Rutrum quisque non tellus orci ac auctor augue. Curabitur gravida arcu ac tortor. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. In nisl nisi scelerisque eu ultrices vitae auctor eu. Sit amet dictum sit amet. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Quam viverra orci sagittis eu volutpat odio facilisis mauris. Sit amet volutpat consequat mauris nunc congue nisi vitae. Arcu ac tortor dignissim convallis aenean et tortor. Nunc sed augue lacus viverra. Nunc aliquet bibendum enim facilisis. Sit amet nisl purus in mollis nunc sed. Tempor nec feugiat nisl pretium fusce. Condimentum id venenatis a condimentum vitae.
+
+Sed libero enim sed faucibus turpis in. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Nibh ipsum consequat nisl vel pretium. Donec massa sapien faucibus et. Neque gravida in fermentum et sollicitudin ac orci phasellus. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Ultrices dui sapien eget mi. Quisque non tellus orci ac auctor. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
