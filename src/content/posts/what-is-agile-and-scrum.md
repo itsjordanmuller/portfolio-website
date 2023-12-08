@@ -1,11 +1,16 @@
 ---
-title: 'What is Agile & Scrum?'
+title: "What Are Agile Methodologies & Scrum?"
 publishDate: 2023-07-01 12:00:00
-description: 'What is Agile & Scrum?'
-author: 'Jordan Muller'
+description: "A Simple Guide to Understanding Agile Methodologies and Scrum"
+author: "Jordan Muller"
 images:
-  - url: 'images/commencement.jpg'
-    alt: 'Commencement Image.'
+  - url: "/images/agile.jpg"
+    alt: "Office space with two black chairs facing a glass wall covered in colorful sticky notes arranged in columns for agile planning."
 tags: ["Scrum", "Agile", "Productivity", "Project Management", "Agile Methodologies"]
 ---
-# What is Agile & Scrum?
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Sit amet consectetur adipiscing elit duis tristique sollicitudin. In fermentum et sollicitudin ac orci phasellus egestas tellus. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id. Suscipit tellus mauris a diam maecenas sed. Condimentum mattis pellentesque id nibh tortor id aliquet. Ultrices dui sapien eget mi proin sed. Porttitor lacus luctus accumsan tortor. Egestas congue quisque egestas diam in arcu cursus euismod quis. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Auctor urna nunc id cursus metus aliquam eleifend. Nam at lectus urna duis convallis convallis tellus. Facilisis volutpat est velit egestas. Suspendisse interdum consectetur libero id faucibus nisl tincidunt.
+
+Commodo viverra maecenas accumsan lacus vel. Orci nulla pellentesque dignissim enim sit amet. Ante metus dictum at tempor commodo ullamcorper a. Laoreet sit amet cursus sit amet dictum. Turpis egestas maecenas pharetra convallis. Suspendisse potenti nullam ac tortor vitae purus. In vitae turpis massa sed. Tristique sollicitudin nibh sit amet commodo. Bibendum est ultricies integer quis. Lacus suspendisse faucibus interdum posuere lorem ipsum. Parturient montes nascetur ridiculus mus. Lobortis mattis aliquam faucibus purus in massa tempor nec. Velit aliquet sagittis id consectetur purus. Malesuada fames ac turpis egestas integer eget aliquet. Amet nisl purus in mollis nunc. Velit dignissim sodales ut eu sem integer. Quam lacus suspendisse faucibus interdum posuere lorem. Congue quisque egestas diam in arcu cursus euismod. Accumsan sit amet nulla facilisi morbi. Turpis cursus in hac habitasse platea.
+
+Pretium nibh ipsum consequat nisl vel pretium. Eget felis eget nunc lobortis mattis aliquam. Et ligula ullamcorper malesuada proin libero. Netus et malesuada fames ac. Est placerat in egestas erat imperdiet sed euismod nisi porta. Duis ut diam quam nulla porttitor massa id. Pellentesque diam volutpat commodo sed egestas. Nisl purus in mollis nunc sed id semper risus. At auctor urna nunc id cursus metus aliquam eleifend mi. Arcu dictum varius duis at consectetur. Ornare quam viverra orci sagittis. Adipiscing commodo elit at imperdiet dui accumsan sit amet. Quam lacus suspendisse faucibus interdum posuere. Tortor posuere ac ut consequat. In hac habitasse platea dictumst. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Leo vel orci porta non pulvinar neque laoreet suspendisse. Porttitor leo a diam sollicitudin tempor id. Viverra ipsum nunc aliquet bibendum.
