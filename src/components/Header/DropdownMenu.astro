@@ -35,10 +35,10 @@ function getActiveBadge(fullUrl: string) {
 const activeBadge = getActiveBadge(currentUrl);
 ---
 
-<div class="dropdown">
-	<div tabindex="0" role="button" class="btn btn-square btn-ghost mr-4 active:bg-base-300">
-		<Icon name="mdi:menu" class="h-6 w-6" />
-	</div>
+<details class="dropdown">
+	<summary class="btn btn-square btn-ghost mr-4 active:bg-base-300"
+		><Icon name="mdi:menu" class="h-6 w-6" /></summary
+	>
 	<ul
 		id="main-menu"
 		class="lg:border-6 menu dropdown-content z-[2] mt-4 rounded-box border-4 border-solid border-base-300 bg-base-200 text-base shadow-2xl shadow-[#00000080] lg:min-w-max lg:text-2xl"
@@ -124,7 +124,21 @@ const activeBadge = getActiveBadge(currentUrl);
 			</ul>
 		</li>
 	</ul>
-</div>
+</details>
+<script is:inline>
+	// Remove Open Tag When Clicking Anything Except Details
+	// Credit: https://stackoverflow.com/users/14251221/spectric
+	// Solution Link: https://stackoverflow.com/a/68644266/21003114
+	// Question Link: https://stackoverflow.com/questions/68644260/how-to-close-details-tag-when-other-is-open-or-a-click-is-made-outside-the-tag
+	var details = [...document.querySelectorAll("details")];
+	document.addEventListener("click", function (e) {
+		if (!details.some((f) => f.contains(e.target))) {
+			details.forEach((f) => f.removeAttribute("open"));
+		} else {
+			details.forEach((f) => (!f.contains(e.target) ? f.removeAttribute("open") : ""));
+		}
+	});
+</script>
 <style>
 	@media only screen and (max-width: 400px) {
 		li {
