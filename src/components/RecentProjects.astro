@@ -9,7 +9,7 @@ const allProjects = (await getCollection("projects"))
 const uniqueProjectTags = [...new Set(allProjects.map((project) => project.data.tags).flat())];
 ---
 
-<section class="mb-12">
+<section class="mb-12" data-pagefind-ignore="all">
 	<h2 class="text-center">Recent Portfolio Projects</h2>
 	<p class="indent-6 md:text-lg lg:text-left">
 		In this section, you'll discover a curated collection of my recent work & portfolio projects.
