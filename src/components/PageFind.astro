@@ -1,16 +1,11 @@
 <div id="search" class="mt-8 p-4"></div>
 
 <script>
+	// Credit Liran Tal
+	// How to add client-side search with PageFind to your Astro blog static website
+	// https://lirantal.com/blog/2023-01-01_-how_to_add_client-side_search_to_your_astro_blog_static_website/
 	window.addEventListener("DOMContentLoaded", (event) => {
 		new PagefindUI({ element: "#search", resetStyles: false });
-	});
-
-	window.addEventListener("keydown", (event) => {
-		if (event.key === "/" || event.key === ".") {
-			console.log("you pressed the slash");
-			event.preventDefault();
-			document.querySelector("div#search input").focus();
-		}
 	});
 </script>
 
