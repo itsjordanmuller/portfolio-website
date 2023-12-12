@@ -1,13 +1,14 @@
 ---
-import TagList from "../components/Utilities/TagList.astro";
 import Layout from "./Layout.astro";
+import TagList from "../components/Utilities/TagList.astro";
+import { Icon } from "astro-icon";
+
 const { frontmatter } = Astro.props;
 const [coverImage, ...otherImages] = frontmatter.images;
 const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")[0];
-import { Icon } from "astro-icon";
 ---
 
-<Layout pageTitle={frontmatter.title}>
+<Layout pageTitle={frontmatter.title} description={frontmatter.description}>
 	<article class="container prose mx-auto max-w-4xl p-6">
 		<div class="mb-6 flex flex-col items-center">
 			<h1 class="mb-0">{frontmatter.title}</h1>
