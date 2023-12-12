@@ -2,10 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import SocialImage from "../components/SocialImage.astro";
 import { Icon } from "astro-icon";
+
 const pageTitle = "Social - Jordan Muller";
+const description =
+	"Let's connect with each other online and stay in touch! On my Social page, I share links to my various social media accounts across a variety of websites.";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} description={description}>
 	<section class="bg-200 container prose mx-auto px-6 py-10">
 		<h1 class="my-0 text-center text-3xl">Social Links</h1>
 		<SocialImage />
