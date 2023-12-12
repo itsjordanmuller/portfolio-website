@@ -1,11 +1,14 @@
 ---
-import ContactToFAQCTA from "../components/ContactToFAQCTA.astro";
 import Layout from "../layouts/Layout.astro";
+import ContactToFAQCTA from "../components/ContactToFAQCTA.astro";
 import { Icon } from "astro-icon";
+
 const pageTitle = "Contact - Jordan Muller";
+const description =
+	"Trying to get in contact? Reach out to me on my Contact page. I'm always open to new ideas, projects, & conversations. Let's go change the world together!";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} description={description}>
 	<section class="bg-200 container prose mx-auto px-6 py-10">
 		<h1 class="my-0 text-center text-3xl">Contact Me</h1>
 		<p class="pt-4 text-center text-lg">
