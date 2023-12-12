@@ -82,7 +82,7 @@ import { Icon } from "astro-icon";
 		showTooltipTemporarily();
 	};
 
-	const themeCheckbox = document.getElementById("theme-checkbox");
+	const themeCheckbox = document.getElementById("theme-toggle");
 	themeCheckbox.checked = theme === "dark";
 	themeCheckbox.addEventListener("change", handleToggleClick);
 </script>
