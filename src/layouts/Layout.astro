@@ -5,9 +5,10 @@ import Footer from "../components/Footer.astro";
 
 interface Props {
 	pageTitle: string;
+	description: string;
 }
 
-const { pageTitle } = Astro.props;
+const { pageTitle, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -19,6 +20,7 @@ const { pageTitle } = Astro.props;
 		<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 		<script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
 		<title>{pageTitle}</title>
 	</head>
 	<body tabindex="-1">
