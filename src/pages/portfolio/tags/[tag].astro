@@ -25,7 +25,10 @@ const allProjects = await getCollection("projects");
 const uniqueTags = [...new Set(allProjects.map((project) => project.data.tags).flat())];
 ---
 
-<Layout pageTitle={tag}>
+<Layout
+	pageTitle=`Projects Tagged with ${tag} in Portfolio`
+	description=`A collection of Portfolio Projects Tagged with ${tag}`
+>
 	<section
 		class="lg-px-[6rem] container prose max-w-none bg-base-200 px-[2rem] py-12 sm:px-[5rem] md:px-[9rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[14rem]"
 		data-pagefind-ignore="all"
