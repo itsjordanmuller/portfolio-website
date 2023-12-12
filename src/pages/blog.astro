@@ -1,15 +1,18 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-const pageTitle = "Blog - Jordan Muller";
-
+import TagList from "../components/Utilities/TagList.astro";
 import Post from "../components/Post.astro";
+import { getCollection } from "astro:content";
+
 const allPosts = await getCollection("posts");
 const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
-import TagList from "../components/Utilities/TagList.astro";
+
+const pageTitle = "Blog - Jordan Muller";
+const description =
+	"Want updates on my life and journey as they happen? Here on my Blog page, I share my latest thoughts, opinions, & progress in the world of tech.";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} description={description}>
 	<section
 		class="lg-px-[6rem] container prose max-w-none bg-base-200 px-[2rem] py-12 sm:px-[5rem] md:px-[9rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[14rem]"
 		data-pagefind-ignore="all"
