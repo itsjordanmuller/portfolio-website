@@ -1,13 +1,16 @@
 ---
-import Timeline from "../components/Timeline.astro";
-import AboutToContactCTA from "../components/AboutToContactCTA.astro";
 import Layout from "../layouts/Layout.astro";
 import AboutImage from "../components/AboutImage.astro";
 import FAQs from "../components/FAQs.astro";
+import Timeline from "../components/Timeline.astro";
+import AboutToContactCTA from "../components/AboutToContactCTA.astro";
+
 const pageTitle = "About - Jordan Muller";
+const description =
+	"Learn about my journey in web development. I'm Jordan Muller, and here I provide answers to FAQs & a timeline of my journey so you can learn more about me.";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} description={description}>
 	<section class="container mx-auto bg-base-200 px-6 py-10">
 		<div class="prose max-w-none">
 			<h1 class="text-center">About Me</h1>
