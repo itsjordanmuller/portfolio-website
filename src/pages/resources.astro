@@ -1,15 +1,18 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-const pageTitle = "Resources - Jordan Muller";
-
+import TagList from "../components/Utilities/TagList.astro";
 import Resource from "../components/Resource.astro";
+import { getCollection } from "astro:content";
+
 const allResources = await getCollection("resources");
 const uniqueTags = [...new Set(allResources.map((resource) => resource.data.tags).flat())];
-import TagList from "../components/Utilities/TagList.astro";
+
+const pageTitle = "Resources - Jordan Muller";
+const description =
+	"Curious about my professional credentials and qualifications? On my Resources page, I showcase my achievements including my current certifications & resume.";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} description={description}>
 	<section
 		class="lg-px-[6rem] container prose max-w-none bg-base-200 px-[2rem] py-12 sm:px-[5rem] md:px-[9rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[14rem]"
 		data-pagefind-ignore="all"
