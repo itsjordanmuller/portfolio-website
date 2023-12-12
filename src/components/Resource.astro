@@ -2,10 +2,10 @@
 const { title, url, description, images, type } = Astro.props;
 ---
 
-<div class="gradient-card-bg rounded-2xl p-2 shadow-2xl shadow-[#00000080]">
+<li class="gradient-card-bg rounded-2xl p-2 shadow-2xl shadow-[#00000080]">
 	<div class="card h-[100%] rounded-2xl bg-base-100 shadow-xl">
 		<figure class="m-0 w-full">
-			<img src={images[0].url} alt={images[0].alt} class="mb-0" />
+			<img src={images[0].url} alt={images[0].alt} class="mb-0" loading="lazy" />
 		</figure>
 		<div class="prose card-body w-full max-w-none">
 			<h2 class="card-title mb-0">{title}</h2>
@@ -15,4 +15,11 @@ const { title, url, description, images, type } = Astro.props;
 			</div>
 		</div>
 	</div>
-</div>
+</li>
+<style>
+	li {
+		display: block;
+		list-style: none;
+		margin: 0;
+	}
+</style>
