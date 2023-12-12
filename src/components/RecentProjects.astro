@@ -43,6 +43,7 @@ const uniqueProjectTags = [...new Set(allProjects.map((project) => project.data.
 				id="projectsTagSelect"
 				class="join-item select select-bordered w-full"
 				onchange="updateProjectButtonLink()"
+				aria-label="Dropdown to Select Tag to Filter Portfolio Posts"
 			>
 				<option value="All Project Tags" selected>All Project Tags</option>
 				{uniqueProjectTags.map((tag) => <option value={tag}>{tag.toUpperCase()}</option>)}
