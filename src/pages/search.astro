@@ -1,10 +1,13 @@
 ---
 import PageFind from "../components/PageFind.astro";
 import Layout from "../layouts/Layout.astro";
+
 const pageTitle = "Search - Jordan Muller";
+const description =
+	"Looking for something specific on my site? Use the Search page to easily navigate through my content, including blogs, projects, pages and resources.";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} description={description}>
 	<div class="container mx-auto min-h-[85svh] py-12 text-base-content" data-pagefind-ignore="all">
 		<div class="container prose max-w-none px-6 text-center">
 			<h1>Search for Posts, Projects & Resources</h1>
