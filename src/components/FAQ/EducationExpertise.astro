@@ -3,11 +3,12 @@ import { Icon } from "astro-icon";
 import Question from "../Question.astro";
 ---
 
-<div class="collapse bg-base-300">
-	<input type="checkbox" />
-	<div class="collapse-title flex text-xl font-medium">
-		<Icon name="education" class="ml-1 mr-4 h-7 w-7 text-[#a61168]" />Education & Expertise
-	</div>
+<details class="collapse bg-base-300">
+	<summary class="collapse-title flex flex-row text-xl font-medium">
+		<div class="flex flex-row">
+			<Icon name="education" class="ml-1 mr-4 h-7 w-7 text-[#a61168]" />Education & Expertise
+		</div>
+	</summary>
 	<div class="collapse-content">
 		<div class="flex flex-col gap-2">
 			<Question
@@ -28,4 +29,4 @@ import Question from "../Question.astro";
 			/>
 		</div>
 	</div>
-</div>
+</details>
