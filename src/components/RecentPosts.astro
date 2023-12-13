@@ -39,19 +39,31 @@ const uniquePostTags = [...new Set(allPosts.map((post) => post.data.tags).flat()
 				class="join-item select select-bordered w-full"
 				onchange="updatePostButtonLink()"
 				aria-label="Dropdown to Select Tag to Filter Blog Posts"
+				title="Dropdown to Select Tag to Filter Blog Posts"
 			>
 				<option value="All Blog Post Tags" selected>All Blog Post Tags</option>
 				{
 					uniquePostTags.map((tag) => (
-						<option value={tag}>{tag.charAt(0).toUpperCase() + tag.slice(1)}</option>
+						<option title={"Filter by " + tag + " Tag"} value={tag}>
+							{tag.charAt(0).toUpperCase() + tag.slice(1)}
+						</option>
 					))
 				}
 			</select>
-			<a id="postTagLink" href="/blog" class="btn btn-secondary join-item h-auto text-sm">
-				Filter Blog Posts by Tag
+			<a
+				id="postTagLink"
+				href="/blog"
+				title="Filter Blog Posts by Tag"
+				class="btn btn-secondary join-item h-auto text-sm"
+			>
+				Filter Posts by Tag
 			</a>
 		</div>
-		<a href="/blog" class="btn btn-accent h-auto w-full max-w-3xl text-lg">View All Blog Posts</a>
+		<a
+			href="/blog"
+			title="View All Blog Posts"
+			class="btn btn-accent h-auto w-full max-w-3xl text-lg">View All Blog Posts</a
+		>
 	</div>
 </section>
 
