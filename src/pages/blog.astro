@@ -21,8 +21,11 @@ const description =
 		<p class="mt-1 text-center leading-[32px]">
 			<span class="px-1">All Blog Posts</span>
 		</p>
-		<p class="my-8 text-center font-bold leading-[30px]">Filter Posts by Tag</p>
-		<TagList tags={uniqueTags} contentType="posts" />
+		<div class="card bg-base-300 p-4">
+			<p class="my-0 text-center font-bold leading-[30px]">Filter Posts by Tag</p>
+			<TagList tags={uniqueTags} contentType="posts" />
+		</div>
+		<hr />
 		<ul class="mt-12 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
 				allPosts.map((post) => (
