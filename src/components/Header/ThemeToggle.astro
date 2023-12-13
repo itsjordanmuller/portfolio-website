@@ -6,6 +6,7 @@ import { Icon } from "astro-icon";
 	for="theme-toggle"
 	id="theme-toggle-label"
 	class="btn btn-square btn-ghost swap swap-rotate active:bg-base-300"
+	tabindex="0"
 >
 	<input
 		type="checkbox"
@@ -14,11 +15,26 @@ import { Icon } from "astro-icon";
 		value="dracula"
 		class="theme-controller"
 		aria-label="Light/Dark Mode Toggle"
+		tabindex="-1"
 	/>
-	<div class="tooltip tooltip-bottom absolute right-20 top-8" id="tooltip-text" data-tip="hello">
+	<div
+		class="tooltip tooltip-bottom absolute right-20 top-8"
+		id="tooltip-text"
+		data-tip="Dark Mode Toggle"
+	>
 	</div>
-	<Icon name="ph:sun-bold" class="swap-on h-6 w-6 fill-current" />
-	<Icon name="ph:moon-bold" class="swap-off h-6 w-6 fill-current" />
+	<Icon
+		name="ph:sun-bold"
+		class="swap-on h-6 w-6 fill-current"
+		title="Activate Dark Mode"
+		alt="Light"
+	/>
+	<Icon
+		name="ph:moon-bold"
+		class="swap-off h-6 w-6 fill-current"
+		title="Activate Light Mode"
+		alt="Dark"
+	/>
 </label>
 
 <script is:inline>
@@ -82,9 +98,20 @@ import { Icon } from "astro-icon";
 		showTooltipTemporarily();
 	};
 
+	const handleKeyboardToggle = (event) => {
+		if (event.key === "Enter" || event.key === " ") {
+			event.preventDefault();
+			themeCheckbox.checked = !themeCheckbox.checked;
+			handleToggleClick();
+		}
+	};
+
 	const themeCheckbox = document.getElementById("theme-toggle");
+	const themeCheckboxLabel = document.getElementById("theme-toggle-label");
 	themeCheckbox.checked = theme === "dark";
 	themeCheckbox.addEventListener("change", handleToggleClick);
+	themeCheckbox.addEventListener("keydown", handleKeyboardToggle);
+	themeCheckboxLabel.addEventListener("keydown", handleKeyboardToggle);
 </script>
 
 <style>
