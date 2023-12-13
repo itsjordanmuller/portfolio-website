@@ -21,8 +21,11 @@ const description =
 		<p class="mt-1 text-center leading-[32px]">
 			<span class="px-1">All Projects</span>
 		</p>
-		<p class="my-8 text-center font-bold leading-[30px]">Filter Projects by Tag</p>
-		<TagList tags={uniqueTags} contentType="projects" />
+		<div class="card bg-base-300 p-4">
+			<p class="my-0 text-center font-bold leading-[30px]">Filter Projects by Tag</p>
+			<TagList tags={uniqueTags} contentType="projects" />
+		</div>
+		<hr />
 		<ul class="mt-12 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
 				allProjects.map((project) => (
