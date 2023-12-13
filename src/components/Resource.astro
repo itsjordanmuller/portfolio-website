@@ -5,13 +5,19 @@ const { title, url, description, images, type } = Astro.props;
 <li class="gradient-card-bg rounded-2xl p-2 shadow-2xl shadow-[#00000080]">
 	<div class="card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
 		<figure class="m-0 w-full">
-			<img src={images[0].url} alt={images[0].alt} class="mb-0" loading="lazy" />
+			<img
+				src={images[0].url}
+				title=`${title} Cover Image`
+				alt={images[0].alt}
+				class="mb-0"
+				loading="lazy"
+			/>
 		</figure>
 		<div class="prose card-body w-full max-w-none">
 			<h2 class="card-title mb-0">{title}</h2>
 			<p>{description}</p>
 			<div class="card-actions justify-end">
-				<a href={url} class="btn btn-accent capitalize">View {type}</a>
+				<a href={url} title=`View ${title}` class="btn btn-accent capitalize">View {type}</a>
 			</div>
 		</div>
 	</div>
