@@ -17,16 +17,25 @@ const description =
 			question, an opportunity, a project idea, or just want to say hello, I'd love to hear from
 			you!
 		</p>
-		<hr />
-		<h2 class="mt-0 pt-4 text-center" id="contact-form">Contact Me Directly</h2>
+		<hr class="my-8" />
+		<h2 class="mt-0 text-center" id="contact-form">Contact Me Directly</h2>
 		<div class="card join my-4 flex flex-row justify-center bg-base-100 p-2">
-			<a href="mailto:itsjordanmuller@gmail.com" class="btn btn-primary join-item w-1/3"
+			<a
+				href="mailto:itsjordanmuller@gmail.com"
+				title="Send an E-Mail to Jordan Muller"
+				class="btn btn-primary join-item w-1/3"
 				><Icon name="mdi:email" class="mr-2 h-5 w-5" />Email</a
 			>
-			<a href="tel:19257913526" class="btn btn-secondary join-item w-1/3"
+			<a
+				href="tel:19257913526"
+				title="Make a Phone Call to Jordan Muller"
+				class="btn btn-secondary join-item w-1/3"
 				><Icon name="mdi:phone" class="mr-2 h-5 w-5" />Call</a
 			>
-			<a href="sms:19257913526" class="btn btn-accent join-item w-1/3"
+			<a
+				href="sms:19257913526"
+				title="Send a Text Message to Jordan Muller"
+				class="btn btn-accent join-item w-1/3"
 				><Icon name="mdi:message" class="mr-2 h-5 w-5" />Text</a
 			>
 		</div>
@@ -36,7 +45,12 @@ const description =
 				<div class="label">
 					<span class="label-text text-lg">What is your name?</span>
 				</div>
-				<input type="text" placeholder="Name" class="input input-bordered w-full max-w-none" />
+				<input
+					type="text"
+					placeholder="Name"
+					class="input input-bordered w-full max-w-none"
+					required
+				/>
 				<div class="label"></div>
 			</label>
 			<label class="form-control w-full max-w-none">
@@ -47,6 +61,7 @@ const description =
 					type="email"
 					placeholder="E-mail Address"
 					class="input input-bordered w-full max-w-none"
+					required
 				/>
 				<div class="label"></div>
 			</label>
@@ -56,10 +71,12 @@ const description =
 				</div>
 				<textarea
 					class="textarea textarea-bordered h-48 text-base"
-					placeholder="Write me a detailed message"></textarea>
+					placeholder="Write a Detailed Message"
+					required></textarea>
 			</label>
 			<button
 				type="submit"
+				title="Submit Contact Form to Send Message to Jordan Muller"
 				class="btn mt-8 w-full max-w-none bg-[#a61168] text-[#fff] hover:bg-neutral"
 				>Send Message</button
 			>
