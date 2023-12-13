@@ -3,11 +3,13 @@ import { Icon } from "astro-icon";
 import Question from "../Question.astro";
 ---
 
-<div class="collapse bg-base-300">
-	<input type="checkbox" />
-	<div class="collapse-title flex text-xl font-medium">
-		<Icon name="briefcase-search" class="ml-1 mr-4 h-7 w-7 text-[#a61168]" />Location & Availability
-	</div>
+<details class="collapse bg-base-300">
+	<summary class="collapse-title flex text-xl font-medium">
+		<div class="flex flex-row">
+			<Icon name="briefcase-search" class="ml-1 mr-4 h-7 w-7 text-[#a61168]" />Location &
+			Availability
+		</div>
+	</summary>
 	<div class="collapse-content">
 		<div class="flex flex-col gap-2">
 			<Question
@@ -28,4 +30,4 @@ import Question from "../Question.astro";
 			/>
 		</div>
 	</div>
-</div>
+</details>
