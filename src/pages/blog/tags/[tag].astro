@@ -35,14 +35,16 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 	>
 		<h1 class="mb-1 text-center">Blog Posts</h1>
 		<p class="mt-1 text-center leading-[32px]">
-			Tagged with <span class="btn btn-outline btn-sm px-1">{tag.toUpperCase()}</span>
+			Tagged with <span class="btn btn-outline btn-sm px-1">{tag}</span>
 		</p>
-		<p class="my-8 text-center font-bold">
-			<a href="/blog" title="Remove Filter to View All Blog Posts" class="btn btn-outline btn-sm"
-				>View All Posts</a
-			>
-		</p>
-		<TagList tags={uniqueTags} contentType="blog" />
+		<div class="card bg-base-300 p-4">
+			<p class="my-2 text-center font-bold">
+				<a href="/blog" title="Remove Filter to View All Blog Posts" class="btn btn-outline"
+					>View All Blog Posts</a
+				>
+			</p>
+			<TagList tags={uniqueTags} contentType="posts" />
+		</div>
 		<ul class="mt-12 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
 				posts.map((post) => (
