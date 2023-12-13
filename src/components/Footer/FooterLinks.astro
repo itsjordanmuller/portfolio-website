@@ -2,36 +2,108 @@
 
 ---
 
-<nav>
-	<header class="footer-title opacity-90">Pages</header>
-	<a href="/" class="link-hover link">Home</a>
-	<a href="/portfolio" class="link-hover link">Portfolio</a>
-	<a href="/blog" class="link-hover link">Blog</a>
-	<a href="/about" class="link-hover link">About</a>
-	<a href="/contact" class="link-hover link">Contact</a>
-	<a href="/resources" class="link-hover link">Resources</a>
-	<a href="/social" class="link-hover link">Social</a>
-</nav>
-<nav>
-	<header class="footer-title opacity-90">Social Links</header>
-	<a href="https://github.com/itsjordanmuller" class="link-hover link">GitHub</a>
-	<a href="https://www.linkedin.com/in/itsjordanmuller" class="link-hover link">LinkedIn</a>
-	<a href="https://codepen.io/itsjordanmuller" class="link-hover link">CodePen</a>
-</nav>
-<nav>
-	<header class="footer-title opacity-90">Project Links</header>
-	<a href="https://github.com/itsjordanmuller/2023-python-100-days" class="link-hover link"
-		>100 Days of Python</a
-	>
-	<a href="https://github.com/itsjordanmuller/50-in-50-html-css-javascript" class="link-hover link"
-		>50 Projects in 50 Days</a
-	>
-	<a href="https://github.com/itsjordanmuller/css-100-days-challenge" class="link-hover link"
-		>100 Days CSS Challenge</a
-	>
-</nav>
-<nav>
-	<header class="footer-title opacity-90">Resource Links</header>
-	<a href="/resources/resume" class="link-hover link">Resume</a>
-	<a href="/resources/tags/certificates" class="link-hover link">Certificates</a>
-</nav>
+<section>
+	<h4 class="footer-title opacity-90">Pages</h4>
+	<ul>
+		<li><a href="/" title="Home Page" class="link-hover link">Home</a></li>
+		<li>
+			<a href="/portfolio" title="Portfolio Projects Page" class="link-hover link">Portfolio</a>
+		</li>
+		<li>
+			<a href="/blog" title="Blog Posts Page" class="link-hover link"> Blog</a>
+		</li>
+		<li>
+			<a href="/about" title="About Page" class="link-hover link">About</a>
+		</li>
+		<li>
+			<a href="/contact" title="Contact Page" class="link-hover link">Contact</a>
+		</li>
+		<li>
+			<a href="/resources" title="Resources Page" class="link-hover link">Resources</a>
+		</li>
+		<li>
+			<a href="/social" title="Social Page" class="link-hover link">Social</a>
+		</li>
+		<li>
+			<a href="/search" title="Search Page" class="link-hover link">Search</a>
+		</li>
+	</ul>
+</section>
+<section>
+	<h4 class="footer-title opacity-90">Social Links</h4>
+	<ul>
+		<li>
+			<a
+				href="https://github.com/itsjordanmuller"
+				title="View My GitHub Profile"
+				class="link-hover link">GitHub</a
+			>
+		</li>
+		<li>
+			<a
+				href="https://www.linkedin.com/in/itsjordanmuller"
+				title="View My LinkedIn Profile"
+				class="link-hover link">LinkedIn</a
+			>
+		</li>
+		<li>
+			<a
+				href="https://codepen.io/itsjordanmuller"
+				title="View My CodePen Profile"
+				class="link-hover link">CodePen</a
+			>
+		</li>
+	</ul>
+</section>
+<section>
+	<h4 class="footer-title opacity-90">Project Links</h4>
+	<ul>
+		<li>
+			<a
+				href="https://github.com/itsjordanmuller/2023-python-100-days"
+				title="View My 100 Days of Python Project"
+				class="link-hover link">100 Days of Python</a
+			>
+		</li>
+		<li>
+			<a
+				href="https://github.com/itsjordanmuller/50-in-50-html-css-javascript"
+				title="View My 50 Projects in 50 Days Challenge"
+				class="link-hover link">50 Projects in 50 Days</a
+			>
+		</li>
+		<li>
+			<a
+				href="https://github.com/itsjordanmuller/css-100-days-challenge"
+				title="View My 100 Days CSS Challenge"
+				class="link-hover link">100 Days CSS Challenge</a
+			>
+		</li>
+	</ul>
+</section>
+<section>
+	<h4 class="footer-title opacity-90">Resource Links</h4>
+	<ul>
+		<li>
+			<a href="/resources/resume" title="View My Resume" class="link-hover link">Resume</a>
+		</li>
+		<li>
+			<a href="/resources/tags/certificates" title="View My Certifications" class="link-hover link"
+				>Certificates</a
+			>
+		</li>
+	</ul>
+</section>
+
+<style>
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	li {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+</style>
