@@ -2,14 +2,13 @@
 const { question, answer } = Astro.props;
 ---
 
-<div class="collapse bg-base-200">
-	<input type="checkbox" />
-	<div class="collapse-title pr-2 text-base font-medium">
-		<strong class="mr-1 text-accent">Q.</strong>{` ${question}`}
-	</div>
+<details class="collapse bg-base-200">
+	<summary class="collapse-title pr-2 text-base font-medium">
+		<strong class="mr-1 text-[#5f458d]">Q.</strong>{` ${question}`}
+	</summary>
 	<div class="collapse-content">
 		<p class="my-0">
-			<strong class="mr-1 text-secondary">A.</strong>{` ${answer}`}
+			<strong class="mr-1 text-[#a61168]">A.</strong>{` ${answer}`}
 		</p>
 	</div>
-</div>
+</details>
