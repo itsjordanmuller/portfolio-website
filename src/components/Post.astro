@@ -8,6 +8,7 @@ const { title, url, description, images } = Astro.props;
 			<img
 				src={images[0].url}
 				alt={images[0].alt}
+				title=`${title} Blog Post Cover Image`
 				class="mb-0 aspect-[5/3] bg-cover object-cover"
 				loading="lazy"
 			/>
@@ -16,7 +17,7 @@ const { title, url, description, images } = Astro.props;
 			<h2 class="card-title mb-0">{title}</h2>
 			<p>{description}</p>
 			<div class="card-actions justify-end">
-				<a href={url} class="btn btn-accent">View Post</a>
+				<a href={url} title=`View ${title} Blog Post` class="btn btn-accent">View Post</a>
 			</div>
 		</div>
 	</div>
