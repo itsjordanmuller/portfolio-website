@@ -2,16 +2,31 @@
 import { Icon } from "astro-icon";
 ---
 
-<nav class="md:place-self-center md:justify-self-end">
-	<div class="w-50 grid grid-flow-col gap-4">
-		<a href="https://github.com/itsjordanmuller" aria-label="View My GitHub Profile"
-			><Icon name="mdi:github" class="h-6 w-6 hover:text-accent" /></a
-		>
-		<a href="https://www.linkedin.com/in/itsjordanmuller" aria-label="View My LinkedIn Profile"
-			><Icon name="mdi:linkedin" class="h-6 w-6 hover:text-accent" /></a
-		>
-		<a href="https://codepen.io/itsjordanmuller" aria-label="View My CodePen Profile"
-			><Icon name="mdi:codepen" class="h-6 w-6 hover:text-accent" /></a
-		>
-	</div>
-</nav>
+<div class="md:place-self-center md:justify-self-end">
+	<ul class="w-50 grid grid-flow-col gap-4">
+		<li>
+			<a
+				href="https://github.com/itsjordanmuller"
+				title="View My GitHub Profile"
+				aria-label="View My GitHub Profile"
+				><Icon name="mdi:github" class="h-6 w-6 hover:text-accent" /></a
+			>
+		</li>
+		<li>
+			<a
+				href="https://www.linkedin.com/in/itsjordanmuller"
+				title="View My LinkedIn Profile"
+				aria-label="View My LinkedIn Profile"
+				><Icon name="mdi:linkedin" class="h-6 w-6 hover:text-accent" /></a
+			>
+		</li>
+		<li>
+			<a
+				href="https://codepen.io/itsjordanmuller"
+				title="View My CodePen Profile"
+				aria-label="View My CodePen Profile"
+				><Icon name="mdi:codepen" class="h-6 w-6 hover:text-accent" /></a
+			>
+		</li>
+	</ul>
+</div>
