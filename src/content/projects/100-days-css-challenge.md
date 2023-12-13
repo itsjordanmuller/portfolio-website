@@ -6,6 +6,6 @@ author: 'Jordan Muller'
 images:
   - url: '/images/projects/100-days-css-challenge/100-days-css-challenge-repo.png'
     alt: '100 Days of CSS Challenges GitHub Repository Banner Image'
-tags: ["css", "100 days"]
+tags: ["CSS", "HTML", "100 Days"]
 ---
 

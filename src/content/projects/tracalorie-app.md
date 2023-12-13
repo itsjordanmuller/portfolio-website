@@ -6,6 +6,6 @@ author: 'Jordan Muller'
 images:
   - url: '/images/animated-navigation1.png'
     alt: 'Animated Navigation Project'
-tags: ["html", "css", "javascript", "react", "frontend", "calorie tracker"]
+tags: ["HTML", "CSS", "JavaScript", "React", "Frontend", "Calorie Tracker", "Astro"]
 ---
 

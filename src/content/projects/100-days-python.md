@@ -6,6 +6,6 @@ author: 'Jordan Muller'
 images:
   - url: '/images/projects/100-days-python/100-days-python-repo.png'
     alt: '100 Days of Python GitHub Repository Banner Image'
-tags: ["python", "100 days"]
+tags: ["Python", "100 Days"]
 ---
 

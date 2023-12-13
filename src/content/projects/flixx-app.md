@@ -6,6 +6,6 @@ author: 'Jordan Muller'
 images:
   - url: '/images/projects/flixx/flixx-app-site-1.png'
     alt: 'Flixx App Project Home Page'
-tags: ["html", "css", "javascript", "react", "frontend", "movies & tv shows"]
+tags: ["HTML", "CSS", "JavaScript", "React", "Frontend", "Movies & TV Shows"]
 ---
 

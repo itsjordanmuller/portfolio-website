@@ -6,6 +6,6 @@ author: 'Jordan Muller'
 images:
   - url: '/images/projects/grocery-bud/grocery-bud-site.png'
     alt: 'Grocery Bud Project Home Page'
-tags: ["html", "css", "javascript", "react", "frontend", "shopping list"]
+tags: ["HTML", "CSS", "JavaScript", "React", "Frontend", "Shopping List"]
 ---
 

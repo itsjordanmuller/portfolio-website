@@ -6,6 +6,6 @@ author: 'Jordan Muller'
 images:
   - url: '/images/projects/menu/menu-site.png'
     alt: 'Menu App Project Home Page'
-tags: ["html", "css", "javascript", "react", "frontend", "food menu"]
+tags: ["HTML", "CSS", "JavaScript", "React", "Frontend", "Food Menu"]
 ---
 

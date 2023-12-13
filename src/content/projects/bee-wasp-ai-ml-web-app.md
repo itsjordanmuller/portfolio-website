@@ -6,6 +6,6 @@ author: 'Jordan Muller'
 images:
   - url: '/images/projects/bee-wasp/bee-wasp-web-app-1.jpeg'
     alt: 'Bee vs Wasp AI/ML Web Application Project'
-tags: ["python", "ai & ml", "jupyter notebook", "Convolutional Neural Networks (CNNs)"]
+tags: ["Python", "AI & ML", "Jupyter Notebook", "Convolutional Neural Networks (CNNs)"]
 ---
 
