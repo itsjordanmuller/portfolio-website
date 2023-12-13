@@ -2,19 +2,17 @@
 import DropdownMenu from "./Header/DropdownMenu.astro";
 import ThemeToggle from "./Header/ThemeToggle.astro";
 import LogoName from "./Header/LogoName.astro";
-import SearchBtn from "./Header/SearchBtn.astro";
 ---
 
 <header>
 	<div class="container navbar mx-auto justify-between bg-base-100">
-		<div class="navbar-start">
+		<nav class="navbar-start">
 			<DropdownMenu />
-		</div>
+		</nav>
 		<div class="navbar-center">
 			<LogoName />
 		</div>
-		<div class="navbar-end ml-4">
-			<SearchBtn />
+		<div class="navbar-end">
 			<ThemeToggle />
 		</div>
 	</div>
