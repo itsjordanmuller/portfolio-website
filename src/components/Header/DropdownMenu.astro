@@ -18,6 +18,7 @@ function getActiveBadge(fullUrl: string) {
 		["/contact", "contact"],
 		["/resources", "resources"],
 		["/social", "social"],
+		["/search", "search"],
 	]);
 
 	for (let [key, value] of badgeMap) {
@@ -36,94 +37,104 @@ const activeBadge = getActiveBadge(currentUrl);
 ---
 
 <details class="dropdown z-10" data-pagefind-ignore="all">
-	<summary class="btn btn-square btn-ghost mr-4 active:bg-base-300"
+	<summary
+		title="Open/Close Main Navigation Menu"
+		class="btn btn-square btn-ghost active:bg-base-300"
 		><Icon name="mdi:menu" class="h-6 w-6" /></summary
 	>
-	<ul
-		id="main-menu"
-		class="lg:border-6 menu dropdown-content z-10 mt-4 rounded-box border-4 border-solid border-base-300 bg-base-200 text-base shadow-2xl shadow-[#00000080] lg:min-w-max lg:text-2xl"
-	>
-		<li>
-			<a href="/">
-				<Icon name="mdi:home-outline" class="h-5 w-5" />
-				 Home
-				<MenuIndicator isActive={activeBadge === "home"} />
-			</a>
-		</li>
-		<li>
-			<a href="/portfolio">
-				<Icon name="mdi:briefcase-account-outline" class="h-5 w-5" />
-				 Portfolio
-				<MenuIndicator isActive={activeBadge === "portfolio"} />
-			</a>
-		</li>
-		<li>
-			<a href="/blog">
-				<Icon name="mdi:book-edit-outline" class="h-5 w-5" />
-				 Blog
-				<MenuIndicator isActive={activeBadge === "blog"} />
-			</a>
-		</li>
-		<li>
-			<a href="/about">
-				<Icon name="mdi:information-outline" class="h-5 w-5" />
-				 About<MenuIndicator isActive={activeBadge === "about"} />
-			</a>
-		</li>
-		<li>
-			<a href="/contact">
-				<Icon name="mdi:phone-message-outline" class="h-5 w-5" />
-				 Contact<MenuIndicator isActive={activeBadge === "contact"} />
-			</a>
-		</li>
-		<li>
-			<a href="/resources"
-				><Icon name="mdi:archive-star-outline" class="h-5 w-5" />
-				 Resources<MenuIndicator isActive={activeBadge === "resources"} />
-			</a>
-			<ul>
-				<li>
-					<a href="/resources/resume"
-						><Icon name="mdi:file-account-outline" class="h-5 w-5" />
-						 Resume
-					</a>
-				</li>
-				<li>
-					<a href="/resources/tags/certificates"
-						><Icon name="mdi:certificate-outline" class="h-5 w-5" />
-						 Certificates
-					</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="/social"
-				><Icon name="mdi:account-group-outline" class="h-5 w-5" />
-				 Social
-				<MenuIndicator isActive={activeBadge === "social"} />
-			</a>
-			<ul>
-				<li>
-					<a href="https://github.com/itsjordanmuller"
-						><Icon name="mdi:github" class="h-5 w-5" />
-						 GitHub
-					</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/itsjordanmuller"
-						><Icon name="mdi:linkedin" class="h-5 w-5" />
-						 LinkedIn
-					</a>
-				</li>
-				<li>
-					<a href="https://codepen.io/itsjordanmuller"
-						><Icon name="mdi:codepen" class="h-5 w-5" />
-						 CodePen
-					</a>
-				</li>
-			</ul>
-		</li>
-	</ul>
+	<nav>
+		<ul
+			id="main-menu"
+			class="lg:border-6 menu dropdown-content z-10 mt-4 rounded-box border-4 border-solid border-base-300 bg-base-200 text-base shadow-2xl shadow-[#00000080] lg:min-w-max lg:text-2xl"
+		>
+			<li>
+				<a href="/" title="Home Page">
+					<Icon name="mdi:home-outline" class="h-5 w-5" />
+					 Home
+					<MenuIndicator isActive={activeBadge === "home"} />
+				</a>
+			</li>
+			<li>
+				<a href="/portfolio" title="Portfolio Page">
+					<Icon name="mdi:briefcase-account-outline" class="h-5 w-5" />
+					 Portfolio
+					<MenuIndicator isActive={activeBadge === "portfolio"} />
+				</a>
+			</li>
+			<li>
+				<a href="/blog" title="Blog Page">
+					<Icon name="mdi:book-edit-outline" class="h-5 w-5" />
+					 Blog
+					<MenuIndicator isActive={activeBadge === "blog"} />
+				</a>
+			</li>
+			<li>
+				<a href="/about" title="About Page">
+					<Icon name="mdi:information-outline" class="h-5 w-5" />
+					 About<MenuIndicator isActive={activeBadge === "about"} />
+				</a>
+			</li>
+			<li>
+				<a href="/contact" title="Contact Page">
+					<Icon name="mdi:phone-message-outline" class="h-5 w-5" />
+					 Contact<MenuIndicator isActive={activeBadge === "contact"} />
+				</a>
+			</li>
+			<li>
+				<a href="/resources" title="Resources Page"
+					><Icon name="mdi:archive-star-outline" class="h-5 w-5" />
+					 Resources<MenuIndicator isActive={activeBadge === "resources"} />
+				</a>
+				<ul>
+					<li>
+						<a href="/resources/resume" title="View My Resume"
+							><Icon name="mdi:file-account-outline" class="h-5 w-5" />
+							 Resume
+						</a>
+					</li>
+					<li>
+						<a href="/resources/tags/certificates" title="View My Certifications"
+							><Icon name="mdi:certificate-outline" class="h-5 w-5" />
+							 Certificates
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="/social" title="Social Page"
+					><Icon name="mdi:account-group-outline" class="h-5 w-5" />
+					 Social
+					<MenuIndicator isActive={activeBadge === "social"} />
+				</a>
+				<ul>
+					<li>
+						<a href="https://github.com/itsjordanmuller" title="View My GitHub Profile"
+							><Icon name="mdi:github" class="h-5 w-5" />
+							 GitHub
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/itsjordanmuller" title="View My LinkedIn Profile"
+							><Icon name="mdi:linkedin" class="h-5 w-5" />
+							 LinkedIn
+						</a>
+					</li>
+					<li>
+						<a href="https://codepen.io/itsjordanmuller" title="View My CodePen Profile"
+							><Icon name="mdi:codepen" class="h-5 w-5" />
+							 CodePen
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="rounded-lg bg-base-300">
+				<a href="/search" title="Search Page">
+					<Icon name="mdi:magnify-outline" class="h-5 w-5" />
+					 Search<MenuIndicator isActive={activeBadge === "search"} />
+				</a>
+			</li>
+		</ul>
+	</nav>
 </details>
 <script is:inline>
 	// Remove Open Tag When Clicking Anything Except Details
