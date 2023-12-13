@@ -53,7 +53,7 @@ function getUrlPrefix(contentType: string): string {
 		case "resources":
 			return "/resources/tags/";
 		default:
-			return "/blog/tags/"; // Default case
+			return "/blog/tags/";
 	}
 }
 
@@ -72,6 +72,7 @@ function getTagDisplayAndClass(tag: string): TagStyle {
 			return (
 				<a
 					href={`${urlPrefix}${tag}`}
+					title={`Filter by ${tag} Tag`}
 					class={`btn ${btnClasses} btn-sm capitalize ${
 						iconClasses ? `text-[${iconClasses}]` : ""
 					}`}
