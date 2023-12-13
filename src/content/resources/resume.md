@@ -6,6 +6,6 @@ author: "Jordan Muller"
 images:
   - url: "/images/resume.png"
     alt: "The full Astro logo."
-tags: ["PDF", "Resume", "Documents"]
+tags: ["PDF", "Resume", "Documents", "Qualifications"]
 type: "resume"
 ---

@@ -6,6 +6,6 @@ author: 'Jordan Muller'
 images:
   - url: '/images/psm1.png'
     alt: 'The full Astro logo.'
-tags: ["PDF", "certificates", "PSM1", "Scrum", "Agile"]
+tags: ["PDF", "Certificates", "PSM1", "Scrum", "Agile", "Qualifications", "Scrum.org"]
 type: "certificate"
 ---
