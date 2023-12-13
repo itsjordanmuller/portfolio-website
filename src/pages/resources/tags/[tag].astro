@@ -38,7 +38,11 @@ const uniqueTags = [...new Set(allResources.map((resource) => resource.data.tags
 			Tagged with <span class="btn btn-outline btn-sm px-1">{tag.toUpperCase()}</span>
 		</p>
 		<p class="my-8 text-center font-bold">
-			<a href="/resources" class="btn btn-outline btn-sm">View All Resources</a>
+			<a
+				href="/resources"
+				title="Remove Filter to View All Resources & Documents"
+				class="btn btn-outline btn-sm">View All Resources</a
+			>
 		</p>
 		<TagList tags={uniqueTags} contentType="resources" />
 		<ul class="mt-12 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">

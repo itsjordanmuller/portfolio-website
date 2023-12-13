@@ -38,7 +38,11 @@ const uniqueTags = [...new Set(allProjects.map((project) => project.data.tags).f
 			Tagged with <span class="btn btn-outline btn-sm px-1">{tag.toUpperCase()}</span>
 		</p>
 		<p class="my-8 text-center font-bold">
-			<a href="/portfolio" class="btn btn-outline btn-sm">View All Projects</a>
+			<a
+				href="/portfolio"
+				title="Remove Filter to View All Portfolio Projects"
+				class="btn btn-outline btn-sm">View All Projects</a
+			>
 		</p>
 		<TagList tags={uniqueTags} contentType="projects" />
 		<ul class="mt-12 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
