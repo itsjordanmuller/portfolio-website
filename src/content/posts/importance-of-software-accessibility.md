@@ -1,18 +1,66 @@
 ---
-title: "The Importance of Software Accessibility & Inclusivity"
+title: "The Importance of Software Accessibility, Usability, & Inclusivity"
 publishDate: 2023-08-01 12:30:00
 description: "My Journey to Understanding Accessibility & Inclusivity To Build Software for Everyone"
 author: "Jordan Muller"
 images:
   - url: "/images/accessibility.jpg"
     alt: "Illuminated accessibility sign with symbols for an elevator for disabled access and bicycle parking, featuring an upward arrow against a dark ceiling."
-tags: ["Software", "Accessibility", "Inclusivity"]
+tags: ["Software", "Accessibility", "Usability", "Inclusion"]
 ---
 
-<!-- <img src="/images/accessibility.jpg" class="container mx-auto rounded-xl"/> -->
+As a [recent Computer Science graduate](/blog/graduating-with-bachelors-in-comp-sci/) deeply immersed in the world of machine learning and web development, I have come to understand the crucial role of accessibility, usability, and inclusion in creating web experiences. In this blog post, I aim to share insights into these integral aspects of web development, drawing from my academic background, professional role as an AI Data Annotator, and passion for technology.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue mauris rhoncus aenean vel. Mauris augue neque gravida in fermentum et sollicitudin ac. Augue lacus viverra vitae congue eu consequat ac. Magna fermentum iaculis eu non diam phasellus. Etiam sit amet nisl purus. Nam libero justo laoreet sit amet cursus. Massa sed elementum tempus egestas sed sed risus pretium quam. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. At auctor urna nunc id cursus metus. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec.
+---
 
-Lacus vel facilisis volutpat est velit. Venenatis tellus in metus vulputate eu scelerisque. Ipsum consequat nisl vel pretium. Id ornare arcu odio ut sem. Risus pretium quam vulputate dignissim. Curabitur vitae nunc sed velit dignissim. Malesuada bibendum arcu vitae elementum curabitur vitae. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor. Rhoncus aenean vel elit scelerisque mauris. In hac habitasse platea dictumst quisque. Lobortis elementum nibh tellus molestie nunc. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Magnis dis parturient montes nascetur ridiculus mus mauris. Ultrices mi tempus imperdiet nulla malesuada. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. Bibendum at varius vel pharetra vel turpis. Rhoncus urna neque viverra justo nec ultrices. Congue nisi vitae suscipit tellus mauris a diam. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Cursus metus aliquam eleifend mi in nulla.
+## Understanding the Trio: Accessibility, Usability, and Inclusion
 
-Mi ipsum faucibus vitae aliquet. Consectetur a erat nam at lectus urna duis. Malesuada fames ac turpis egestas. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Sagittis orci a scelerisque purus semper eget duis at tellus. Purus in mollis nunc sed. In iaculis nunc sed augue lacus viverra vitae. Ac tortor vitae purus faucibus ornare suspendisse sed. Semper quis lectus nulla at. Quis auctor elit sed vulputate mi sit amet mauris commodo. Iaculis urna id volutpat lacus laoreet non. Pretium viverra suspendisse potenti nullam ac. Neque volutpat ac tincidunt vitae semper quis lectus nulla at. Libero volutpat sed cras ornare arcu. Auctor augue mauris augue neque gravida in fermentum. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Eu tincidunt tortor aliquam nulla facilisi cras. Eu consequat ac felis donec et. Purus ut faucibus pulvinar elementum integer. Turpis egestas maecenas pharetra convallis.
+The concepts of accessibility, usability, and inclusion, although distinct, are interconnected in the realm of web development. They collectively contribute to creating a web that is truly for everyone.
+
+### Accessibility
+
+[Accessibility](/blog/tags/Accessibility) is about ensuring that web content is equally perceivable, understandable, navigable, and interactive for people with disabilities. This encompasses more than just technical requirements; it's a core aspect of providing an equitable user experience. As web developers, our goal is to ensure that our sites and applications do not create barriers for people with various disabilities.
+
+### Usability
+
+[Usability](/blog/tags/Usability), in contrast, focuses on making products effective, efficient, and satisfying for all users. This includes aspects of user experience design that impact everyone and should not disproportionately affect people with disabilities. It's about designing products that are not only functional but also intuitive and enjoyable to use.
+
+### Inclusion
+
+[Inclusion](/blog/tags/Inclusion) extends beyond the realms of accessibility and usability. It encompasses diversity and the involvement of everyone to the greatest extent possible, regardless of their disability, economic status, education, geographic location, culture, age, or language. Inclusive design is about creating experiences that are welcoming and usable for as wide an audience as possible.
+
+---
+
+## The Synergy of Accessibility and Usability
+
+There is a significant overlap between accessibility and usability, particularly in how certain features can benefit a wide range of users. For example, high contrast on websites aids not just those with visual impairments but also users trying to read content in either extremely bright or dark environments. Similarly, features like captions can aid users in noisy environments or those who prefer silent browsing.
+
+In addition, designing with accessibility in mind can enhance usability for individuals with age-related limitations, who might not classify these as 'disabilities'. This overlap demonstrates how features intended for accessibility can have broader benefits, enhancing the overall user experience.
+
+## Inclusive Design: A Wider Lens
+
+Inclusive design addresses a broader spectrum of issues and benefits a wide range of users. This includes people with disabilities but also extends to those facing language barriers, low literacy, or technological constraints. However, it's important that the focus on accessibility remains centered on disabilities, ensuring that research and development cater to these specific needs. At the same time, inclusive design encourages us to consider the broader context of our user base.
+
+## Usable Accessibility: Bridging Standards and Real User Experience
+
+Adhering to accessibility guidelines such as the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG21/) is crucial. However, it's equally important to consider the human interaction aspect of our designs. This is where 'usable accessibility' or accessible user experience (UX) comes into play.
+
+Incorporating real people, especially those with disabilities, into the design process ensures that the web is functionally usable for everyone. This approach goes beyond checking off standards and focuses on creating experiences that are truly accessible in practice.
+
+## Integrating Usability in Accessible Design
+
+Common UX processes can and should include considerations for people with disabilities. This integration ensures that our designs cater to a diverse range of users. While usability processes alone cannot address all accessibility issues, combining these with accessibility standards provides a comprehensive approach to web development.
+
+Accessibility guidelines, standards, and techniques ensure that a wide range of issues are adequately covered. This approach ensures that the diversity of disabilities, adaptive strategies, and assistive technologies are all considered in the design process.
+
+## A Call for Unified Efforts
+
+As tech professionals, it's important to merge accessibility, usability, and inclusion practices. This unified approach leads to a web environment that's more accessible, usable, and inclusive for everyone. Increased communication and coordination between accessibility, usability, and inclusion practitioners can significantly enhance the overall web experience.
+
+---
+
+## Conclusion
+
+In my journey as a dedicated and aspiring tech professional, I recognize the importance of creating web platforms that are not just technically sound but also universally accessible, usable, and inclusive. Continually learning and applying these principles in my work contributes to a web environment that is welcoming and usable for everyone.
+
+Let's all strive to be part of this significant change, ensuring that the web remains a space where diversity is not just acknowledged but celebrated and catered to. As we navigate the dynamic landscape of the tech industry, it's crucial to focus on continual learning, growth, and impactful contribution in the field of accessible and inclusive web development.
