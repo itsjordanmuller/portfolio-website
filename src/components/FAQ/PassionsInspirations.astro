@@ -3,29 +3,31 @@ import { Icon } from "astro-icon";
 import Question from "../Question.astro";
 ---
 
-<details class="collapse bg-base-300">
-	<summary
-		title="Open/Close Passions & Inspirations FAQs"
-		class="collapse-title flex text-xl font-medium"
-	>
-		<div class="flex flex-row">
-			<Icon name="heart-pulse" class="ml-1 mr-4 h-7 w-7" />Passions & Inspirations
+<div class="card bg-base-300 p-2">
+	<details class="collapse bg-base-100">
+		<summary
+			title="Open/Close Passions & Inspirations FAQs"
+			class="collapse-title flex text-xl font-medium"
+		>
+			<div class="flex flex-row">
+				<Icon name="heart-pulse" class="ml-1 mr-4 h-7 w-7" />Passions & Inspirations
+			</div>
+		</summary>
+		<div class="collapse-content">
+			<div class="flex flex-col gap-2">
+				<Question
+					question="What are you passionate about?"
+					answer="I am deeply passionate about blending technology with environmental & ethical consciousness. My upbringing, surrounded by the natural beauty of Northern California, instilled in me a respect for the environment, which I strive to incorporate into my digital creations."
+				/>
+				<Question
+					question="What inspired you to pursue a career in web development?"
+					answer="The inspiration came from the blend of my hands-on experiences during my gap year founding Foundry Media Company, where I tackled web development and digital marketing challenges, and my academic pursuits in computer science, which deepened my understanding of the technical nuances of web development."
+				/>
+				<Question
+					question="How did you start your journey into this field?"
+					answer="My journey started with curiosity and a love for technology. From early experiences with AutoCAD on my grandfather's PC to founding my digital marketing agency and studying computer science, each step was a building block towards a career in technology, driven by a desire to merge creativity with technical expertise."
+				/>
+			</div>
 		</div>
-	</summary>
-	<div class="collapse-content">
-		<div class="flex flex-col gap-2">
-			<Question
-				question="What are you passionate about?"
-				answer="I am deeply passionate about blending technology with environmental & ethical consciousness. My upbringing, surrounded by the natural beauty of Northern California, instilled in me a respect for the environment, which I strive to incorporate into my digital creations."
-			/>
-			<Question
-				question="What inspired you to pursue a career in web development?"
-				answer="The inspiration came from the blend of my hands-on experiences during my gap year founding Foundry Media Company, where I tackled web development and digital marketing challenges, and my academic pursuits in computer science, which deepened my understanding of the technical nuances of web development."
-			/>
-			<Question
-				question="How did you start your journey into this field?"
-				answer="My journey started with curiosity and a love for technology. From early experiences with AutoCAD on my grandfather's PC to founding my digital marketing agency and studying computer science, each step was a building block towards a career in technology, driven by a desire to merge creativity with technical expertise."
-			/>
-		</div>
-	</div>
-</details>
+	</details>
+</div>
