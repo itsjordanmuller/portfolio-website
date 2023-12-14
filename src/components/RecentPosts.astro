@@ -32,38 +32,42 @@ const uniquePostTags = [...new Set(allPosts.map((post) => post.data.tags).flat()
 		Feel free to filter my posts by specific tags that interest you, or simply choose to view all
 		blog posts to explore the full range of topics I cover.
 	</p>
-	<div class="mx-auto flex flex-col flex-wrap items-center gap-6">
-		<div class="flex w-full max-w-3xl flex-col justify-center sm:join sm:flex-row">
-			<select
-				id="postsTagSelect"
-				class="join-item select select-bordered w-full"
-				onchange="updatePostButtonLink()"
-				aria-label="Dropdown to Select Tag to Filter Blog Posts"
-				title="Dropdown to Select Tag to Filter Blog Posts"
-			>
-				<option value="All Blog Post Tags" selected>All Blog Post Tags</option>
-				{
-					uniquePostTags.map((tag) => (
-						<option title={"Filter by " + tag + " Tag"} value={tag}>
-							{tag.charAt(0).toUpperCase() + tag.slice(1)}
-						</option>
-					))
-				}
-			</select>
-			<a
-				id="postTagLink"
-				href="/blog"
-				title="Filter Blog Posts by Tag"
-				class="btn btn-secondary join-item h-auto text-sm"
-			>
-				Filter Posts by Tag
-			</a>
+	<div class="flex justify-center">
+		<div class="card flex max-w-3xl grow bg-base-300 p-2">
+			<div class="card gap-4 bg-base-100 p-4">
+				<div class="flex w-full max-w-3xl flex-col justify-center sm:join sm:flex-row">
+					<select
+						id="postsTagSelect"
+						class="join-item select select-bordered w-full rounded-b-none sm:rounded-lg"
+						onchange="updatePostButtonLink()"
+						aria-label="Dropdown to Select Tag to Filter Blog Posts"
+						title="Dropdown to Select Tag to Filter Blog Posts"
+					>
+						<option value="All Blog Post Tags" selected>All Blog Post Tags</option>
+						{
+							uniquePostTags.map((tag) => (
+								<option title={"Filter by " + tag + " Tag"} value={tag}>
+									{tag.charAt(0).toUpperCase() + tag.slice(1)}
+								</option>
+							))
+						}
+					</select>
+					<a
+						id="postTagLink"
+						href="/blog"
+						title="Filter Blog Posts by Tag"
+						class="btn btn-secondary join-item h-auto rounded-t-none text-sm sm:rounded-lg"
+					>
+						Filter Posts by Tag
+					</a>
+				</div>
+				<a
+					href="/blog"
+					title="View All Blog Posts"
+					class="btn btn-accent h-auto w-full max-w-3xl text-lg">View All Blog Posts</a
+				>
+			</div>
 		</div>
-		<a
-			href="/blog"
-			title="View All Blog Posts"
-			class="btn btn-accent h-auto w-full max-w-3xl text-lg">View All Blog Posts</a
-		>
 	</div>
 </section>
 
