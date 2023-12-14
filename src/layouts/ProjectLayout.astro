@@ -9,37 +9,37 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 ---
 
 <Layout pageTitle={frontmatter.title} description={frontmatter.description}>
-	<article class="container prose mx-auto max-w-4xl p-6">
+	<article class="container prose mx-auto max-w-5xl px-8 py-10">
 		<div class="mb-6 flex flex-col items-center">
-			<h1 class="mb-0">{frontmatter.title}</h1>
-			<img
-				id="cover-image"
-				src={coverImage.url}
-				alt={coverImage.alt}
-				class="my-0 max-h-[450px] max-w-full rounded-2xl object-cover"
-			/>
-			<div>
-				<a href="#" class="btn btn-error"><Icon name="gridicons:site" class="h-6 w-6" />Live Demo</a
-				>
-				<a href="#" class="btn btn-secondary"
-					><Icon name="mdi:github" class="h-6 w-6" />GitHub Repository</a
-				>
+			<h1 class="mb-0 max-w-2xl text-center text-3xl">{frontmatter.title}</h1>
+			<div class="card mt-4 bg-base-300 p-2">
+				<div class="flex flex-row flex-wrap justify-center gap-2 rounded-xl bg-base-100 p-2">
+					<a href="#" class="btn btn-error btn-sm h-auto"
+						><Icon name="gridicons:site" class="h-6 w-6" />Live Demo</a
+					>
+					<a href="#" class="btn btn-secondary btn-sm h-auto"
+						><Icon name="mdi:github" class="h-6 w-6" />GitHub Repo</a
+					>
+				</div>
 			</div>
-			<p class="text-xs sm:text-sm">
+			<div class="gradient-card-bg my-4 rounded-2xl p-2">
+				<div class="gradient-bg card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
+					<img
+						id="cover-image"
+						src={coverImage.url}
+						alt={coverImage.alt}
+						class="m-4 max-h-[325px] rounded-2xl object-cover md:max-h-[425px]"
+					/>
+				</div>
+			</div>
+			<p class="my-0 text-center text-xs sm:text-sm">
 				Created by <a class="link link-accent" href="/about"
 					><strong>{frontmatter.author}</strong></a
 				> on <a class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a>
 			</p>
 			<TagList tags={frontmatter.tags} contentType="projects" />
+			<hr class="mb-0 mt-4 w-full max-w-md border text-base-content" />
 		</div>
 		<slot />
 	</article>
 </Layout>
-<style>
-	@media (max-width: 599px) {
-		#cover-image {
-			max-height: 300px;
-			height: 300px;
-		}
-	}
-</style>
