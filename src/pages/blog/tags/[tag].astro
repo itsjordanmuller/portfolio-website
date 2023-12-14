@@ -25,28 +25,25 @@ const allPosts = await getCollection("posts");
 const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 ---
 
-<Layout
-	pageTitle=`Posts Tagged with ${tag} in Blog`
-	description=`A collection of Blog Posts Tagged with ${tag}`
->
+<Layout pageTitle={`Posts - ${tag}`} description={`A collection of Posts Tagged with ${tag}`}>
 	<section
 		class="lg-px-[6rem] container prose max-w-none bg-base-200 px-[2rem] py-10 sm:px-[5rem] md:px-[9rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[14rem]"
 		data-pagefind-ignore="all"
 	>
-		<h1 class="mb-1 text-center">Blog Posts</h1>
-		<p class="mt-1 text-center leading-[32px]">
-			Tagged with <span class="btn btn-outline btn-sm px-1">{tag}</span>
-		</p>
+		<h1 class="mb-8 text-center">Blog Posts</h1>
 		<div class="card bg-base-300 p-2 shadow-2xl">
 			<div class="card bg-base-100 p-4">
-				<p class="my-2 text-center font-bold">
-					<a
-						href="/blog"
-						title="Remove Filter to View All Blog Posts"
-						class="btn btn-outline btn-sm px-16">Clear Filter to View All Posts</a
-					>
+				<p class="my-0 text-center text-lg font-bold leading-[32px]">
+					Tagged with <span class="btn btn-outline btn-sm px-1">{tag}</span>
 				</p>
+
 				<TagList tags={uniqueTags} contentType="posts" />
+				<a
+					href="/blog"
+					title="Remove Filter to View All Blog Posts"
+					class="btn btn-outline btn-sm mb-2 mt-4 h-auto px-4 text-center font-bold"
+					>Clear Filter to View All Posts</a
+				>
 			</div>
 		</div>
 		<hr class="mx-12" />
