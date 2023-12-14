@@ -9,8 +9,30 @@ images:
 tags: ["Graduation", "University", "Computer Science", "Accomplishments", "Milestones", "Degree"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Et malesuada fames ac turpis egestas sed tempus. Natoque penatibus et magnis dis parturient. Integer vitae justo eget magna fermentum iaculis. Nibh tellus molestie nunc non blandit. Sed cras ornare arcu dui vivamus arcu. Vitae auctor eu augue ut lectus arcu. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Enim ut sem viverra aliquet eget sit amet tellus. Purus gravida quis blandit turpis cursus in hac habitasse. Quis hendrerit dolor magna eget est lorem. Scelerisque purus semper eget duis at tellus. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Nisi lacus sed viverra tellus in. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor. In eu mi bibendum neque egestas congue quisque.
+Graduating with a Bachelor of Science in Computer Science from [Western Governors University](https://www.wgu.edu/) in May 2023 marks a significant milestone in my life and career. This achievement is not just a testament to my academic abilities but also a reflection of my dedication to the field of computer science. The journey through my coursework, including Data Structures & Algorithms, Software Quality Assurance, Project Management, Calculus, Discrete Mathematics, Operating Systems, Computer Architecture, Ethics & Communications, Artificial Intelligence, and Machine Learning, has been both challenging and exhilarating.
 
-Tellus mauris a diam maecenas sed enim ut. Libero nunc consequat interdum varius. A diam maecenas sed enim ut sem viverra aliquet eget. Rutrum quisque non tellus orci ac auctor augue. Curabitur gravida arcu ac tortor. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. In nisl nisi scelerisque eu ultrices vitae auctor eu. Sit amet dictum sit amet. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Quam viverra orci sagittis eu volutpat odio facilisis mauris. Sit amet volutpat consequat mauris nunc congue nisi vitae. Arcu ac tortor dignissim convallis aenean et tortor. Nunc sed augue lacus viverra. Nunc aliquet bibendum enim facilisis. Sit amet nisl purus in mollis nunc sed. Tempor nec feugiat nisl pretium fusce. Condimentum id venenatis a condimentum vitae.
+---
 
-Sed libero enim sed faucibus turpis in. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Nibh ipsum consequat nisl vel pretium. Donec massa sapien faucibus et. Neque gravida in fermentum et sollicitudin ac orci phasellus. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Ultrices dui sapien eget mi. Quisque non tellus orci ac auctor. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
+## Projects That Shaped My Experience
+
+### Bee/Wasp Machine Learning Analysis
+
+One of my proudest achievements during my studies was my capstone project, where I created a [user-friendly Google Colab Notebook for analyzing photos of bees or wasps](/portfolio/bee-wasp-ai-ml-web-app/). This project allowed me to harness Python's machine learning capabilities, particularly a convolutional neural network (CNN), which I trained on thousands of images. The result was a dashboard that could analyze and return detailed photo outputs. This project not only honed my technical skills but also my ability to create practical, user-centric solutions.
+
+### Simulated Functional Electronic CPU
+
+Another fascinating project was designing a simple functional CPU using [Logisim](https://github.com/logisim-evolution/logisim-evolution) simulation software. This CPU, comprised of an Arithmetic Logic Unit & Control Unit, could perform nine instructions, including arithmetic operations and logical shifts. It was a practical application of my learning in computer architecture and electronics, and it pushed me to think both analytically and creatively.
+
+### Package Routing Application
+
+I also developed a Python-based text interface to manage the efficient delivery of over 40 packages using minimal resources. This project required me to implement a self-adjusting data structure and algorithm, ensuring all packages met their delivery deadlines and notes. It was a challenge that combined my knowledge of data structures, algorithms, and practical problem-solving skills.
+
+---
+
+## Reflections and Looking Forward
+
+As I reflect on my academic journey, I am filled with a sense of accomplishment and excitement for the future. My experience at [Western Governors University](https://www.wgu.edu/) has not only equipped me with a solid foundation in both the theoretical and practical aspects of computing but has also ignited a passion for continuous learning and innovation. 
+
+My role as an [AI Data Annotator](/blog/what-is-ai-data-annotation/), alongside my academic background, has given me a unique perspective on the real-world applications of AI and data science. I look forward to applying the knowledge and skills I've gained in more advanced roles in the tech industry.
+
+This milestone is not just the end of a chapter but the beginning of a new one. As I continue to juggle professional duties with personal projects, I am eager to embrace future challenges and opportunities, ever committed to making a meaningful impact in the tech world. With a relentless quest for knowledge and a fervor for technological innovation, I am ready to contribute to and grow in this dynamic industry.
