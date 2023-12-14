@@ -30,22 +30,24 @@ const uniqueTags = [...new Set(allResources.map((resource) => resource.data.tags
 	description=`A collection of Resources Tagged with ${tag}`
 >
 	<section
-		class="lg-px-[6rem] container prose max-w-none bg-base-200 px-[2rem] py-12 sm:px-[5rem] md:px-[9rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[14rem]"
+		class="lg-px-[6rem] container prose max-w-none bg-base-200 px-[2rem] py-10 sm:px-[5rem] md:px-[9rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[14rem]"
 		data-pagefind-ignore="all"
 	>
 		<h1 class="mb-1 text-center">Resources & Documents</h1>
 		<p class="mt-1 text-center leading-[32px]">
 			Tagged with <span class="btn btn-outline btn-sm px-1">{tag}</span>
 		</p>
-		<div class="card bg-base-300 p-4">
-			<p class="my-2 text-center font-bold">
-				<a
-					href="/resources"
-					title="Remove Filter to View All Resources & Documents"
-					class="btn btn-outline">View All Resources</a
-				>
-			</p>
-			<TagList tags={uniqueTags} contentType="resources" />
+		<div class="card bg-base-300 p-2">
+			<div class="card bg-base-100 p-4">
+				<p class="my-2 text-center font-bold">
+					<a
+						href="/resources"
+						title="Remove Filter to View All Resources & Documents"
+						class="btn btn-outline btn-sm px-16">Clear Filter to View All Resources</a
+					>
+				</p>
+				<TagList tags={uniqueTags} contentType="resources" />
+			</div>
 		</div>
 		<ul class="mt-12 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
