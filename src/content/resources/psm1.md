@@ -9,3 +9,50 @@ images:
 tags: ["PDF", "Certificates", "PSM1", "Scrum", "Agile", "Qualifications", "Scrum.org"]
 type: "certificate"
 ---
+
+## Earning My Professional Scrum Master I Certification
+
+The journey to attaining the Professional Scrum Master I (PSM I) certification was a significant milestone in my career. It involved rigorous study and examination, deepening my grasp of Scrum principles and refining my capabilities in the Scrum Master role. The certification process did more than assess my knowledge; it challenged me to implement Scrum concepts in real-world contexts. This achievement has proven invaluable in my web development projects, ensuring adherence to the highest standards as outlined in the Scrum Guide.
+
+---
+
+## Introduction to Scrum & Agile
+
+[Agile and Scrum](/blog/what-is-agile-and-scrum/) are methodologies in software development and project management. Agile emphasizes customer collaboration, adaptability, and incremental development, while Scrum is a specific Agile framework with defined roles, events, and artifacts. The Professional Scrum Master I certification from Scrum.org is a recognized credential that assesses Scrum understanding and application, covering theory, roles, events, and artifacts.
+
+---
+
+## Scrum Overview
+
+Scrum is a dynamic agile framework designed for the management and incremental delivery of work. Emphasizing collaboration, experimentation, and feedback, it was first formalized in 1995 and provides a structured yet adaptable approach to work processes, tailored to the specific needs of each team.
+
+### Scrum Roles
+
+Scrum identifies three critical roles:
+1. **Product Owner**: Manages the product backlog and prioritizes tasks.
+2. **Scrum Master**: Facilitates the Scrum process and ensures team alignment with Scrum principles.
+3. **Developers**: Focus on delivering incremental improvements and achieving sprint goals.
+
+### Scrum Mechanics
+
+Scrum functions through five essential events:
+1. **Sprints**: Time-boxed periods for completing work.
+2. **Sprint Planning**: Setting goals and defining the sprint backlog.
+3. **Daily Scrum**: Short, daily meetings for team coordination.
+4. **Sprint Review**: Demonstrating completed work and gathering feedback.
+5. **Sprint Retrospective**: Reflecting on and improving the process.
+
+Key artifacts in Scrum include the Product Backlog, Sprint Backlog, and Increment, fostering a culture of collaboration and continuous improvement.
+
+### Scrum Pillars
+
+Scrum is built upon three core pillars: transparency, inspection, and adaptation. These pillars form the foundation for an empirical decision-making approach, driven by observation and experimentation. Trust and adherence to Scrum Values, including Courage, Focus, Commitment, Respect, and Openness, are pivotal for nurturing effective teamwork.
+
+---
+
+## My Journey with Agile and Scrum in Web Development
+As a Computer Science major passionate about web development, I've always been intrigued by efficient and effective project management methodologies. My exploration led me to Agile and Scrum, which have completely changed the way that I approach software development and project management. Agile, with its emphasis on collaboration and adaptability, aligns perfectly with the dynamic nature of web development, where needs and technologies are continually evolving. Scrum, a specific Agile framework, has provided me with a structured yet flexible way to manage projects, especially in larger teams.
+
+## A Continuous Journey of Improvement
+
+My journey with Agile and Scrum in web development is ongoing. These methodologies have not only reshaped how I approach software development but also underlined the importance of adaptability and continuous improvement. With my PSM I certification, I've solidified my commitment to these principles, which I believe are essential for any tech professional seeking to excel in this dynamic industry. As I continue to grow and take on new web development challenges, Agile and Scrum will remain integral to my approach, driving efficiency and innovation in my work.
