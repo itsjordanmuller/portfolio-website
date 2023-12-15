@@ -1,16 +1,40 @@
 ---
 import Layout from "./Layout.astro";
 import TagList from "../components/Utilities/TagList.astro";
+import { Icon } from "astro-icon";
 
 const { frontmatter } = Astro.props;
 const [coverImage, ...otherImages] = frontmatter.images;
 const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")[0];
+const showPDF = frontmatter.pdf !== "N/A";
+const showDownload = frontmatter.download !== "N/A";
+const showCard = showPDF || showDownload;
 ---
 
 <Layout pageTitle={frontmatter.title} description={frontmatter.description}>
 	<article class="container prose mx-auto max-w-4xl px-8 py-10">
 		<div class="mb-6 flex flex-col items-center">
 			<h1 class="mb-0 max-w-2xl text-center text-3xl">{frontmatter.title}</h1>
+			{
+				showCard && (
+					<div class="card mt-4 bg-base-300 p-2">
+						<div class="flex flex-row flex-wrap justify-center gap-2 rounded-xl bg-base-100 p-2">
+							{showPDF && (
+								<a href={frontmatter.pdf} class="btn btn-error btn-sm h-auto">
+									<Icon name="mdi:file-pdf-box" class="h-6 w-6 capitalize" />
+									{`View Document`}
+								</a>
+							)}
+							{showDownload && (
+								<a href={frontmatter.pdf} class="btn btn-secondary btn-sm h-auto">
+									<Icon name="mdi:download" class="h-6 w-6 capitalize" />
+									{`Download PDF`}
+								</a>
+							)}
+						</div>
+					</div>
+				)
+			}
 			<div class="gradient-card-bg my-4 rounded-2xl p-2">
 				<div class="gradient-bg card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
 					<img
@@ -26,7 +50,11 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 					><strong>{frontmatter.author}</strong></a
 				> on <a class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a>
 			</p>
-			<TagList tags={frontmatter.tags} contentType="resources" />
+			<div class="card my-4 bg-base-300 p-2 shadow-2xl">
+				<div class="card bg-base-100 p-4">
+					<TagList tags={frontmatter.tags} contentType="resources" />
+				</div>
+			</div>
 			<hr class="mb-0 mt-4 w-full max-w-md border text-base-content" />
 		</div>
 		<slot />
