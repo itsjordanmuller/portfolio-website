@@ -5,7 +5,7 @@ description: "Reflections on Graduating With a Bachelors of Science in Computer 
 author: "Jordan Muller"
 images:
   - url: "/images/commencement.jpg"
-    alt: "Close-up of a thick stack of white pages with colorful sticky tabs protruding from the side, indicating marked sections in a document or book, with a blurred background emphasizing the tabs."
+    alt: "A jubilant crowd of graduates celebrates their commencement. The air is filled with a vibrant shower of confetti, reflecting a spectrum of colors that glisten in the light. Graduation caps are tossed up in joy, contributing to the festive atmosphere."
 tags: ["Graduation", "University", "Computer Science", "Accomplishments", "Milestones", "Degree"]
 ---
 
