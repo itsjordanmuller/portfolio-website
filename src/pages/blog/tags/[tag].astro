@@ -36,7 +36,6 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 				<p class="my-0 text-center text-lg font-bold leading-[32px]">
 					Tagged with <span class="btn btn-outline btn-sm px-1">{tag}</span>
 				</p>
-
 				<TagList tags={uniqueTags} contentType="posts" />
 				<a
 					href="/blog"
@@ -46,8 +45,8 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 				>
 			</div>
 		</div>
-		<hr class="mx-12" />
-		<ul class="mt-12 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
+		<hr class="mx-8" />
+		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
 				posts.map((post) => (
 					<Post
