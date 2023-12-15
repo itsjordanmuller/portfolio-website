@@ -6,22 +6,33 @@ import { Icon } from "astro-icon";
 const { frontmatter } = Astro.props;
 const [coverImage, ...otherImages] = frontmatter.images;
 const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")[0];
+const showGitHubRepo = frontmatter.repo !== "N/A";
+const showLiveDemo = frontmatter.demo !== "N/A";
+const showCard = showGitHubRepo || showLiveDemo;
 ---
 
 <Layout pageTitle={frontmatter.title} description={frontmatter.description}>
 	<article class="container prose mx-auto max-w-5xl px-8 py-10">
 		<div class="mb-6 flex flex-col items-center">
 			<h1 class="mb-0 max-w-2xl text-center text-3xl">{frontmatter.title}</h1>
-			<div class="card mt-4 bg-base-300 p-2">
-				<div class="flex flex-row flex-wrap justify-center gap-2 rounded-xl bg-base-100 p-2">
-					<a href="#" class="btn btn-error btn-sm h-auto"
-						><Icon name="gridicons:site" class="h-6 w-6" />Live Demo</a
-					>
-					<a href="#" class="btn btn-secondary btn-sm h-auto"
-						><Icon name="mdi:github" class="h-6 w-6" />GitHub Repo</a
-					>
-				</div>
-			</div>
+			{
+				showCard && (
+					<div class="card mt-4 bg-base-300 p-2">
+						<div class="flex flex-row flex-wrap justify-center gap-2 rounded-xl bg-base-100 p-2">
+							{showLiveDemo && (
+								<a href={frontmatter.demo} class="btn btn-error btn-sm h-auto">
+									<Icon name="gridicons:site" class="h-6 w-6" /> Live Demo
+								</a>
+							)}
+							{showGitHubRepo && (
+								<a href={frontmatter.repo} class="btn btn-secondary btn-sm h-auto">
+									<Icon name="mdi:github" class="h-6 w-6" /> GitHub Repo
+								</a>
+							)}
+						</div>
+					</div>
+				)
+			}
 			<div class="gradient-card-bg my-4 rounded-2xl p-2">
 				<div class="gradient-bg card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
 					<img
@@ -37,7 +48,11 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 					><strong>{frontmatter.author}</strong></a
 				> on <a class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a>
 			</p>
-			<TagList tags={frontmatter.tags} contentType="projects" />
+			<div class="card my-4 bg-base-300 p-2 shadow-2xl">
+				<div class="card bg-base-100 p-2">
+					<TagList tags={frontmatter.tags} contentType="projects" />
+				</div>
+			</div>
 			<hr class="mb-0 mt-4 w-full max-w-md border text-base-content" />
 		</div>
 		<slot />
