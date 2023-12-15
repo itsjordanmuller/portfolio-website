@@ -33,24 +33,23 @@ const uniqueTags = [...new Set(allResources.map((resource) => resource.data.tags
 		class="lg-px-[6rem] container prose max-w-none bg-base-200 px-[2rem] py-10 sm:px-[5rem] md:px-[9rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[14rem]"
 		data-pagefind-ignore="all"
 	>
-		<h1 class="mb-1 text-center">Resources & Documents</h1>
-		<p class="mt-1 text-center leading-[32px]">
-			Tagged with <span class="btn btn-outline btn-sm px-1">{tag}</span>
-		</p>
+		<h1 class="mb-8 text-center">Resources & Documents</h1>
 		<div class="card bg-base-300 p-2 shadow-2xl">
 			<div class="card bg-base-100 p-4">
-				<p class="my-2 text-center font-bold">
-					<a
-						href="/resources"
-						title="Remove Filter to View All Resources & Documents"
-						class="btn btn-outline btn-sm h-auto px-4">Clear Filter to View All Resources</a
-					>
+				<p class="my-0 text-center text-lg font-bold leading-[32px]">
+					Tagged with <span class="btn btn-outline btn-sm px-1">{tag}</span>
 				</p>
 				<TagList tags={uniqueTags} contentType="resources" />
+				<a
+					href="/resources"
+					title="Remove Filter to View All Resources & Documents"
+					class="btn btn-outline btn-sm mb-2 mt-4 h-auto px-4 text-center font-bold"
+					>Clear Filter to View All Resources</a
+				>
 			</div>
 		</div>
-		<hr class="mx-12" />
-		<ul class="mt-12 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
+		<hr class="mx-8" />
+		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
 				resources.map((resource) => (
 					<Resource
