@@ -1,13 +1,15 @@
 ---
-title: 'ITIL 4 Foundation in IT Service Management Certificate'
+title: "ITIL 4 Foundation in IT Service Management Certificate"
 publishDate: 2023-07-02 17:38:00
-description: 'This is the first certificate in my resources collection.'
-author: 'Jordan Muller'
+description: "This is the first certificate in my resources collection."
+author: "Jordan Muller"
 images:
-  - url: '/images/itil4.png'
-    alt: 'The full Astro logo.'
-tags: ["PDF", "Certificates", "ITIL 4", "IT", "Qualifications", "Axelos", "PeopleCert"]
+  - url: "/images/itil4.png"
+    alt: "The full Astro logo."
 type: "certificate"
+pdf: "N/A"
+download: "N/A"
+tags: ["PDF", "Certificates", "Documents", "Credentials", "ITIL 4", "IT", "Qualifications", "Education", "Axelos", "PeopleCert", "Service Management", "Technology", "Organization"]
 ---
 
 ## Introduction to ITIL IT Service Management

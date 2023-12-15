@@ -6,6 +6,17 @@ author: "Jordan Muller"
 images:
   - url: "/images/resume.png"
     alt: "The full Astro logo."
-tags: ["PDF", "Resume", "Documents", "Qualifications"]
 type: "resume"
+pdf: "#"
+download: "#"
+tags: ["PDF", "Resume", "Documents", "Qualifications", "Skills & Expertise", "Education", "Work Experience"]
 ---
+
+## My Current Resume
+Welcome to the dedicated space for my most up-to-date resume. Above, you'll find a detailed overview of my current qualifications & career progress. I tried my best to focus on highlighting my key skills, experiences, and accomplishments.
+
+My resume offers a comprehensive and current snapshot of my professional profile & will be continuously updated to reflect my most recent achievements and roles. Whether you're a potential employer, collaborator, or just curious about my career path, this resume serves as a transparent and informative resource. Dive in to discover how my expertise and experiences align with your needs and opportunities.
+
+## Have Questions or Need More Details?
+
+If you have any queries or require further clarification, please don't hesitate to reach out. You can contact me in a variety of ways including [direct contact](/contact) and [social media](/social), where I am readily available to discuss my professional background or potential opportunities. Additionally, for more common inquiries, please refer to my [FAQ section](/about/#faqs). Here, I address a range of questions about my experience, work philosophy, and more, offering deeper insights into my professional profile.
