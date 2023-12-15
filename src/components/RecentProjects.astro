@@ -53,7 +53,7 @@ const uniqueProjectTags = [...new Set(allProjects.map((project) => project.data.
 						{
 							uniqueProjectTags.map((tag) => (
 								<option title={"Filter by " + tag + " Tag"} value={tag}>
-									{tag.toUpperCase()}
+									{tag.charAt(0).toUpperCase() + tag.slice(1)}
 								</option>
 							))
 						}
@@ -75,7 +75,6 @@ const uniqueProjectTags = [...new Set(allProjects.map((project) => project.data.
 		</div>
 	</div>
 </section>
-
 <script is:inline>
 	function updateProjectButtonLink() {
 		const selectProjectsElement = document.getElementById("projectsTagSelect");
