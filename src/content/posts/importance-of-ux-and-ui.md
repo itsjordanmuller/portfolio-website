@@ -5,7 +5,7 @@ description: "Creating Seamless Digital Experiences Using Amazing UX and UI Desi
 author: "Jordan Muller"
 images:
   - url: "/images/ui-ux.jpg"
-    alt: "Colorful sticky notes used as bookmarks in between sheets of paper, most likely a book."
+    alt: "Multiple people are engaged in a collaborative design session, with one pointing to a wireframe layout on a white paper and the other drawing a diagram with circular elements and text annotations. The scene is a typical setup for design brainstorming, with tools such as colored sticky notes, pens, and other office supplies scattered around, contributing to a creative and organized workspace."
 tags: ["Design", "User Experience (UX)", "User Interface (UI)"]
 ---
 
