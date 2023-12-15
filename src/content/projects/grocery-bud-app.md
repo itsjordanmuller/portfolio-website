@@ -1,11 +1,14 @@
 ---
-title: 'Grocery Bud'
+title: "Grocery Bud"
 publishDate: 2022-07-01
-description: 'Grocery Bud - React Web Application for Tracking Grocery Shopping List'
-author: 'Jordan Muller'
+description: "Grocery Bud - React Web Application for Tracking Grocery Shopping List"
+author: "Jordan Muller"
 images:
-  - url: '/images/projects/grocery-bud/grocery-bud-site.png'
-    alt: 'Grocery Bud Project Home Page'
+  - url: "/images/projects/grocery-bud/grocery-bud-site.png"
+    alt: "Grocery Bud Project Home Page"
+repo: "N/A"
+demo: "N/A"
+importance: 6
 tags: ["HTML", "CSS", "JavaScript", "React", "Frontend", "Shopping List"]
 ---
 

@@ -1,11 +1,14 @@
 ---
-title: 'Flixx App'
+title: "Flixx App"
 publishDate: 2022-07-01
-description: 'Flixx App - React Movie & TV Show Application'
-author: 'Jordan Muller'
+description: "Flixx App - React Movie & TV Show Application"
+author: "Jordan Muller"
 images:
-  - url: '/images/projects/flixx/flixx-app-site-1.png'
-    alt: 'Flixx App Project Home Page'
+  - url: "/images/projects/flixx/flixx-app-site-1.png"
+    alt: "Flixx App Project Home Page"
+repo: "N/A"
+demo: "N/A"
+importance: 8
 tags: ["HTML", "CSS", "JavaScript", "React", "Frontend", "Movies & TV Shows"]
 ---
 

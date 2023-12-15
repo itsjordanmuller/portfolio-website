@@ -1,11 +1,14 @@
 ---
-title: 'Menu App'
+title: "Menu App"
 publishDate: 2022-07-01
-description: 'Menu App - React Web Application for Restaurant Food Menu'
-author: 'Jordan Muller'
+description: "Menu App - React Web Application for Restaurant Food Menu"
+author: "Jordan Muller"
 images:
-  - url: '/images/projects/menu/menu-site.png'
-    alt: 'Menu App Project Home Page'
+  - url: "/images/projects/menu/menu-site.png"
+    alt: "Menu App Project Home Page"
+repo: "N/A"
+demo: "N/A"
+importance: 6
 tags: ["HTML", "CSS", "JavaScript", "React", "Frontend", "Food Menu"]
 ---
 
