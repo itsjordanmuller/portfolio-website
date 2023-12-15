@@ -30,6 +30,9 @@ const projectsCollection = defineCollection({
 				alt: z.string(),
 			}),
 		),
+		repo: z.string(),
+		demo: z.string(),
+		importance: z.number(),
 		tags: z.array(z.string()),
 	}),
 });
@@ -47,8 +50,8 @@ const resourcesCollection = defineCollection({
 				alt: z.string(),
 			}),
 		),
-		tags: z.array(z.string()),
 		type: z.string(),
+		tags: z.array(z.string()),
 	}),
 });
 
