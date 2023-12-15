@@ -69,18 +69,6 @@ const activeBadge = getActiveBadge(currentUrl);
 				</a>
 			</li>
 			<li>
-				<a href="/about" title="About Page">
-					<Icon name="mdi:information" class="h-5 w-5" />
-					 About<MenuIndicator isActive={activeBadge === "about"} />
-				</a>
-			</li>
-			<li>
-				<a href="/contact" title="Contact Page">
-					<Icon name="mdi:phone-message" class="h-5 w-5" />
-					 Contact<MenuIndicator isActive={activeBadge === "contact"} />
-				</a>
-			</li>
-			<li>
 				<a href="/resources" title="Resources Page"
 					><Icon name="mdi:archive-star" class="h-5 w-5" />
 					 Resources<MenuIndicator isActive={activeBadge === "resources"} />
@@ -127,7 +115,19 @@ const activeBadge = getActiveBadge(currentUrl);
 					</li>
 				</ul>
 			</li>
-			<li class="rounded-lg bg-base-200">
+			<li>
+				<a href="/about" title="About Page">
+					<Icon name="mdi:information" class="h-5 w-5" />
+					 About<MenuIndicator isActive={activeBadge === "about"} />
+				</a>
+			</li>
+			<li>
+				<a href="/contact" title="Contact Page">
+					<Icon name="mdi:phone-message" class="h-5 w-5" />
+					 Contact<MenuIndicator isActive={activeBadge === "contact"} />
+				</a>
+			</li>
+			<li class="mt-1 rounded-lg bg-base-200">
 				<a href="/search" title="Search Page">
 					<Icon name="ph:magnifying-glass-fill" class="h-5 w-5" />
 					 Search<MenuIndicator isActive={activeBadge === "search"} />
