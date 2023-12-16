@@ -1,0 +1,16 @@
+---
+import HeroButtons from "../components/Hero/HeroButtons.astro";
+import SubmissionMenu from "../components/SubmissionMenu.astro";
+import Layout from "../layouts/Layout.astro";
+
+const pageTitle = "Success - Contact Form Submission Sent to Jordan Muller";
+const description =
+	"If you submitted a message via contact form, you will be redirected here. Feel free to keep exploring my site after submission. Reach out if you have questions.";
+---
+
+<Layout pageTitle={pageTitle} description={description}>
+	<section class="container prose mx-auto px-6 pt-10">
+		<SubmissionMenu />
+	</section>
+	<div class="mt-4 pb-10"><HeroButtons /></div>
+</Layout>

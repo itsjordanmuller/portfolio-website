@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import BouncingHeroArrow from "./Hero/HeroBouncingArrow.astro";
+import HeroButtons from "./Hero/HeroButtons.astro";
+import SentMessage from "../images/sent-message.png";
+---
+
+<div class="flex flex-col items-center">
+	<h1 class="mb-4 mt-0 text-center">Message Sent</h1>
+	<h2 class="mb-4 mt-0 text-center text-xl font-bold">
+		Jordan should be receiving your message soon!
+	</h2>
+	<div class="gradient-card-bg my-4 max-w-sm rounded-2xl p-2 shadow-2xl">
+		<div class="gradient-bg rounded-2xl p-2">
+			<Image
+				src={SentMessage}
+				alt="Jordan Muller Profile Picture"
+				title="Jordan Muller Profile Picture"
+				class="my-0 w-full"
+			/>
+		</div>
+	</div>
+	<div class="my-2 flex flex-col justify-center">
+		<p class="my-0 max-w-md text-center text-lg">
+			If you don't hear back from me in the next week, please reach out again or give me a call!
+		</p>
+	</div>
+</div>
