@@ -11,11 +11,13 @@ const uniquePostTags = [...new Set(allPosts.map((post) => post.data.tags).flat()
 
 <section class="mb-12" data-pagefind-ignore="all">
 	<h2 class="text-center">Recent Blog Posts</h2>
-	<p class="md:text-lg lg:text-left">
-		In my blog, I share my thoughts, experiences, and discoveries in the world of development.
-		Whether you're a fellow developer, a curious learner, or simply an enthusiast in the tech
-		sphere, I hope to provide you with valuable and personal insights from my life.
-	</p>
+	<div class="flex justify-center">
+		<p class="my-4 max-w-4xl text-center md:text-lg">
+			In my blog, I share my thoughts, experiences, and discoveries in the world of development.
+			Whether you're a fellow developer, a curious learner, or simply an enthusiast in the tech
+			sphere, I hope to provide you with valuable and personal insights from my life.
+		</p>
+	</div>
 	<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 		{
 			allPosts.map((post) => (
@@ -28,10 +30,12 @@ const uniquePostTags = [...new Set(allPosts.map((post) => post.data.tags).flat()
 			))
 		}
 	</ul>
-	<p class="md:text-lg lg:text-left">
-		Feel free to filter my posts by specific tags that interest you, or simply choose to view all
-		blog posts to explore the full range of topics I cover.
-	</p>
+	<div class="flex justify-center">
+		<p class="my-4 max-w-2xl text-center md:text-lg lg:text-left">
+			Feel free to filter my posts by specific tags that interest you, or simply choose to view all
+			blog posts to explore the full range of topics I cover.
+		</p>
+	</div>
 	<div class="flex justify-center">
 		<div class="card flex max-w-3xl grow bg-base-300 p-2 shadow-2xl">
 			<div class="card gap-4 bg-base-100 p-4">
