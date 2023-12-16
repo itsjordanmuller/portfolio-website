@@ -1,9 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import AboutImage from "../components/AboutImage.astro";
-import FAQs from "../components/FAQs.astro";
 import Timeline from "../components/Timeline.astro";
-import FAQToContactCTA from "../components/FAQToContactCTA.astro";
+import AboutIntro from "../components/AboutIntro.astro";
+import FAQSection from "../components/FAQSection.astro";
+import AboutOutro from "../components/AboutOutro.astro";
 
 const pageTitle = "About - Jordan Muller";
 const description =
@@ -15,64 +16,13 @@ const description =
 		<div class="prose max-w-none">
 			<h1 class="text-center">About Me</h1>
 			<AboutImage />
-			<h2>My Personal Journey in Tech</h2>
-			<p>
-				My journey began in the shadow of Silicon Valley, under my grandfather's guidance. A skilled
-				machinist, he introduced me to the world of computers at six years old, igniting a lifelong
-				passion for technology. I vividly remember the early days of bulky monitors and dial-up
-				internet, a stark contrast to the natural beauty of weekends spent fishing and hiking. By
-				eight, I had gotten my very own PC, which became my gateway to further explore the realms of
-				software, gaming, and digital creativity. My curiosity & fascination with technology has
-				expanded as quickly as technology has continued to evolve over the years.
-			</p>
-			<p>
-				My high school years were marked by academic excellence and leadership, culminating in my
-				role as Salutatorian and the founding of a STEM club. These experiences honed my leadership
-				skills and laid the groundwork for how I would later end up spending my gap year, a crucial
-				period for personal growth in my life, which saw me founding a digital marketing agency
-				called Foundry Media Company, at nineteen years old.
-			</p>
-			<p>
-				Most notable of these achievements was my recent graduation from university with a Bachelor
-				of Science in Computer Science. It was here that I studied advanced topics like Discrete
-				Mathematics, Calculus, Software Engineering, AI and Machine Learning, culminating in a AI/ML
-				Web App Capstone Project that exemplified my ability to combine technical knowledge with
-				practical solutions. My journey has uniquely equipped me for a career in technology,
-				underpinned by a profound respect for both the environment and digital innovation's
-				transformative power.
-			</p>
-			<hr class="mb-2" />
-			<section id="faqs">
-				<h2 class="mt-0 pt-8">Frequently Asked Questions (FAQs)</h2>
-				<p>Select a topic below to see my answers to a variety of common questions!</p>
-				<FAQs />
-				<FAQToContactCTA />
-			</section>
-			<hr />
+			<AboutIntro />
+			<hr class="my-8" />
+			<FAQSection />
+			<hr class="my-8" />
 			<Timeline />
-			<hr />
-			<p>
-				My journey has been a blend of relentless curiosity, a deep appreciation for nature, and a
-				commitment to technological innovation.
-			</p>
-			<p>
-				From foundational lessons learned under my family's guidance to the complex & ever-changing
-				world of web development, software engineering and machine learning, I have developed a
-				skill set that is both diverse and specialized. My academic achievements, leadership
-				qualities, and hands-on experience in creating real-world applications underscore my
-				readiness to contribute significantly in the field of web development.
-			</p>
-			<p>
-				As I stand at this exciting crossroads, eager to bring my blend of environmental
-				consciousness and technological expertise to your team, I invite you to connect with me.I'd
-				love to discuss how my unique perspective and skills can help drive your projects forward,
-				innovate solutions, and shape the future of software.
-			</p>
-			<p>
-				I believe that together, we can create impactful sustainable digital experiences that
-				resonate in this ever-evolving technological landscape and have the potential to change the
-				world.
-			</p>
+			<hr class="my-8" />
+			<AboutOutro />
 		</div>
 	</section>
 </Layout>
