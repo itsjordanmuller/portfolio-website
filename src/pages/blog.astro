@@ -7,9 +7,9 @@ import PageRouteTagFilters from "../components/PageRouteTagFilters.astro";
 const allPosts = await getCollection("posts");
 const uniqueBlogTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 
-const pageTitle = "Blog - Jordan Muller";
+const pageTitle = "Blog - Jordan Muller - Posts on Progress, Updates & Insights";
 const description =
-	"Want updates on my life and journey as they happen? Here on my Blog page, I share my latest thoughts, opinions, & progress in the world of tech.";
+	"Want updates on my life and journey as they happen? I share relevant information, opinions, & progress in the world of tech here on my blog.";
 ---
 
 <Layout pageTitle={pageTitle} description={description}>

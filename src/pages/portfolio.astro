@@ -7,9 +7,9 @@ import PageRouteTagFilters from "../components/PageRouteTagFilters.astro";
 const allProjects = await getCollection("projects");
 const uniquePortfolioTags = [...new Set(allProjects.map((project) => project.data.tags).flat())];
 
-const pageTitle = "Portfolio - Jordan Muller";
+const pageTitle = "Portfolio - Jordan Muller - View Projects & Previous Work";
 const description =
-	"Hoping to see some of my previous work? Here on my Portfolio page, I showcase my progress as a developer including my best and most recent projects.";
+	"Hoping to see some of my previous work? This portfolio showcases my projects and reflects my skills in programming, design, and creative problem-solving.";
 ---
 
 <Layout pageTitle={pageTitle} description={description}>
