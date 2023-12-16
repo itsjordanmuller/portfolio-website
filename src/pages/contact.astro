@@ -12,12 +12,8 @@ const description =
 
 <Layout pageTitle={pageTitle} description={description}>
 	<section class="container prose mx-auto bg-base-200 px-6 py-10">
-		<h1 class="my-0 text-center text-3xl">Contact Me</h1>
-		<p class="pt-4 text-center text-lg">
-			Thanks for stopping by & taking the time to view my portfolio!
-		</p>
-		<hr class="my-8" />
-		<h2 class="mt-0 pt-4 text-center" id="contact-form">Contact via Email/Phone</h2>
+		<h1 class="my-0 pt-4 text-center text-3xl" id="contact">Contact Me</h1>
+		<h2 class="my-4 text-center">Email & Phone Number</h2>
 		<div class="card flex flex-row justify-center bg-base-300 p-2">
 			<div class="card join flex w-full flex-row justify-center bg-base-100 p-2">
 				<a
@@ -37,11 +33,13 @@ const description =
 				>
 			</div>
 		</div>
-		<p class="pt-4 text-center text-lg">
+		<p class="text-center text-lg">
 			If you're looking to connect with a web developer who is passionate about improving lives with
 			software, you are in the right place. Whether you have a question, an opportunity, a project
 			idea, or just want to say hello, I'd love to hear from you!
 		</p>
+		<hr class="my-8" />
+		<h2 class="my-4 text-center">Contact Details</h2>
 		<div class="card my-8 flex flex-row justify-center bg-base-300 p-2">
 			<div class="card bg-base-100 p-4">
 				<div class="chat chat-start">
@@ -100,8 +98,8 @@ const description =
 				</div>
 			</div>
 		</div>
-		<hr />
-		<h3 class="mt-0 pt-4">Direct Contact Form</h3>
+		<hr class="my-4" />
+		<h2 class="mt-0 pt-4 text-center" id="contact-form">Direct Contact Form</h2>
 		<form name="contact" action="/pages/submission" method="POST" data-netlify="true">
 			<div class="form-group mb-4">
 				<label for="name" class="label-text text-lg">What is your name?</label>
