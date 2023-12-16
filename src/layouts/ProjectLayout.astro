@@ -1,7 +1,8 @@
 ---
 import Layout from "./Layout.astro";
 import TagList from "../components/Utilities/TagList.astro";
-import { Icon } from "astro-icon";
+import Site from "../icons/ui/Site.astro";
+import GitHubLogo from "../icons/logos/social/GitHubLogo.astro";
 
 const { frontmatter } = Astro.props;
 const [coverImage, ...otherImages] = frontmatter.images;
@@ -21,12 +22,14 @@ const showCard = showGitHubRepo || showLiveDemo;
 						<div class="flex flex-row flex-wrap justify-center gap-2 rounded-xl bg-base-100 p-2">
 							{showLiveDemo && (
 								<a href={frontmatter.demo} class="btn btn-error btn-sm h-auto">
-									<Icon name="gridicons:site" class="h-6 w-6" /> Live Demo
+									<Site size="24" />
+									Live Demo
 								</a>
 							)}
 							{showGitHubRepo && (
 								<a href={frontmatter.repo} class="btn btn-secondary btn-sm h-auto">
-									<Icon name="mdi:github" class="h-6 w-6" /> GitHub Repo
+									<GitHubLogo size="24" />
+									GitHub Repo
 								</a>
 							)}
 						</div>
