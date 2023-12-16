@@ -24,6 +24,7 @@ import ThemeModeMoon from "../../icons/ui/ThemeModeMoon.astro";
 		id="tooltip-text"
 		data-tip="Dark Mode Toggle"
 		role="tooltip"
+		aria-label="Dark Mode Toggle"
 	>
 	</span>
 	<ThemeModeSun size="24" />
@@ -51,6 +52,12 @@ import ThemeModeMoon from "../../icons/ui/ThemeModeMoon.astro";
 		document
 			.getElementById("tooltip-text")
 			.setAttribute("data-tip", theme === "dark" ? "Dark Mode Activated" : "Light Mode Activated");
+		document
+			.getElementById("tooltip-text")
+			.setAttribute(
+				"aria-label",
+				theme === "dark" ? "Dark Mode Activated" : "Light Mode Activated",
+			);
 	};
 
 	const applyInitialThemeClass = (theme) => {
