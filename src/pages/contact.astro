@@ -102,37 +102,42 @@ const description =
 		</div>
 		<hr />
 		<h3 class="mt-0 pt-4">Direct Contact Form</h3>
-		<form>
-			<label class="form-control mb-4 w-full max-w-none">
-				<span class="label label-text text-lg">What is your name?</span>
+		<form name="contact" method="POST" netlify>
+			<div class="form-group mb-4">
+				<label for="name" class="label-text text-lg">What is your name?</label>
 				<input
 					type="text"
+					id="name"
+					name="name"
 					placeholder="Name"
-					class="input input-bordered w-full max-w-none"
+					class="input input-bordered mt-2 w-full"
 					required
 				/>
-			</label>
-			<label class="form-control mb-4 w-full max-w-none">
-				<span class="label label-text text-lg">What is your email?</span>
+			</div>
+			<div class="form-group mb-4">
+				<label for="email" class="label-text text-lg">What is your email?</label>
 				<input
 					type="email"
+					id="email"
+					name="email"
 					placeholder="E-mail Address"
-					class="input input-bordered w-full max-w-none"
+					class="input input-bordered mt-2 w-full"
 					required
 				/>
-			</label>
-			<label class="form-control">
-				<span class="label label-text text-lg">Message:</span>
-			</label>
-			<textarea
-				class="textarea textarea-bordered h-48 w-full text-base"
-				placeholder="Write a Detailed Message"
-				required></textarea>
+			</div>
+			<div class="form-group">
+				<label for="message" class="label-text text-lg">Message:</label>
+				<textarea
+					id="message"
+					name="message"
+					class="textarea textarea-bordered mt-2 h-48 w-full text-base"
+					placeholder="Write a Detailed Message"
+					required></textarea>
+			</div>
 			<button
 				type="submit"
-				title="Submit Contact Form to Send Message to Jordan Muller"
-				class="btn mt-8 w-full max-w-none bg-[#a61168] text-[#fff] hover:bg-neutral"
-				>Send Message</button
+				class="btn mt-8 w-full bg-[#a61168] text-white hover:bg-neutral"
+				aria-label="Send Message">Send Message</button
 			>
 		</form>
 		<hr />
