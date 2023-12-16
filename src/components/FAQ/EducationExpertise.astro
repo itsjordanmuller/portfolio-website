@@ -1,16 +1,16 @@
 ---
-import { Icon } from "astro-icon";
 import Question from "../Question.astro";
+import EducationGradient from "../../icons/ui/gradients/EducationGradient.astro";
 ---
 
 <div class="card bg-base-300 p-2">
 	<details class="collapse bg-base-100">
 		<summary
 			title="Open/Close Education & Expertise FAQs"
-			class="collapse-title flex flex-row text-xl font-medium"
+			class="collapse-title flex px-4 text-xl font-medium"
 		>
-			<div class="flex flex-row">
-				<Icon name="education" class="ml-1 mr-4 h-7 w-7 text-[#a61168]" />Education & Expertise
+			<div class="flex w-full flex-row gap-4">
+				<EducationGradient size="28" />Education & Expertise
 			</div>
 		</summary>
 		<div class="collapse-content">

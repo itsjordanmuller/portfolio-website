@@ -1,17 +1,16 @@
 ---
-import { Icon } from "astro-icon";
 import Question from "../Question.astro";
+import BriefcaseSearchGradient from "../../icons/ui/gradients/BriefcaseSearchGradient.astro";
 ---
 
 <div class="card bg-base-300 p-2">
 	<details class="collapse bg-base-100">
 		<summary
 			title="Open/Close Location & Availability FAQs"
-			class="collapse-title flex text-xl font-medium"
+			class="collapse-title flex px-4 text-xl font-medium"
 		>
-			<div class="flex flex-row">
-				<Icon name="briefcase-search" class="ml-1 mr-4 h-7 w-7 text-[#a61168]" />Location &
-				Availability
+			<div class="flex w-full flex-row gap-4">
+				<BriefcaseSearchGradient size="28" />Location & Availability
 			</div>
 		</summary>
 		<div class="collapse-content">

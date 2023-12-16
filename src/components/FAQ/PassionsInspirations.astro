@@ -1,16 +1,16 @@
 ---
-import { Icon } from "astro-icon";
 import Question from "../Question.astro";
+import HeartPulseGradient from "../../icons/ui/gradients/HeartPulseGradient.astro";
 ---
 
 <div class="card bg-base-300 p-2">
 	<details class="collapse bg-base-100">
 		<summary
 			title="Open/Close Passions & Inspirations FAQs"
-			class="collapse-title flex text-xl font-medium"
+			class="collapse-title flex px-4 text-xl font-medium"
 		>
-			<div class="flex flex-row">
-				<Icon name="heart-pulse" class="ml-1 mr-4 h-7 w-7" />Passions & Inspirations
+			<div class="flex w-full flex-row gap-4">
+				<HeartPulseGradient size="28" />Passions & Inspirations
 			</div>
 		</summary>
 		<div class="collapse-content">
