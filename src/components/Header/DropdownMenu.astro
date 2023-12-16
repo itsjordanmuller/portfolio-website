@@ -1,6 +1,20 @@
 ---
-import { Icon } from "astro-icon";
 import MenuIndicator from "../Utilities/MenuIndicator.astro";
+import Menu from "../../icons/ui/Menu.astro";
+import Home from "../../icons/ui/Home.astro";
+import BriefcaseAccount from "../../icons/ui/BriefcaseAccount.astro";
+import BookEdit from "../../icons/ui/BookEdit.astro";
+import ArchiveStar from "../../icons/ui/ArchiveStar.astro";
+import AccountFile from "../../icons/ui/AccountFile.astro";
+import Certificate from "../../icons/ui/Certificate.astro";
+import AccountGroup from "../../icons/ui/AccountGroup.astro";
+import Information from "../../icons/ui/Information.astro";
+import PhoneMessage from "../../icons/ui/PhoneMessage.astro";
+import MagnifyingGlass from "../../icons/ui/MagnifyingGlass.astro";
+import GitHubLogo from "../../icons/logos/social/GitHubLogo.astro";
+import LinkedInLogo from "../../icons/logos/social/LinkedInLogo.astro";
+import CodePenLogo from "../../icons/logos/social/CodePenLogo.astro";
+
 const currentUrl = Astro.request.url;
 
 function getActiveBadge(fullUrl: string) {
@@ -39,8 +53,7 @@ const activeBadge = getActiveBadge(currentUrl);
 <details class="dropdown z-10" data-pagefind-ignore="all">
 	<summary
 		title="Open/Close Main Navigation Menu"
-		class="btn btn-square btn-ghost active:bg-base-300"
-		><Icon name="mdi:menu" class="h-6 w-6" /></summary
+		class="btn btn-square btn-ghost active:bg-base-300"><Menu size="24" /></summary
 	>
 	<nav>
 		<ul
@@ -49,40 +62,40 @@ const activeBadge = getActiveBadge(currentUrl);
 		>
 			<li>
 				<a href="/" title="Home Page">
-					<Icon name="mdi:home" class="h-5 w-5" />
+					<Home size="20" />
 					 Home
 					<MenuIndicator isActive={activeBadge === "home"} />
 				</a>
 			</li>
 			<li>
 				<a href="/portfolio" title="Portfolio Page">
-					<Icon name="mdi:briefcase-account" class="h-5 w-5" />
+					<BriefcaseAccount size="20" />
 					 Portfolio
 					<MenuIndicator isActive={activeBadge === "portfolio"} />
 				</a>
 			</li>
 			<li>
 				<a href="/blog" title="Blog Page">
-					<Icon name="mdi:book-edit" class="h-5 w-5" />
+					<BookEdit size="20" />
 					 Blog
 					<MenuIndicator isActive={activeBadge === "blog"} />
 				</a>
 			</li>
 			<li>
 				<a href="/resources" title="Resources Page"
-					><Icon name="mdi:archive-star" class="h-5 w-5" />
+					><ArchiveStar size="20" />
 					 Resources<MenuIndicator isActive={activeBadge === "resources"} />
 				</a>
 				<ul>
 					<li>
 						<a href="/resources/resume" title="View My Resume"
-							><Icon name="mdi:file-account" class="h-5 w-5" />
+							><AccountFile size="20" />
 							 Resume
 						</a>
 					</li>
 					<li>
 						<a href="/resources/tags/Certificates" title="View My Certifications"
-							><Icon name="mdi:certificate" class="h-5 w-5" />
+							><Certificate size="20" />
 							 Certificates
 						</a>
 					</li>
@@ -90,26 +103,26 @@ const activeBadge = getActiveBadge(currentUrl);
 			</li>
 			<li>
 				<a href="/social" title="Social Page"
-					><Icon name="mdi:account-group" class="h-5 w-5" />
+					><AccountGroup size="20" />
 					 Social
 					<MenuIndicator isActive={activeBadge === "social"} />
 				</a>
 				<ul>
 					<li>
 						<a href="https://github.com/itsjordanmuller" title="View My GitHub Profile"
-							><Icon name="mdi:github" class="h-5 w-5" />
+							><GitHubLogo size="20" />
 							 GitHub
 						</a>
 					</li>
 					<li>
 						<a href="https://www.linkedin.com/in/itsjordanmuller" title="View My LinkedIn Profile"
-							><Icon name="mdi:linkedin" class="h-5 w-5" />
+							><LinkedInLogo size="20" />
 							 LinkedIn
 						</a>
 					</li>
 					<li>
 						<a href="https://codepen.io/itsjordanmuller" title="View My CodePen Profile"
-							><Icon name="mdi:codepen" class="h-5 w-5" />
+							><CodePenLogo size="20" />
 							 CodePen
 						</a>
 					</li>
@@ -117,19 +130,19 @@ const activeBadge = getActiveBadge(currentUrl);
 			</li>
 			<li>
 				<a href="/about" title="About Page">
-					<Icon name="mdi:information" class="h-5 w-5" />
+					<Information size="20" />
 					 About<MenuIndicator isActive={activeBadge === "about"} />
 				</a>
 			</li>
 			<li>
 				<a href="/contact" title="Contact Page">
-					<Icon name="mdi:phone-message" class="h-5 w-5" />
+					<PhoneMessage size="20" />
 					 Contact<MenuIndicator isActive={activeBadge === "contact"} />
 				</a>
 			</li>
 			<li class="mt-1 rounded-lg bg-base-200">
 				<a href="/search" title="Search Page">
-					<Icon name="ph:magnifying-glass-fill" class="h-5 w-5" />
+					<MagnifyingGlass size="20" />
 					 Search<MenuIndicator isActive={activeBadge === "search"} />
 				</a>
 			</li>
