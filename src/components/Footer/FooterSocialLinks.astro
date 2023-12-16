@@ -1,5 +1,7 @@
 ---
-import { Icon } from "astro-icon";
+import GitHubLogo from "../../icons/logos/social/GitHubLogo.astro";
+import LinkedInLogo from "../../icons/logos/social/LinkedInLogo.astro";
+import CodePenLogo from "../../icons/logos/social/CodePenLogo.astro";
 ---
 
 <div class="md:place-self-center md:justify-self-end">
@@ -9,24 +11,27 @@ import { Icon } from "astro-icon";
 				href="https://github.com/itsjordanmuller"
 				title="View My GitHub Profile"
 				aria-label="View My GitHub Profile"
-				><Icon name="mdi:github" class="h-6 w-6 hover:text-accent" /></a
-			>
+				class="duration-200 hover:text-accent active:text-neutral"
+				><GitHubLogo size="24" />
+			</a>
 		</li>
 		<li>
 			<a
 				href="https://www.linkedin.com/in/itsjordanmuller"
 				title="View My LinkedIn Profile"
 				aria-label="View My LinkedIn Profile"
-				><Icon name="mdi:linkedin" class="h-6 w-6 hover:text-primary" /></a
-			>
+				class="duration-200 hover:text-accent active:text-neutral"
+				><LinkedInLogo size="24" />
+			</a>
 		</li>
 		<li>
 			<a
 				href="https://codepen.io/itsjordanmuller"
 				title="View My CodePen Profile"
 				aria-label="View My CodePen Profile"
-				><Icon name="mdi:codepen" class="h-6 w-6 hover:text-secondary" /></a
-			>
+				class="duration-200 hover:text-accent active:text-neutral"
+				><CodePenLogo size="24" />
+			</a>
 		</li>
 	</ul>
 </div>
