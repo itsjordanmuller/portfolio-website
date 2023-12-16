@@ -1,0 +1,11 @@
+---
+import TagList from "./Utilities/TagList.astro";
+const { contentType, uniqueTags } = Astro.props;
+---
+
+<div class="card bg-base-300 p-2 shadow-2xl">
+	<div class="card bg-base-100 p-4">
+		<p class="my-0 text-center text-lg font-bold leading-[30px]">Filter {contentType} by Tag</p>
+		<TagList tags={uniqueTags} contentType={contentType} />
+	</div>
+</div>

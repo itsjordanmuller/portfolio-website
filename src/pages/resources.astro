@@ -1,11 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TagList from "../components/Utilities/TagList.astro";
 import Resource from "../components/Resource.astro";
 import { getCollection } from "astro:content";
+import PageRouteTagFilters from "../components/PageRouteTagFilters.astro";
 
 const allResources = await getCollection("resources");
-const uniqueTags = [...new Set(allResources.map((resource) => resource.data.tags).flat())];
+const uniqueResourceTags = [...new Set(allResources.map((resource) => resource.data.tags).flat())];
 
 const pageTitle = "Resources - Jordan Muller";
 const description =
@@ -18,12 +18,11 @@ const description =
 		data-pagefind-ignore="all"
 	>
 		<h1 class="mb-8 text-center">Resources & Documents</h1>
-		<div class="card bg-base-300 p-2 shadow-2xl">
-			<div class="card bg-base-100 p-4">
-				<p class="my-0 text-center text-lg font-bold leading-[30px]">Filter Resources by Tag</p>
-				<TagList tags={uniqueTags} contentType="resources" />
-			</div>
-		</div>
+		<PageRouteTagFilters
+			title="Resources & Documents"
+			contentType="resources"
+			uniqueTags={uniqueResourceTags}
+		/>
 		<hr class="mx-8" />
 		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
