@@ -1,103 +1,102 @@
 ---
 import { Icon } from "astro-icon";
+import AstroLogo from "../../icons/logos/AstroLogo.astro";
+import HTMLLogo from "../../icons/logos/HTMLLogo.astro";
+import CSSLogo from "../../icons/logos/CSSLogo.astro";
+import JavaScriptLogo from "../../icons/logos/JavaScriptLogo.astro";
+import ReactLogo from "../../icons/logos/ReactLogo.astro";
+import PythonLogo from "../../icons/logos/PythonLogo.astro";
+import JupyterLogo from "../../icons/logos/JupyterLogo.astro";
 
 const { tags, contentType } = Astro.props;
 
-interface TagStyle {
-	displayText: string;
-	btnClasses: string;
-	icon?: string;
+interface TagModifications {
+	displayText?: string;
+	fill?: string;
+	btnClasses?: string;
 	iconClasses?: string;
 	importance?: number;
 }
 
-interface TagStyles {
-	[key: string]: TagStyle;
+interface TagDetails {
+	[key: string]: TagModifications;
 }
 
-const tagStyles: TagStyles = {
+const iconComponents: { [key: string]: any } = {
+	astro: AstroLogo,
+	html: HTMLLogo,
+	css: CSSLogo,
+	javascript: JavaScriptLogo,
+	react: ReactLogo,
+	python: PythonLogo,
+	"jupyter notebook": JupyterLogo,
+};
+
+const tagDetails: TagDetails = {
 	astro: {
-		displayText: "Astro",
-		btnClasses: "bg-[#3f4252] text-[#fff]",
-		icon: "astro",
+		btnClasses: "bg-[#3f4252] text-[#ffffff]",
 		importance: 5,
 	},
 	html: {
-		displayText: "HTML",
-		btnClasses: "bg-[#E34F26] text-[#fff]",
-		icon: "simple-icons:html5",
+		btnClasses: "bg-[#E34F26] text-[#ffffff]",
 		importance: 10,
 	},
 	javascript: {
-		displayText: "JavaScript",
-		btnClasses: "bg-[#F7DF1E] text-[#000]",
-		icon: "simple-icons:javascript",
+		btnClasses: "bg-[#F7DF1E] text-[#000000]",
 		importance: 10,
 	},
 	typescript: {
-		displayText: "TypeScript",
-		btnClasses: "bg-[#007ACC] text-[#fff]",
-		icon: "simple-icons:typescript",
+		btnClasses: "bg-[#007ACC] text-[#ffffff]",
 		importance: 10,
 	},
 	css: {
-		displayText: "CSS",
-		btnClasses: "bg-[#1572B6] text-[#fff]",
-		icon: "simple-icons:css3",
+		btnClasses: "bg-[#1572B6] text-[#ffffff]",
 		importance: 10,
 	},
 	python: {
-		displayText: "Python",
-		btnClasses: "bg-[#1572B6] text-[#fff]",
-		icon: "simple-icons:python",
-		iconClasses: "text-[#FFDD54]",
+		fill: "#FFDD54",
+		btnClasses: "bg-[#1572B6] text-[#ffffff]",
 		importance: 10,
 	},
 	react: {
-		displayText: "React",
-		btnClasses: "bg-[#61DAFB] text-[#000]",
-		icon: "simple-icons:react",
+		btnClasses: "bg-[#61DAFB] text-[#000000]",
 		importance: 9,
 	},
 	resume: {
 		displayText: "Resume",
-		btnClasses: "btn-outline",
 		importance: 10,
 	},
 	certificates: {
 		displayText: "Certificates",
-		btnClasses: "btn-outline",
 		importance: 9,
 	},
 	pdf: {
 		displayText: "PDF",
-		btnClasses: "btn-outline",
 		importance: 8,
 	},
 	documents: {
 		displayText: "Documents",
-		btnClasses: "btn-outline",
 		importance: 8,
 	},
 	agile: {
 		displayText: "Agile",
-		btnClasses: "btn-outline",
 		importance: 7,
 	},
 	scrum: {
 		displayText: "Scrum",
-		btnClasses: "btn-outline",
 		importance: 6,
 	},
 	"itil 4": {
 		displayText: "ITIL 4",
-		btnClasses: "btn-outline",
 		importance: 5,
 	},
 	psm1: {
 		displayText: "PSM1",
-		btnClasses: "btn-outline",
 		importance: 5,
+	},
+	"jupyter notebook": {
+		fill: "#F37726",
+		btnClasses: "bg-[#44475A] text-[#ffffff]",
 	},
 };
 
@@ -114,14 +113,20 @@ function getUrlPrefix(contentType: string): string {
 	}
 }
 
-function getTagDisplayAndClass(tag: string): TagStyle {
+function getTagDisplayAndClass(tag: string): TagModifications {
 	const lowerCaseTag = tag.toLowerCase();
-	return tagStyles[lowerCaseTag] || { displayText: tag, btnClasses: "btn-outline" };
+	const tagModifications = tagDetails[lowerCaseTag] || {};
+
+	return {
+		displayText: tagModifications.displayText || tag,
+		btnClasses: tagModifications.btnClasses || "btn-outline",
+		fill: tagModifications.fill,
+	};
 }
 
 tags.sort((a: string, b: string) => {
-	const importanceA = tagStyles[a.toLowerCase()]?.importance || 0;
-	const importanceB = tagStyles[b.toLowerCase()]?.importance || 0;
+	const importanceA = tagDetails[a.toLowerCase()]?.importance || 0;
+	const importanceB = tagDetails[b.toLowerCase()]?.importance || 0;
 
 	if (importanceA > 0 && importanceB > 0) {
 		return importanceB - importanceA;
@@ -140,16 +145,16 @@ const hiddenTags = tags.slice(10);
 <div class="my-4 flex flex-wrap justify-center gap-2" data-pagefind-ignore="all">
 	{
 		visibleTags.map((tag: string) => {
-			const { displayText, btnClasses, icon, iconClasses } = getTagDisplayAndClass(tag);
+			const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);
+			const IconComponent = iconComponents[tag.toLowerCase()];
 			const urlPrefix = getUrlPrefix(contentType);
-
 			return (
 				<a
 					href={`${urlPrefix}${tag}`}
 					title={`Filter by ${tag} Tag`}
-					class={`btn ${btnClasses} btn-sm ${iconClasses ? `text-[${iconClasses}]` : ""}`}
+					class={`btn ${btnClasses} btn-sm`}
 				>
-					{icon && <Icon name={icon} class={`mr-0 h-4 w-4 ${iconClasses}`} />}
+					{IconComponent && <IconComponent size="16" fill={fill} />}
 					{displayText}
 				</a>
 			);
@@ -171,16 +176,17 @@ const hiddenTags = tags.slice(10);
 					<div class="collapse-content p-4">
 						<div class="flex flex-wrap justify-center gap-2">
 							{hiddenTags.map((tag: string) => {
-								const { displayText, btnClasses, icon, iconClasses } = getTagDisplayAndClass(tag);
+								const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);
+								const IconComponent = iconComponents[tag.toLowerCase()];
 								const urlPrefix = getUrlPrefix(contentType);
 
 								return (
 									<a
 										href={`${urlPrefix}${tag}`}
 										title={`Filter by ${tag} Tag`}
-										class={`btn ${btnClasses} btn-sm ${iconClasses ? `text-[${iconClasses}]` : ""}`}
+										class={`btn ${btnClasses} btn-sm`}
 									>
-										{icon && <Icon name={icon} class={`mr-0 h-4 w-4 ${iconClasses}`} />}
+										{IconComponent && <IconComponent size="16" fill={fill} />}
 										{displayText}
 									</a>
 								);
