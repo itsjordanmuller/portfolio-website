@@ -1,21 +1,25 @@
 ---
-import { Icon } from "astro-icon";
+import BriefcaseAccount from "../../icons/ui/BriefcaseAccount.astro";
+import AccountFile from "../../icons/ui/AccountFile.astro";
+import PhoneMessage from "../../icons/ui/PhoneMessage.astro";
+import GitHubLogo from "../../icons/logos/social/GitHubLogo.astro";
+import LinkedInLogo from "../../icons/logos/social/LinkedInLogo.astro";
 ---
 
 <ul class="mb-2 flex flex-wrap justify-center gap-2">
 	<li>
 		<a href="/portfolio" title="View My Portfolio Projects" class="btn btn-accent btn-sm h-auto"
-			><Icon name="mdi:briefcase-account" class="h-4 w-4" />Portfolio</a
+			><BriefcaseAccount size="20" />Portfolio</a
 		>
 	</li>
 	<li>
 		<a href="/contact" title="Contact Me" class="btn btn-primary btn-sm h-auto"
-			><Icon name="mdi:phone-message" class="h-4 w-4" />Contact</a
+			><PhoneMessage size="20" />Contact</a
 		>
 	</li>
 	<li>
 		<a href="resources/resume" title="View My Resume" class="btn btn-secondary btn-sm h-auto"
-			><Icon name="mdi:file-account" class="h-4 w-4" />Resume</a
+			><AccountFile size="20" />Resume</a
 		>
 	</li>
 </ul>
@@ -24,16 +28,14 @@ import { Icon } from "astro-icon";
 		<a
 			href="https://github.com/itsjordanmuller"
 			title="View My GitHub Profile"
-			class="btn btn-outline btn-neutral btn-sm h-auto"
-			><Icon name="mdi:github" class="h-4 w-4" />GitHub</a
+			class="btn btn-outline btn-neutral btn-sm h-auto"><GitHubLogo size="20" />GitHub</a
 		>
 	</li>
 	<li>
 		<a
 			href="https://www.linkedin.com/in/itsjordanmuller"
 			title="View My LinkedIn Profile"
-			class="btn btn-outline btn-neutral btn-sm h-auto"
-			><Icon name="mdi:linkedin" class="h-4 w-4" />LinkedIn</a
+			class="btn btn-outline btn-neutral btn-sm h-auto"><LinkedInLogo size="20" />LinkedIn</a
 		>
 	</li>
 </ul>
