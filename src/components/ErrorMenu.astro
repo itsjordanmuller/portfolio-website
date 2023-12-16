@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import BouncingHeroArrow from "./Hero/HeroBouncingArrow.astro";
+import HeroButtons from "./Hero/HeroButtons.astro";
+import ErrorImage from "../images/404-error.png";
+---
+
+<div class="flex flex-col items-center">
+	<h1 class="mb-4 mt-0 text-center">404 - Page Not Found</h1>
+	<h2 class="mb-4 mt-0 text-center text-xl font-bold">It looks like that page doesn't exist.</h2>
+	<div class="gradient-card-bg my-4 max-w-sm rounded-2xl p-2 shadow-2xl">
+		<div class="gradient-bg rounded-2xl p-2">
+			<Image
+				src={ErrorImage}
+				alt="Jordan Muller Profile Picture"
+				title="Jordan Muller Profile Picture"
+				class="my-0 w-full"
+			/>
+		</div>
+	</div>
+	<div class="my-2 flex flex-col justify-center">
+		<p class="my-0 max-w-md text-center text-lg">
+			Use the main menu, one of the these quick links, or the search below to look for something
+			specific!
+		</p>
+	</div>
+</div>
