@@ -1,7 +1,8 @@
 ---
 import Layout from "./Layout.astro";
 import TagList from "../components/Utilities/TagList.astro";
-import { Icon } from "astro-icon";
+import PDFLogo from "../icons/logos/PDFLogo.astro";
+import Download from "../icons/ui/Download.astro";
 
 const { frontmatter } = Astro.props;
 const [coverImage, ...otherImages] = frontmatter.images;
@@ -21,14 +22,14 @@ const showCard = showPDF || showDownload;
 						<div class="flex flex-row flex-wrap justify-center gap-2 rounded-xl bg-base-100 p-2">
 							{showPDF && (
 								<a href={frontmatter.pdf} class="btn btn-error btn-sm h-auto">
-									<Icon name="mdi:file-pdf-box" class="h-6 w-6 capitalize" />
-									{`View Document`}
+									<PDFLogo size="24" />
+									View Document
 								</a>
 							)}
 							{showDownload && (
 								<a href={frontmatter.pdf} class="btn btn-secondary btn-sm h-auto">
-									<Icon name="mdi:download" class="h-6 w-6 capitalize" />
-									{`Download PDF`}
+									<Download size="24" />
+									Download PDF
 								</a>
 							)}
 						</div>
