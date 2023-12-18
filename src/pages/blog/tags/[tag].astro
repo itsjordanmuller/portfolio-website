@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import Post from "../../../components/Post.astro";
-import TagRouteTagFilters from "../../../components/TagRouteTagFilters.astro";
+import FilteredTags from "../../../components/Utilities/FilteredTags.astro";
 
 export async function getStaticPaths() {
 	const allPosts = await getCollection("posts");
@@ -30,7 +30,7 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 		data-pagefind-ignore="all"
 	>
 		<h1 class="mb-8 text-center">Blog Posts</h1>
-		<TagRouteTagFilters contentType="posts" uniqueTags={uniqueTags} tag={tag} />
+		<FilteredTags contentType="posts" uniqueTags={uniqueTags} tag={tag} />
 		<hr class="mx-8" />
 		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
