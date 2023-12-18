@@ -17,6 +17,7 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 						src={frontmatter.cover}
 						alt={frontmatter.coverAlt}
 						class="my-0 aspect-[2/1] max-w-full rounded-2xl object-cover"
+						loading="eager"
 					/>
 				</div>
 			</div>
