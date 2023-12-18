@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import Resource from "../../../components/Resource.astro";
 import TagList from "../../../components/Utilities/TagList.astro";
+import TagRouteTagFilters from "../../../components/TagRouteTagFilters.astro";
 
 export async function getStaticPaths() {
 	const allResources = await getCollection("resources");
@@ -34,20 +35,7 @@ const uniqueTags = [...new Set(allResources.map((resource) => resource.data.tags
 		data-pagefind-ignore="all"
 	>
 		<h1 class="mb-8 text-center">Resources & Documents</h1>
-		<div class="card bg-base-300 p-2 shadow-2xl">
-			<div class="card bg-base-100 p-4">
-				<p class="my-0 text-center text-lg font-bold leading-[32px]">
-					Tagged with <span class="btn btn-outline btn-sm px-1">{tag}</span>
-				</p>
-				<TagList tags={uniqueTags} contentType="resources" />
-				<a
-					href="/resources"
-					title="Remove Filter to View All Resources & Documents"
-					class="btn btn-outline btn-sm mb-2 mt-4 h-auto px-4 text-center font-bold"
-					>Clear Filter to View All Resources</a
-				>
-			</div>
-		</div>
+		<TagRouteTagFilters contentType="resources" uniqueTags={uniqueTags} tag={tag} />
 		<hr class="mx-8" />
 		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
@@ -55,8 +43,10 @@ const uniqueTags = [...new Set(allResources.map((resource) => resource.data.tags
 					<Resource
 						title={resource.data.title}
 						description={resource.data.description}
-						url={`/resources/${resource.slug}/`}
-						images={resource.data.images}
+						cover={resource.data.cover}
+						coverAlt={resource.data.coverAlt}
+						url={resource.slug}
+						type={resource.data.type}
 					/>
 				))
 			}

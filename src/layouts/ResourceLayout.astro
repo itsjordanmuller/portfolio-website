@@ -1,11 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "./Layout.astro";
 import TagList from "../components/Utilities/TagList.astro";
 import PDFLogo from "../icons/logos/PDFLogo.astro";
 import Download from "../icons/ui/Download.astro";
 
 const { frontmatter } = Astro.props;
-const [coverImage, ...otherImages] = frontmatter.images;
 const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")[0];
 const showPDF = frontmatter.pdf !== "N/A";
 const showDownload = frontmatter.download !== "N/A";
@@ -14,7 +14,7 @@ const showCard = showPDF || showDownload;
 
 <Layout pageTitle={frontmatter.title} description={frontmatter.description}>
 	<article class="container prose mx-auto max-w-4xl px-8 py-10">
-		<div class="mb-6 flex flex-col items-center">
+		<div class="flex flex-col items-center">
 			<h1 class="mb-0 max-w-2xl text-center text-3xl">{frontmatter.title}</h1>
 			{
 				showCard && (
@@ -36,27 +36,28 @@ const showCard = showPDF || showDownload;
 					</div>
 				)
 			}
-			<div class="gradient-card-bg my-4 rounded-2xl p-2 shadow-2xl">
-				<div class="gradient-bg card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
-					<img
-						id="cover-image"
-						src={coverImage.url}
-						alt={coverImage.alt}
-						class="m-4 max-h-[325px] rounded-2xl object-cover md:max-h-[425px]"
+			<div class="gradient-card-bg my-4 max-w-lg rounded-2xl p-2 shadow-2xl">
+				<div class="gradient-bg card my-0 max-w-full rounded-2xl bg-base-100 p-2 shadow-xl">
+					<Image
+						src={frontmatter.cover}
+						alt={frontmatter.coverAlt}
+						class="my-0 max-w-full rounded-2xl object-cover"
 					/>
 				</div>
 			</div>
-			<p class="my-0 text-center text-xs sm:text-sm">
+			<p class="mb-2 mt-0 text-center text-xs sm:text-sm">
 				Created by <a class="link link-accent" href="/about"
 					><strong>{frontmatter.author}</strong></a
 				> on <a class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a>
 			</p>
-			<div class="card my-4 bg-base-300 p-2">
-				<div class="card bg-base-100 p-4">
-					<TagList tags={frontmatter.tags} contentType="resources" />
+			<div class="card max-w-2xl bg-base-300 p-2">
+				<div class="flex flex-row bg-base-300 shadow-2xl">
+					<div class="card bg-base-100 p-4">
+						<TagList tags={frontmatter.tags} contentType="resources" />
+					</div>
 				</div>
 			</div>
-			<hr class="mb-0 mt-4 w-full max-w-md border text-base-content" />
+			<hr class="mb-0 mt-10 w-full max-w-md border text-base-content" />
 		</div>
 		<slot />
 	</article>

@@ -18,11 +18,7 @@ const description =
 		data-pagefind-ignore="all"
 	>
 		<h1 class="mb-8 text-center">Resources & Documents</h1>
-		<PageRouteTagFilters
-			title="Resources & Documents"
-			contentType="resources"
-			uniqueTags={uniqueResourceTags}
-		/>
+		<PageRouteTagFilters contentType="resources" uniqueTags={uniqueResourceTags} />
 		<hr class="mx-8" />
 		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
@@ -30,8 +26,9 @@ const description =
 					<Resource
 						title={resource.data.title}
 						description={resource.data.description}
-						url={`/resources/${resource.slug}/`}
-						images={resource.data.images}
+						cover={resource.data.cover}
+						coverAlt={resource.data.coverAlt}
+						url={resource.slug}
 						type={resource.data.type}
 					/>
 				))
