@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @supports not (color: oklch(0 0 0)) {
 	:root {
 		color-scheme: light;
