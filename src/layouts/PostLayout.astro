@@ -26,7 +26,7 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 				> on <a class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a>
 			</p>
 			<div class="card my-2 max-w-2xl bg-base-300 p-2">
-				<div class="card bg-base-100">
+				<div class="card bg-base-100 p-2">
 					<TagList tags={frontmatter.tags} contentType="posts" />
 				</div>
 			</div>
