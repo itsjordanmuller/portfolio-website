@@ -166,14 +166,14 @@ const hiddenTags = tags.slice(10);
 		<>
 			<hr class="mx-8 my-4" />
 			<div class="flex justify-center">
-				<details class="collapse bg-base-300">
+				<details class="collapse bg-base-200">
 					<summary
 						title="Open/Close Dropdown to View All Other Tags"
-						class="font-semi-bold h-auto cursor-pointer bg-base-200 py-4 text-center text-lg text-base-content"
+						class="font-semi-bold h-auto cursor-pointer bg-base-300 py-4 text-center text-lg text-base-content"
 					>
 						View All Other Tags
 					</summary>
-					<div class="collapse-content bg-base-200 p-4">
+					<div class="collapse-content p-4">
 						<div class="flex flex-wrap justify-center gap-2">
 							{hiddenTags.map((tag: string) => {
 								const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);
