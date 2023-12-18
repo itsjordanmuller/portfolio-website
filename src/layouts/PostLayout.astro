@@ -1,9 +1,9 @@
 ---
 import Layout from "./Layout.astro";
 import TagList from "../components/Utilities/TagList.astro";
+import { Image } from "astro:assets";
 
 const { frontmatter } = Astro.props;
-const [coverImage, ...otherImages] = frontmatter.images;
 const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")[0];
 ---
 
@@ -12,12 +12,12 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 		<div class="mb-6 flex flex-col items-center">
 			<h1 class="mb-0 max-w-2xl text-center text-3xl">{frontmatter.title}</h1>
 			<div class="gradient-card-bg my-4 rounded-2xl p-2 shadow-2xl">
-				<div class="gradient-bg card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
-					<img
+				<div class="gradient-bg card my-0 h-[100%] rounded-2xl bg-base-100 p-2 shadow-xl">
+					<Image
 						id="cover-image"
-						src={coverImage.url}
-						alt={coverImage.alt}
-						class="m-4 aspect-[2/1] max-h-[325px] max-w-full rounded-2xl object-cover"
+						src={frontmatter.cover}
+						alt={frontmatter.coverAlt}
+						class="my-0 aspect-[2/1] max-h-[325px] max-w-full rounded-2xl object-cover"
 					/>
 				</div>
 			</div>

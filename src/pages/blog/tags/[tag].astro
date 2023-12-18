@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-
+import { Image } from "astro:assets";
 import Layout from "../../../layouts/Layout.astro";
 import Post from "../../../components/Post.astro";
 import TagList from "../../../components/Utilities/TagList.astro";
@@ -52,11 +52,25 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 					<Post
 						title={post.data.title}
 						description={post.data.description}
-						url={`/blog/${post.slug}/`}
-						images={post.data.images}
+						cover={post.data.cover}
+						coverAlt={post.data.coverAlt}
+						url={post.slug}
 					/>
 				))
 			}
 		</ul>
 	</section>
 </Layout>
+<style>
+	li {
+		display: block;
+		list-style: none;
+		margin: 0;
+	}
+	img {
+		margin: 0;
+		aspect-ratio: 5/3;
+		background-size: cover;
+		object-fit: cover;
+	}
+</style>

@@ -1,23 +1,20 @@
 ---
-const { title, url, description, images } = Astro.props;
+import { Image } from "astro:assets";
+const { title, url, description, cover, coverAlt } = Astro.props;
 ---
 
 <li class="gradient-card-bg rounded-2xl p-2 shadow-2xl">
 	<div class="card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
 		<figure class="m-0 w-full">
-			<img
-				src={images[0].url}
-				alt={images[0].alt}
-				title=`${title} Blog Post Cover Image`
-				class="mb-0 aspect-[5/3] bg-cover object-cover"
-				loading="lazy"
-			/>
+			<Image src={cover} alt={coverAlt} />
 		</figure>
 		<div class="prose card-body w-full max-w-none">
 			<h2 class="card-title mb-0">{title}</h2>
 			<p>{description}</p>
 			<div class="card-actions justify-end">
-				<a href={url} title=`View ${title} Blog Post` class="btn btn-accent">View Post</a>
+				<a href={`/blog/${url}`} title={`View ${title} Blog Post`} class="btn btn-accent">
+					View Post
+				</a>
 			</div>
 		</div>
 	</div>
@@ -27,5 +24,11 @@ const { title, url, description, images } = Astro.props;
 		display: block;
 		list-style: none;
 		margin: 0;
+	}
+	img {
+		margin: 0;
+		aspect-ratio: 5/3;
+		background-size: cover;
+		object-fit: cover;
 	}
 </style>
