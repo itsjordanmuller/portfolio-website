@@ -2,7 +2,13 @@
 const { size } = Astro.props;
 ---
 
-<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24">
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width={size}
+	height={size}
+	viewBox="0 0 24 24"
+	class="inline-block"
+>
 	<defs>
 		<linearGradient id="heartGradient" x1="0%" y1="100%" x2="100%" y2="0%">
 			<stop offset="20%" style="stop-color:#edb77e;"></stop>
