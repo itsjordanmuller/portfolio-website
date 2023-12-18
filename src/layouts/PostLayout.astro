@@ -11,27 +11,26 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 	<article class="container prose mx-auto max-w-5xl px-8 py-10">
 		<div class="mb-6 flex flex-col items-center">
 			<h1 class="mb-0 max-w-2xl text-center text-3xl">{frontmatter.title}</h1>
-			<div class="gradient-card-bg my-4 rounded-2xl p-2 shadow-2xl">
-				<div class="gradient-bg card my-0 h-[100%] rounded-2xl bg-base-100 p-2 shadow-xl">
+			<div class="gradient-card-bg my-4 max-w-2xl rounded-2xl p-2 shadow-2xl">
+				<div class="gradient-bg card my-0 max-w-full rounded-2xl bg-base-100 p-2 shadow-xl">
 					<Image
 						src={frontmatter.cover}
 						alt={frontmatter.coverAlt}
-						class="my-0 aspect-[2/1] max-h-[325px] max-w-full rounded-2xl object-cover"
+						class="my-0 aspect-[2/1] max-w-full rounded-2xl object-cover"
 					/>
 				</div>
 			</div>
-			<p class="my-0 text-center text-xs sm:text-sm">
+			<p class="mb-2 mt-0 text-center text-xs sm:text-sm">
 				Created by <a class="link link-accent" href="/about"
 					><strong>{frontmatter.author}</strong></a
-				> on
-				<a class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a>
+				> on <a class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a>
 			</p>
-			<div class="card my-4 bg-base-300 p-2">
-				<div class="card bg-base-100 p-4">
+			<div class="card my-2 max-w-2xl bg-base-300 p-2">
+				<div class="card bg-base-100">
 					<TagList tags={frontmatter.tags} contentType="posts" />
 				</div>
 			</div>
-			<hr class="mb-0 mt-4 w-full max-w-md border text-base-content" />
+			<hr class="mb-0 mt-10 w-full max-w-md border text-base-content" />
 		</div>
 		<h2>{frontmatter.description}</h2>
 		<slot />

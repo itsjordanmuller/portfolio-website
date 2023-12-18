@@ -142,7 +142,7 @@ const visibleTags = tags.slice(0, 10);
 const hiddenTags = tags.slice(10);
 ---
 
-<div class="my-4 flex flex-wrap justify-center gap-2" data-pagefind-ignore="all">
+<div class="flex flex-wrap justify-center gap-2" data-pagefind-ignore="all">
 	{
 		visibleTags.map((tag: string) => {
 			const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);
@@ -164,16 +164,16 @@ const hiddenTags = tags.slice(10);
 {
 	hiddenTags.length > 0 && (
 		<>
-			<hr class="mx-8 my-2" />
-			<div class="mt-4 flex justify-center">
-				<details class="collapse bg-base-200">
+			<hr class="mx-8 my-4" />
+			<div class="flex justify-center">
+				<details class="collapse bg-base-300">
 					<summary
 						title="Open/Close Dropdown to View All Other Tags"
-						class=" h-auto cursor-pointer rounded-xl bg-base-300 p-2 px-8 text-center text-lg font-medium"
+						class="font-semi-bold h-auto cursor-pointer bg-base-200 py-4 text-center text-lg text-base-content"
 					>
 						View All Other Tags
 					</summary>
-					<div class="collapse-content p-4">
+					<div class="collapse-content bg-base-200 p-4">
 						<div class="flex flex-wrap justify-center gap-2">
 							{hiddenTags.map((tag: string) => {
 								const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);

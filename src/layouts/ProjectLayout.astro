@@ -6,7 +6,6 @@ import Site from "../icons/ui/Site.astro";
 import GitHubLogo from "../icons/logos/social/GitHubLogo.astro";
 
 const { frontmatter } = Astro.props;
-const [coverImage, ...otherImages] = frontmatter.images;
 const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")[0];
 const showGitHubRepo = frontmatter.repo !== "N/A";
 const showLiveDemo = frontmatter.demo !== "N/A";
@@ -37,26 +36,26 @@ const showCard = showGitHubRepo || showLiveDemo;
 					</div>
 				)
 			}
-			<div class="gradient-card-bg my-4 rounded-2xl p-2 shadow-2xl">
-				<div class="gradient-bg card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
+			<div class="gradient-card-bg my-4 max-w-2xl rounded-2xl p-2 shadow-2xl">
+				<div class="gradient-bg card my-0 max-w-full rounded-2xl bg-base-100 p-2 shadow-xl">
 					<Image
 						src={frontmatter.cover}
 						alt={frontmatter.coverAlt}
-						class="m-4 max-h-[325px] rounded-2xl object-cover md:max-h-[425px]"
+						class="my-0 max-w-full rounded-2xl object-cover"
 					/>
 				</div>
 			</div>
-			<p class="my-0 text-center text-xs sm:text-sm">
+			<p class="mb-2 mt-0 text-center text-xs sm:text-sm">
 				Created by <a class="link link-accent" href="/about"
 					><strong>{frontmatter.author}</strong></a
 				> on <a class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a>
 			</p>
-			<div class="card my-4 bg-base-300 p-2">
-				<div class="card bg-base-100 p-2">
+			<div class="card my-2 max-w-2xl bg-base-300 p-2">
+				<div class="card bg-base-100">
 					<TagList tags={frontmatter.tags} contentType="projects" />
 				</div>
 			</div>
-			<hr class="mb-0 mt-4 w-full max-w-md border text-base-content" />
+			<hr class="mb-0 mt-10 w-full max-w-md border text-base-content" />
 		</div>
 		<slot />
 	</article>

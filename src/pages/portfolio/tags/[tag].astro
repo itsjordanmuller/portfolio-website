@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import Project from "../../../components/Project.astro";
 import TagList from "../../../components/Utilities/TagList.astro";
+import TagRouteTagFilters from "../../../components/TagRouteTagFilters.astro";
 
 export async function getStaticPaths() {
 	const allProjects = await getCollection("projects");
@@ -34,20 +35,7 @@ const uniqueTags = [...new Set(allProjects.map((project) => project.data.tags).f
 		data-pagefind-ignore="all"
 	>
 		<h1 class="mb-8 text-center">Portfolio Projects</h1>
-		<div class="card bg-base-300 p-2 shadow-2xl">
-			<div class="card bg-base-100 p-4">
-				<p class="my-0 text-center text-lg font-bold leading-[32px]">
-					Tagged with <span class="btn btn-outline btn-sm px-1">{tag}</span>
-				</p>
-				<TagList tags={uniqueTags} contentType="projects" />
-				<a
-					href="/portfolio"
-					title="Remove Filter to View All Portfolio Projects"
-					class="btn btn-outline btn-sm mb-2 mt-4 h-auto px-4 text-center font-bold"
-					>Clear Filter to View All Projects</a
-				>
-			</div>
-		</div>
+		<TagRouteTagFilters contentType="projects" uniqueTags={uniqueTags} tag={tag} />
 		<hr class="mx-8" />
 		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
