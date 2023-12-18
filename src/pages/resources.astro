@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Resource from "../components/Resource.astro";
 import { getCollection } from "astro:content";
-import PageRouteTagFilters from "../components/PageRouteTagFilters.astro";
+import BaseTagsFilter from "../components/Utilities/BaseTagsFilter.astro";
 
 const allResources = await getCollection("resources");
 const uniqueResourceTags = [...new Set(allResources.map((resource) => resource.data.tags).flat())];
@@ -18,7 +18,7 @@ const description =
 		data-pagefind-ignore="all"
 	>
 		<h1 class="text-center">Resources & Documents</h1>
-		<PageRouteTagFilters contentType="resources" uniqueTags={uniqueResourceTags} />
+		<BaseTagsFilter contentType="resources" uniqueTags={uniqueResourceTags} />
 		<hr class="mx-8" />
 		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{

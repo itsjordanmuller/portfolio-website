@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Post from "../components/Post.astro";
 import { getCollection } from "astro:content";
-import PageRouteTagFilters from "../components/PageRouteTagFilters.astro";
+import BaseTagsFilter from "../components/Utilities/BaseTagsFilter.astro";
 
 const allPosts = await getCollection("posts");
 const uniqueBlogTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
@@ -18,7 +18,7 @@ const description =
 		data-pagefind-ignore="all"
 	>
 		<h1 class="text-center">Blog Posts</h1>
-		<PageRouteTagFilters contentType="posts" uniqueTags={uniqueBlogTags} />
+		<BaseTagsFilter contentType="posts" uniqueTags={uniqueBlogTags} />
 		<hr class="mx-8" />
 		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
