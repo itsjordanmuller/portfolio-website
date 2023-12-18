@@ -9,7 +9,7 @@ const { key, title, url, description, cover, coverAlt, loadingMode } = Astro.pro
 			<Image src={cover} alt={coverAlt} loading={loadingMode} />
 		</figure>
 		<div class="prose card-body w-full max-w-none rounded-b-2xl bg-base-100">
-			<h2 class="card-title mb-0">{title}</h2>
+			<h3 class="card-title mb-0">{title}</h3>
 			<p>{description}</p>
 			<div class="card-actions justify-end">
 				<a href={`/portfolio/${url}`} title=`View ${title} Portfolio Project` class="btn btn-accent"

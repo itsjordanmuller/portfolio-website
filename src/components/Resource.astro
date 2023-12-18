@@ -9,7 +9,7 @@ const { title, url, description, type, cover, coverAlt, loadingMode } = Astro.pr
 			<Image src={cover} alt={coverAlt} loading={loadingMode} />
 		</figure>
 		<div class="prose card-body w-full max-w-none">
-			<h2 class="card-title mb-0">{title}</h2>
+			<h3 class="card-title mb-0">{title}</h3>
 			<p>{description}</p>
 			<div class="card-actions justify-end">
 				<a href={`/resources/${url}`} title=`View ${title}` class="btn btn-accent capitalize"
