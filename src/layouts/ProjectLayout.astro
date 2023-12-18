@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "./Layout.astro";
 import TagList from "../components/Utilities/TagList.astro";
 import Site from "../icons/ui/Site.astro";
@@ -38,10 +39,9 @@ const showCard = showGitHubRepo || showLiveDemo;
 			}
 			<div class="gradient-card-bg my-4 rounded-2xl p-2 shadow-2xl">
 				<div class="gradient-bg card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
-					<img
-						id="cover-image"
-						src={coverImage.url}
-						alt={coverImage.alt}
+					<Image
+						src={frontmatter.cover}
+						alt={frontmatter.coverAlt}
 						class="m-4 max-h-[325px] rounded-2xl object-cover md:max-h-[425px]"
 					/>
 				</div>

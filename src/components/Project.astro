@@ -1,23 +1,18 @@
 ---
-const { key, title, url, description, images } = Astro.props;
+import { Image } from "astro:assets";
+const { key, title, url, description, cover, coverAlt } = Astro.props;
 ---
 
 <li class={`gradient-card-bg rounded-2xl p-2 shadow-2xl  ${key > 2 ? "lg:hidden xl:block" : ""}`}>
 	<div class="gradient-bg card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
 		<figure class="m-0 w-full">
-			<img
-				src={images[0].url}
-				alt={images[0].alt}
-				title=`${title} Portfolio Project Cover Image`
-				class="mb-0"
-				loading="lazy"
-			/>
+			<Image src={cover} alt={coverAlt} />
 		</figure>
 		<div class="prose card-body w-full max-w-none rounded-b-2xl bg-base-100">
 			<h2 class="card-title mb-0">{title}</h2>
 			<p>{description}</p>
 			<div class="card-actions justify-end">
-				<a href={url} title=`View ${title} Portfolio Project` class="btn btn-accent">View Project</a
+				<a href={`/portfolio/${url}`} title=`View ${title} Portfolio Project` class="btn btn-accent">View Project</a
 				>
 			</div>
 		</div>

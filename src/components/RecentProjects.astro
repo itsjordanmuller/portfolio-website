@@ -25,9 +25,9 @@ const uniqueProjectTags = [...new Set(allProjects.map((project) => project.data.
 					key={index}
 					title={project.data.title}
 					description={project.data.description}
-					url={`/portfolio/${project.slug}/`}
-					images={project.data.images}
-					className={`project-item ${index > 2 ? "hidden" : ""}`}
+					cover={project.data.cover}
+					coverAlt={project.data.coverAlt}
+					url={project.slug}
 				/>
 			))
 		}

@@ -55,8 +55,9 @@ const uniqueTags = [...new Set(allProjects.map((project) => project.data.tags).f
 					<Project
 						title={project.data.title}
 						description={project.data.description}
-						url={`/portfolio/${project.slug}/`}
-						images={project.data.images}
+						cover={project.data.cover}
+						coverAlt={project.data.coverAlt}
+						url={project.slug}
 					/>
 				))
 			}
