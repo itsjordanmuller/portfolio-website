@@ -22,13 +22,14 @@ const description =
 		<hr class="mx-8" />
 		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
-				allPosts.map((post) => (
+				allPosts.map((post, index) => (
 					<Post
 						title={post.data.title}
 						description={post.data.description}
 						cover={post.data.cover}
 						coverAlt={post.data.coverAlt}
 						url={post.slug}
+						loadingMode={index < 3 ? "eager" : "lazy"}
 					/>
 				))
 			}

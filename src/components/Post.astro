@@ -1,12 +1,12 @@
 ---
 import { Image } from "astro:assets";
-const { title, url, description, cover, coverAlt } = Astro.props;
+const { title, url, description, cover, coverAlt, loadingMode } = Astro.props;
 ---
 
 <li class="gradient-card-bg rounded-2xl p-2 shadow-2xl">
 	<div class="card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
 		<figure class="m-0 w-full">
-			<Image src={cover} alt={coverAlt} />
+			<Image src={cover} alt={coverAlt} loading={loadingMode} />
 		</figure>
 		<div class="prose card-body w-full max-w-none">
 			<h2 class="card-title mb-0">{title}</h2>
