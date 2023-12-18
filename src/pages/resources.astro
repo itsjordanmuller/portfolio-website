@@ -22,7 +22,7 @@ const description =
 		<hr class="mx-8" />
 		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
-				allResources.map((resource) => (
+				allResources.map((resource, index) => (
 					<Resource
 						title={resource.data.title}
 						description={resource.data.description}
@@ -30,6 +30,7 @@ const description =
 						coverAlt={resource.data.coverAlt}
 						url={resource.slug}
 						type={resource.data.type}
+						loadingMode={index < 3 ? "eager" : "lazy"}
 					/>
 				))
 			}
