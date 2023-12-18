@@ -1,12 +1,13 @@
 ---
-
+import { Image } from "astro:assets";
+import MoreQuestionsImage from "../../src/assets/images/more-questions.jpg";
 ---
 
 <div class="mt-12 rounded-2xl bg-base-300 p-2">
 	<div class="card flex-col items-center bg-base-100 px-8 py-8 lg:flex-row lg:gap-16">
-		<img
-			src="/images/more-questions.jpg"
-			title="Question Mark Image - Red Neon Reflection"
+		<Image
+			src={MoreQuestionsImage}
+			title="Question Mark - Red Neon Reflection"
 			alt="A red neon sign in the shape of a question mark is shown as a reflection with an urban city backdrop."
 			class="my-0 aspect-square w-[100%] max-w-sm rounded-lg object-cover shadow-2xl"
 		/>
