@@ -42,10 +42,12 @@ const tagDetails: TagDetails = {
 		importance: 10,
 	},
 	javascript: {
+		displayText: "JavaScript",
 		btnClasses: "bg-[#F7DF1E] text-[#000000]",
 		importance: 10,
 	},
 	typescript: {
+		displayText: "TypeScript",
 		btnClasses: "bg-[#007ACC] text-[#ffffff]",
 		importance: 10,
 	},
@@ -86,17 +88,32 @@ const tagDetails: TagDetails = {
 		displayText: "Scrum",
 		importance: 6,
 	},
-	"itil 4": {
+	"itil-4": {
 		displayText: "ITIL 4",
 		importance: 5,
 	},
-	psm1: {
-		displayText: "PSM1",
+	"psm-1": {
+		displayText: "PSM 1",
 		importance: 5,
 	},
-	"jupyter notebook": {
+	"jupyter-notebook": {
 		fill: "#F37726",
 		btnClasses: "bg-[#44475A] text-[#ffffff]",
+	},
+	"e-commerce": {
+		displayText: "E-Commerce",
+	},
+	ai: {
+		displayText: "AI - (Artificial Intelligence)",
+	},
+	"machine-learning": {
+		displayText: "ML - (Machine Learning)",
+	},
+	"convolutional-neural-networks": {
+		displayText: "CNNs - (Convolutional Neural Networks)",
+	},
+	"scrum-org": {
+		displayText: "Scrum.org",
 	},
 };
 
@@ -117,8 +134,21 @@ function getTagDisplayAndClass(tag: string): TagModifications {
 	const lowerCaseTag = tag.toLowerCase();
 	const tagModifications = tagDetails[lowerCaseTag] || {};
 
+	let displayText;
+
+	if (tagModifications.displayText) {
+		displayText = tagModifications.displayText;
+	} else {
+		const tagWithSpaces = tag.replace(/-/g, " ");
+		if (tag.length <= 4) {
+			displayText = tag.toUpperCase();
+		} else {
+			displayText = tagWithSpaces.replace(/\b(\w)/g, (char) => char.toUpperCase());
+		}
+	}
+
 	return {
-		displayText: tagModifications.displayText || tag,
+		displayText,
 		btnClasses: tagModifications.btnClasses || "btn-outline",
 		fill: tagModifications.fill,
 	};
