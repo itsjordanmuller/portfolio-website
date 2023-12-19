@@ -7,7 +7,7 @@ const { contentType, uniqueTags } = Astro.props;
 	<div class="card max-w-3xl bg-base-300 p-2 shadow-2xl">
 		<div class="card bg-base-100 p-4">
 			<h2 class="my-0 mb-4 text-center text-lg font-bold leading-[30px]">
-				Filter {contentType} by Tag
+				Filter <span class="capitalize">{contentType}</span> by Tag
 			</h2>
 			<TagList tags={uniqueTags} contentType={contentType} />
 		</div>
