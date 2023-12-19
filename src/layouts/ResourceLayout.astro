@@ -4,6 +4,7 @@ import Layout from "./Layout.astro";
 import TagList from "../components/Utilities/TagList.astro";
 import PDFLogo from "../icons/logos/PDFLogo.astro";
 import Download from "../icons/ui/Download.astro";
+import ContentDetails from "../components/Utilities/ContentDetails.astro";
 
 const { frontmatter } = Astro.props;
 const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")[0];
@@ -46,16 +47,10 @@ const showCard = showPDF || showDownload;
 					/>
 				</div>
 			</div>
-			<p class="mb-2 mt-0 text-center text-xs sm:text-sm">
-				Created by <a class="link link-accent" href="/about"
-					><strong>{frontmatter.author}</strong></a
-				> on <a class="btn btn-outline btn-xs h-auto px-1 py-0">{formattedDate}</a>
-			</p>
-			<div class="card max-w-2xl bg-base-300 p-2">
-				<div class="flex flex-row bg-base-300 shadow-2xl">
-					<div class="card bg-base-100 p-2">
-						<TagList tags={frontmatter.tags} contentType="resources" />
-					</div>
+			<ContentDetails author={frontmatter.author} date={formattedDate} />
+			<div class="card my-2 max-w-2xl bg-base-300 p-2">
+				<div class="card bg-base-100 p-2">
+					<TagList tags={frontmatter.tags} contentType="resources" />
 				</div>
 			</div>
 			<hr class="mb-0 mt-10 w-full max-w-md border text-base-content" />
