@@ -1,7 +1,16 @@
 {
+	"start_url": "https://jordanmuller.com",
 	"name": "Jordan Muller's Portfolio",
-	"short_name": "Jordan Muller's Portfolio",
+	"short_name": "Jordan's Portfolio",
+	"description": "Jordan Muller's Personal Portfolio Website",
+	"id": "portfolio",
 	"icons": [
+		{
+			"purpose": "maskable",
+			"sizes": "512x512",
+			"src": "icon512_maskable.png",
+			"type": "image/png"
+		},
 		{
 			"src": "/android-chrome-192x192.png?v=1",
 			"sizes": "192x192",
@@ -13,7 +22,10 @@
 			"type": "image/png"
 		}
 	],
-	"theme_color": "#ffffff",
-	"background_color": "#ffffff",
-	"display": "standalone"
+	"theme_color": "#a61168",
+	"background_color": "#282a36",
+	"orientation": "any",
+	"display": "standalone",
+	"dir": "left",
+	"lang": "en-US"
 }
