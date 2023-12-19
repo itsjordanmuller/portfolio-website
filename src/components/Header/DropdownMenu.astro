@@ -55,99 +55,97 @@ const activeBadge = getActiveBadge(currentUrl);
 		title="Open/Close Main Navigation Menu"
 		class="btn btn-square btn-ghost active:bg-base-300"><Menu size="24" /></summary
 	>
-	<nav>
-		<ul
-			id="main-menu"
-			class="menu dropdown-content z-10 mt-4 rounded-box border-8 border-solid border-base-300 bg-base-100 text-base shadow-2xl shadow-[#00000080] lg:min-w-max lg:text-2xl"
-		>
-			<li>
-				<a href="/" title="Home Page">
-					<Home size="20" />
-					 Home
-					<MenuIndicator isActive={activeBadge === "home"} />
-				</a>
-			</li>
-			<li>
-				<a href="/portfolio" title="Portfolio Page">
-					<BriefcaseAccount size="20" />
-					 Portfolio
-					<MenuIndicator isActive={activeBadge === "portfolio"} />
-				</a>
-			</li>
-			<li>
-				<a href="/blog" title="Blog Page">
-					<BookEdit size="20" />
-					 Blog
-					<MenuIndicator isActive={activeBadge === "blog"} />
-				</a>
-			</li>
-			<li>
-				<a href="/resources" title="Resources Page"
-					><ArchiveStar size="20" />
-					 Resources<MenuIndicator isActive={activeBadge === "resources"} />
-				</a>
-				<ul>
-					<li>
-						<a href="/resources/resume" title="View My Resume"
-							><AccountFile size="20" />
-							 Resume
-						</a>
-					</li>
-					<li>
-						<a href="/resources/tags/certificates" title="View My Certifications"
-							><Certificate size="20" />
-							 Certificates
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="/social" title="Social Page"
-					><AccountGroup size="20" />
-					 Social
-					<MenuIndicator isActive={activeBadge === "social"} />
-				</a>
-				<ul>
-					<li>
-						<a href="https://github.com/itsjordanmuller" title="View My GitHub Profile"
-							><GitHubLogo size="20" />
-							 GitHub
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/itsjordanmuller" title="View My LinkedIn Profile"
-							><LinkedInLogo size="20" />
-							 LinkedIn
-						</a>
-					</li>
-					<li>
-						<a href="https://codepen.io/itsjordanmuller" title="View My CodePen Profile"
-							><CodePenLogo size="20" />
-							 CodePen
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="/about" title="About Page">
-					<Information size="20" />
-					 About<MenuIndicator isActive={activeBadge === "about"} />
-				</a>
-			</li>
-			<li>
-				<a href="/contact" title="Contact Page">
-					<PhoneMessage size="20" />
-					 Contact<MenuIndicator isActive={activeBadge === "contact"} />
-				</a>
-			</li>
-			<li class="mt-1 rounded-lg bg-base-200">
-				<a href="/search" title="Search Page">
-					<MagnifyingGlass size="20" />
-					 Search<MenuIndicator isActive={activeBadge === "search"} />
-				</a>
-			</li>
-		</ul>
-	</nav>
+	<ul
+		id="main-menu"
+		class="menu dropdown-content z-10 mt-4 rounded-box border-8 border-solid border-base-300 bg-base-100 text-base shadow-2xl shadow-[#00000080] lg:min-w-max lg:text-2xl"
+	>
+		<li>
+			<a href="/" title="Home Page">
+				<Home size="20" />
+				 Home
+				<MenuIndicator isActive={activeBadge === "home"} />
+			</a>
+		</li>
+		<li>
+			<a href="/portfolio" title="Portfolio Page">
+				<BriefcaseAccount size="20" />
+				 Portfolio
+				<MenuIndicator isActive={activeBadge === "portfolio"} />
+			</a>
+		</li>
+		<li>
+			<a href="/blog" title="Blog Page">
+				<BookEdit size="20" />
+				 Blog
+				<MenuIndicator isActive={activeBadge === "blog"} />
+			</a>
+		</li>
+		<li>
+			<a href="/resources" title="Resources Page"
+				><ArchiveStar size="20" />
+				 Resources<MenuIndicator isActive={activeBadge === "resources"} />
+			</a>
+			<ul>
+				<li>
+					<a href="/resources/resume" title="View My Resume"
+						><AccountFile size="20" />
+						 Resume
+					</a>
+				</li>
+				<li>
+					<a href="/resources/tags/certificates" title="View My Certifications"
+						><Certificate size="20" />
+						 Certificates
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="/social" title="Social Page"
+				><AccountGroup size="20" />
+				 Social
+				<MenuIndicator isActive={activeBadge === "social"} />
+			</a>
+			<ul>
+				<li>
+					<a href="https://github.com/itsjordanmuller" title="View My GitHub Profile"
+						><GitHubLogo size="20" />
+						 GitHub
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/itsjordanmuller" title="View My LinkedIn Profile"
+						><LinkedInLogo size="20" />
+						 LinkedIn
+					</a>
+				</li>
+				<li>
+					<a href="https://codepen.io/itsjordanmuller" title="View My CodePen Profile"
+						><CodePenLogo size="20" />
+						 CodePen
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="/about" title="About Page">
+				<Information size="20" />
+				 About<MenuIndicator isActive={activeBadge === "about"} />
+			</a>
+		</li>
+		<li>
+			<a href="/contact" title="Contact Page">
+				<PhoneMessage size="20" />
+				 Contact<MenuIndicator isActive={activeBadge === "contact"} />
+			</a>
+		</li>
+		<li class="mt-1 rounded-lg bg-base-200">
+			<a href="/search" title="Search Page">
+				<MagnifyingGlass size="20" />
+				 Search<MenuIndicator isActive={activeBadge === "search"} />
+			</a>
+		</li>
+	</ul>
 </details>
 <script is:inline>
 	// Remove Open Tag When Clicking Anything Except Details

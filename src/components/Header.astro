@@ -4,16 +4,14 @@ import ThemeToggle from "./Header/ThemeToggle.astro";
 import LogoName from "./Header/LogoName.astro";
 ---
 
-<header>
-	<div class="container navbar mx-auto justify-between bg-base-100">
-		<nav class="navbar-start">
-			<DropdownMenu />
-		</nav>
-		<div class="navbar-center">
-			<LogoName />
-		</div>
-		<div class="navbar-end">
-			<ThemeToggle />
-		</div>
+<header class="container navbar mx-auto justify-between bg-base-100">
+	<nav class="navbar-start">
+		<DropdownMenu />
+	</nav>
+	<div class="navbar-center">
+		<LogoName />
+	</div>
+	<div class="navbar-end">
+		<ThemeToggle />
 	</div>
 </header>
