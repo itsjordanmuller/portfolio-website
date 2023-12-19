@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import Layout from "./Layout.astro";
-import TagList from "../components/Utilities/TagList.astro";
 import PDFLogo from "../icons/logos/PDFLogo.astro";
 import Download from "../icons/ui/Download.astro";
 import ContentDetails from "../components/Utilities/ContentDetails.astro";
@@ -38,22 +37,21 @@ const showCard = showPDF || showDownload;
 				)
 			}
 			<div class="gradient-card-bg my-4 max-w-lg rounded-2xl p-2 shadow-2xl">
-				<div class="gradient-bg card my-0 max-w-full rounded-2xl bg-base-100 p-2 shadow-xl">
+				<figure class="gradient-bg card my-0 max-w-full rounded-2xl bg-base-100 p-2 shadow-xl">
 					<Image
 						src={frontmatter.cover}
 						alt={frontmatter.coverAlt}
 						class="my-0 max-w-full rounded-2xl object-cover"
 						loading="eager"
 					/>
-				</div>
+				</figure>
 			</div>
-			<ContentDetails author={frontmatter.author} date={formattedDate} />
-			<div class="card my-2 max-w-2xl bg-base-300 p-2">
-				<div class="card bg-base-100 p-2">
-					<TagList tags={frontmatter.tags} contentType="resources" />
-				</div>
-			</div>
-			<hr class="mb-0 mt-10 w-full max-w-md border text-base-content" />
+			<ContentDetails
+				author={frontmatter.author}
+				date={formattedDate}
+				tags={frontmatter.tags}
+				contentType="resources"
+			/>
 		</div>
 		<slot />
 	</article>

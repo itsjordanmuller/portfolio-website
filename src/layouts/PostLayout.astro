@@ -1,6 +1,5 @@
 ---
 import Layout from "./Layout.astro";
-import TagList from "../components/Utilities/TagList.astro";
 import { Image } from "astro:assets";
 import ContentDetails from "../components/Utilities/ContentDetails.astro";
 
@@ -10,26 +9,25 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 
 <Layout pageTitle={frontmatter.title} description={frontmatter.description}>
 	<article class="container prose mx-auto max-w-5xl px-8 py-10">
-		<div class="flex flex-col items-center">
+		<header class="flex flex-col items-center">
 			<h1 class="mb-0 max-w-2xl text-center text-3xl">{frontmatter.title}</h1>
 			<div class="gradient-card-bg my-4 max-w-2xl rounded-2xl p-2 shadow-2xl">
-				<div class="gradient-bg card my-0 max-w-full rounded-2xl bg-base-100 p-2 shadow-xl">
+				<figure class="gradient-bg card my-0 max-w-full rounded-2xl bg-base-100 p-2 shadow-xl">
 					<Image
 						src={frontmatter.cover}
 						alt={frontmatter.coverAlt}
 						class="my-0 aspect-[2/1] max-w-full rounded-2xl object-cover"
 						loading="eager"
 					/>
-				</div>
+				</figure>
 			</div>
-			<ContentDetails author={frontmatter.author} date={formattedDate} />
-			<div class="card my-2 max-w-2xl bg-base-300 p-2">
-				<div class="card bg-base-100 p-2">
-					<TagList tags={frontmatter.tags} contentType="posts" />
-				</div>
-			</div>
-			<hr class="mb-0 mt-10 w-full max-w-md border text-base-content" />
-		</div>
+			<ContentDetails
+				author={frontmatter.author}
+				date={formattedDate}
+				tags={frontmatter.tags}
+				contentType="posts"
+			/>
+		</header>
 		<h2 class="mt-10">{frontmatter.description}</h2>
 		<slot />
 	</article>

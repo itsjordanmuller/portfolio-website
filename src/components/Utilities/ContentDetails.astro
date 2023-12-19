@@ -1,5 +1,6 @@
 ---
-const { author, date } = Astro.props;
+import TagList from "./TagList.astro";
+const { author, date, tags, contentType } = Astro.props;
 ---
 
 <p class="mb-2 mt-0 text-center text-xs sm:text-sm">
@@ -7,3 +8,9 @@ const { author, date } = Astro.props;
 		class="link font-medium text-base-content">{date}</a
 	>
 </p>
+<div class="card my-2 max-w-2xl bg-base-300 p-2">
+	<div class="card bg-base-100 p-2">
+		<TagList tags={tags} contentType={contentType} />
+	</div>
+</div>
+<hr class="mb-0 mt-10 w-full max-w-md border text-base-content" />
