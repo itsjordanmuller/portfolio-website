@@ -11,16 +11,14 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 	<article class="container prose mx-auto max-w-5xl px-8 py-10">
 		<header class="flex flex-col items-center">
 			<h1 class="mb-0 max-w-2xl text-center text-3xl">{frontmatter.title}</h1>
-			<div class="gradient-card-bg my-4 max-w-2xl rounded-2xl p-2 shadow-2xl">
-				<figure class="gradient-bg card my-0 max-w-full rounded-2xl bg-base-100 p-2 shadow-xl">
-					<Image
-						src={frontmatter.cover}
-						alt={frontmatter.coverAlt}
-						class="my-0 aspect-[2/1] max-w-full rounded-2xl object-cover"
-						loading="eager"
-					/>
-				</figure>
-			</div>
+			<figure class="gradient-card-bg mb-4 mt-8 max-w-2xl rounded-3xl p-2">
+				<Image
+					src={frontmatter.cover}
+					alt={frontmatter.coverAlt}
+					class="gradient-bg m-0 aspect-[21/12] rounded-2xl object-cover p-2"
+					loading="eager"
+				/>
+			</figure>
 			<ContentDetails
 				author={frontmatter.author}
 				date={formattedDate}
@@ -28,7 +26,6 @@ const formattedDate = new Date(frontmatter.publishDate).toISOString().split("T")
 				contentType="posts"
 			/>
 		</header>
-		<h2 class="mt-10">{frontmatter.description}</h2>
 		<slot />
 	</article>
 </Layout>
