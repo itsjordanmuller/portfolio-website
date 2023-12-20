@@ -3,21 +3,19 @@ import { Image } from "astro:assets";
 const { title, url, description, type, cover, coverAlt, loadingMode } = Astro.props;
 ---
 
-<li class="gradient-card-bg rounded-2xl p-2 shadow-2xl">
-	<div class="card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
+<li class="gradient-card-bg relative my-0 h-full rounded-2xl p-2 shadow-2xl">
+	<article class="mt-0 h-full rounded-2xl bg-base-100 pb-16">
 		<figure class="m-0 w-full">
-			<Image src={cover} alt={coverAlt} loading={loadingMode} />
+			<Image src={cover} alt={coverAlt} loading={loadingMode} class="rounded-t-2xl" />
 		</figure>
-		<div class="prose card-body w-full max-w-none">
-			<h3 class="card-title mb-0">{title}</h3>
-			<p>{description}</p>
-			<div class="card-actions justify-end">
-				<a href={`/resources/${url}`} title=`View ${title}` class="btn btn-accent capitalize"
-					>View {type}</a
-				>
-			</div>
-		</div>
-	</div>
+		<h3 class="mt-4 px-4">{title}</h3>
+		<p class="px-4 text-lg">{description}</p>
+		<a
+			href={`/resources/${url}`}
+			title=`View ${title}`
+			class="btn btn-accent absolute bottom-8 right-8 capitalize">View {type}</a
+		>
+	</article>
 </li>
 <style>
 	li {
