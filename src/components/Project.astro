@@ -3,21 +3,28 @@ import { Image } from "astro:assets";
 const { key, title, url, description, cover, coverAlt, loadingMode } = Astro.props;
 ---
 
-<li class={`gradient-card-bg rounded-2xl p-2 shadow-2xl  ${key > 2 ? "lg:hidden xl:block" : ""}`}>
-	<div class="gradient-bg card my-0 h-[100%] rounded-2xl bg-base-100 shadow-xl">
-		<figure class="m-0 w-full">
-			<Image src={cover} alt={coverAlt} loading={loadingMode} />
+<li
+	class={`gradient-card-bg relative my-0 h-full rounded-2xl p-2 ${
+		key > 2 ? "lg:hidden xl:block" : ""
+	}`}
+>
+	<article class="my-0 h-full rounded-2xl bg-base-100 pb-20">
+		<figure class="gradient-bg m-0 w-full rounded-t-2xl">
+			<Image
+				src={cover}
+				alt={coverAlt}
+				loading={loadingMode}
+				class="aspect-[4/3] rounded-t-2xl object-cover object-top"
+			/>
 		</figure>
-		<div class="prose card-body w-full max-w-none rounded-b-2xl bg-base-100">
-			<h3 class="card-title mb-0">{title}</h3>
-			<p>{description}</p>
-			<div class="card-actions justify-end">
-				<a href={`/portfolio/${url}`} title=`View ${title} Portfolio Project` class="btn btn-accent"
-					>View Project</a
-				>
-			</div>
-		</div>
-	</div>
+		<h3 class="card-title px-8">{title}</h3>
+		<p class="px-8">{description}</p>
+		<a
+			href={`/portfolio/${url}`}
+			title=`View ${title} Portfolio Project`
+			class="btn btn-accent absolute bottom-8 right-8">View Project</a
+		>
+	</article>
 </li>
 <style>
 	li {
