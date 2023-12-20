@@ -4,16 +4,16 @@ const { contentType, uniqueTags, tag } = Astro.props;
 ---
 
 <div class="flex justify-center">
-	<div class="card max-w-3xl bg-base-300 p-2 shadow-2xl">
-		<div class="card bg-base-100 p-4">
-			<h2 class="my-0 mb-4 text-center text-lg font-bold leading-[30px]">
-				Tagged with <span class="btn btn-outline btn-sm px-1">{tag}</span>
+	<div class="card max-w-3xl bg-base-300 p-2">
+		<div class="card bg-base-100 p-2 pt-4">
+			<h2 class="my-0 text-center text-lg font-bold leading-8">
+				Tagged with <span class="btn btn-outline btn-sm px-1 font-bold uppercase">{tag}</span>
 			</h2>
 			<TagList tags={uniqueTags} contentType={contentType} />
 			<a
 				href="/blog"
 				title="Remove Filter to View All Blog Posts"
-				class="btn btn-outline btn-sm mb-2 mt-4 h-auto px-4 text-center font-bold"
+				class="btn btn-outline btn-sm mx-4 mb-2 mt-0 h-auto text-center font-bold"
 				>Clear Filter to View All Posts</a
 			>
 		</div>
