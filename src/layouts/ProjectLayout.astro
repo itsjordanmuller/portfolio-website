@@ -36,16 +36,14 @@ const showCard = showGitHubRepo || showLiveDemo;
 					</div>
 				)
 			}
-			<div class="gradient-card-bg my-4 max-w-2xl rounded-2xl p-2 shadow-2xl">
-				<figure class="gradient-bg card my-0 max-w-full rounded-2xl bg-base-100 p-2 shadow-xl">
-					<Image
-						src={frontmatter.cover}
-						alt={frontmatter.coverAlt}
-						class="my-0 max-w-full rounded-2xl object-cover"
-						loading="eager"
-					/>
-				</figure>
-			</div>
+			<figure class="gradient-card-bg mb-4 mt-8 max-w-3xl rounded-3xl p-2">
+				<Image
+					src={frontmatter.cover}
+					alt={frontmatter.coverAlt}
+					class="gradient-bg m-0 rounded-2xl p-2"
+					loading="eager"
+				/>
+			</figure>
 			<ContentDetails
 				author={frontmatter.author}
 				date={formattedDate}
