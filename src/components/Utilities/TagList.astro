@@ -104,13 +104,13 @@ const tagDetails: TagDetails = {
 		displayText: "E-Commerce",
 	},
 	ai: {
-		displayText: "AI - (Artificial Intelligence)",
+		displayText: "AI",
 	},
 	"machine-learning": {
-		displayText: "ML - (Machine Learning)",
+		displayText: "Machine Learning",
 	},
 	"convolutional-neural-networks": {
-		displayText: "CNNs - (Convolutional Neural Networks)",
+		displayText: "Convolutional Neural Networks",
 	},
 	"scrum-org": {
 		displayText: "Scrum.org",
@@ -172,59 +172,61 @@ const visibleTags = tags.slice(0, 10);
 const hiddenTags = tags.slice(10);
 ---
 
-<div class="flex flex-wrap justify-center gap-2" data-pagefind-ignore="all">
+<div class="rounded-2xl bg-base-100 p-4">
+	<div class="flex flex-wrap justify-center gap-2" data-pagefind-ignore="all">
+		{
+			visibleTags.map((tag: string) => {
+				const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);
+				const IconComponent = iconComponents[tag.toLowerCase()];
+				const urlPrefix = getUrlPrefix(contentType);
+				return (
+					<a
+						href={`${urlPrefix}${tag}`}
+						title={`Filter by ${tag} Tag`}
+						class={`btn ${btnClasses} btn-sm text-base`}
+					>
+						{IconComponent && <IconComponent size="16" fill={fill} />}
+						{displayText}
+					</a>
+				);
+			})
+		}
+	</div>
 	{
-		visibleTags.map((tag: string) => {
-			const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);
-			const IconComponent = iconComponents[tag.toLowerCase()];
-			const urlPrefix = getUrlPrefix(contentType);
-			return (
-				<a
-					href={`${urlPrefix}${tag}`}
-					title={`Filter by ${tag} Tag`}
-					class={`btn ${btnClasses} btn-sm`}
-				>
-					{IconComponent && <IconComponent size="16" fill={fill} />}
-					{displayText}
-				</a>
-			);
-		})
+		hiddenTags.length > 0 && (
+			<>
+				<hr class="mx-8 my-4" />
+				<div class="flex justify-center">
+					<details class="collapse bg-base-200">
+						<summary
+							title="Open/Close Dropdown to View All Other Tags"
+							class="font-semi-bold h-auto cursor-pointer bg-base-300 py-4 text-center text-lg text-base-content"
+						>
+							View All Other Tags
+						</summary>
+						<div class="collapse-content p-4">
+							<div class="flex flex-wrap justify-center gap-2">
+								{hiddenTags.map((tag: string) => {
+									const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);
+									const IconComponent = iconComponents[tag.toLowerCase()];
+									const urlPrefix = getUrlPrefix(contentType);
+
+									return (
+										<a
+											href={`${urlPrefix}${tag}`}
+											title={`Filter by ${tag} Tag`}
+											class={`btn ${btnClasses} btn-xs h-auto text-base`}
+										>
+											{IconComponent && <IconComponent size="16" fill={fill} />}
+											{displayText}
+										</a>
+									);
+								})}
+							</div>
+						</div>
+					</details>
+				</div>
+			</>
+		)
 	}
 </div>
-{
-	hiddenTags.length > 0 && (
-		<>
-			<hr class="mx-8 my-4" />
-			<div class="flex justify-center">
-				<details class="collapse bg-base-200">
-					<summary
-						title="Open/Close Dropdown to View All Other Tags"
-						class="font-semi-bold h-auto cursor-pointer bg-base-300 py-4 text-center text-lg text-base-content"
-					>
-						View All Other Tags
-					</summary>
-					<div class="collapse-content p-4">
-						<div class="flex flex-wrap justify-center gap-2">
-							{hiddenTags.map((tag: string) => {
-								const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);
-								const IconComponent = iconComponents[tag.toLowerCase()];
-								const urlPrefix = getUrlPrefix(contentType);
-
-								return (
-									<a
-										href={`${urlPrefix}${tag}`}
-										title={`Filter by ${tag} Tag`}
-										class={`btn ${btnClasses} btn-sm`}
-									>
-										{IconComponent && <IconComponent size="16" fill={fill} />}
-										{displayText}
-									</a>
-								);
-							})}
-						</div>
-					</div>
-				</details>
-			</div>
-		</>
-	)
-}
