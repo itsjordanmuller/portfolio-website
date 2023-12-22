@@ -3,33 +3,20 @@ import ThemeModeSun from "../../icons/ui/ThemeModeSun.astro";
 import ThemeModeMoon from "../../icons/ui/ThemeModeMoon.astro";
 ---
 
-<label
-	for="theme-toggle"
-	id="theme-toggle-label"
+<button
+	type="button"
+	id="theme-toggle"
 	class="btn btn-square btn-ghost swap swap-rotate active:bg-base-300"
-	tabindex="0"
+	aria-label="Toggle theme to Light Mode"
+	aria-describedby="tooltip-text"
+	onclick="handleToggleClick()"
 >
-	<input
-		type="checkbox"
-		name="theme-toggle"
-		id="theme-toggle"
-		value="dracula"
-		class="theme-controller"
-		aria-label="Light/Dark Mode Toggle"
-		aria-describedby="tooltip-text"
-		tabindex="-1"
-	/>
-	<span
-		class="tooltip tooltip-bottom absolute right-20 top-8"
-		id="tooltip-text"
-		data-tip="Dark Mode Toggle"
-		role="tooltip"
-		aria-label="Dark Mode Toggle"
-	>
+	<span class="tooltip tooltip-bottom absolute right-20 top-8" id="tooltip-text" role="tooltip">
 	</span>
+
 	<ThemeModeSun size="24" />
 	<ThemeModeMoon size="24" />
-</label>
+</button>
 
 <script is:inline>
 	let tooltipTimeout;
@@ -38,47 +25,40 @@ import ThemeModeMoon from "../../icons/ui/ThemeModeMoon.astro";
 		if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
 			return localStorage.getItem("theme");
 		}
+
 		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
 			return "dark";
 		}
+
 		return "light";
 	};
 
-	const setThemeAttribute = (theme) => {
+	const updateTheme = (theme) => {
 		document.documentElement.setAttribute(
 			"data-theme",
 			theme === "dark" ? "dracula" : "dracula-light",
 		);
-		document
-			.getElementById("tooltip-text")
-			.setAttribute("data-tip", theme === "dark" ? "Dark Mode Activated" : "Light Mode Activated");
-		document
-			.getElementById("tooltip-text")
-			.setAttribute(
-				"aria-label",
-				theme === "dark" ? "Dark Mode Activated" : "Light Mode Activated",
-			);
-	};
 
-	const applyInitialThemeClass = (theme) => {
 		const element = document.documentElement;
 		element.classList.remove("dark", "light");
 		element.classList.add(theme);
 
-		const toggleLabel = document.getElementById("theme-toggle-label");
-		if (theme === "dark") {
-			toggleLabel.classList.add("swap-active");
-		} else {
-			toggleLabel.classList.remove("swap-active");
-		}
-	};
+		const tooltipText = theme === "dark" ? "Dark Mode Activated" : "Light Mode Activated";
 
-	const theme = getInitialTheme();
-	setThemeAttribute(theme);
-	applyInitialThemeClass(theme);
+		const tooltipElement = document.getElementById("tooltip-text");
+		tooltipElement.setAttribute("data-tip", tooltipText);
+		tooltipElement.setAttribute("aria-label", tooltipText);
+
+		const toggleButton = document.getElementById("theme-toggle");
+		toggleButton.classList.toggle("swap-active", theme === "dark");
+
+		const buttonAriaLabel = `Toggle Theme to ${theme === "dark" ? "Light" : "Dark"} Mode`;
+		toggleButton.setAttribute("aria-label", buttonAriaLabel);
+	};
 
 	const showTooltipTemporarily = () => {
 		const tooltip = document.getElementById("tooltip-text");
+
 		tooltip.classList.add("tooltip-open");
 
 		clearTimeout(tooltipTimeout);
@@ -89,29 +69,16 @@ import ThemeModeMoon from "../../icons/ui/ThemeModeMoon.astro";
 	};
 
 	const handleToggleClick = () => {
-		const element = document.documentElement;
-		const isDark = !element.classList.contains("dark");
+		const isDark = !document.documentElement.classList.contains("dark");
 		const newTheme = isDark ? "dark" : "light";
+
 		localStorage.setItem("theme", newTheme);
-		setThemeAttribute(newTheme);
-		applyInitialThemeClass(newTheme);
+		updateTheme(newTheme);
 		showTooltipTemporarily();
 	};
 
-	const handleKeyboardToggle = (event) => {
-		if (event.key === "Enter" || event.key === " ") {
-			event.preventDefault();
-			themeCheckbox.checked = !themeCheckbox.checked;
-			handleToggleClick();
-		}
-	};
-
-	const themeCheckbox = document.getElementById("theme-toggle");
-	const themeCheckboxLabel = document.getElementById("theme-toggle-label");
-	themeCheckbox.checked = theme === "dark";
-	themeCheckbox.addEventListener("change", handleToggleClick);
-	themeCheckbox.addEventListener("keydown", handleKeyboardToggle);
-	themeCheckboxLabel.addEventListener("keydown", handleKeyboardToggle);
+	const initialTheme = getInitialTheme();
+	updateTheme(initialTheme);
 </script>
 
 <style>
