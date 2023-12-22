@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+import ErrorImage from "../../assets/images/search.png";
+---
+
+<div class="flex flex-col items-center">
+	<div class="gradient-card-bg mb-4 mt-0 max-w-md rounded-2xl p-2 shadow-2xl">
+		<figure class="gradient-bg my-0 rounded-2xl p-2">
+			<Image
+				src={ErrorImage}
+				alt="Jordan Muller Profile Picture"
+				title="Jordan Muller Profile Picture"
+				class="my-0 w-full rounded-2xl"
+				loading="eager"
+			/>
+		</figure>
+	</div>
+	<div class="mb-0 mt-0 flex flex-col justify-center">
+		<p class="my-0 max-w-md text-center text-lg">
+			Use the main menu, one of the these quick links, or the search above to look for something
+			specific!
+		</p>
+	</div>
+</div>
