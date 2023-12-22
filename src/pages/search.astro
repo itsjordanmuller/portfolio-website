@@ -1,13 +1,15 @@
 ---
+import HeroButtons from "../components/Hero/HeroButtons.astro";
 import PageFind from "../components/PageFind.astro";
 import SearchLayout from "../layouts/SearchLayout.astro";
+import SearchMenu from "../components/Search/SearchMenu.astro";
 
 const pageTitle = "Search Jordan's Portfolio - Show Projects, Posts & Resources";
 const description =
 	"Looking for something specific? Easily navigate my site with this search feature. Search for blog posts, portfolio projects, resources & more at the same time.";
 ---
 
-<SearchLayout pageTitle={pageTitle} description={description}>
+<!-- <SearchLayout pageTitle={pageTitle} description={description}>
 	<div
 		class="container mx-auto flex min-h-[90svh] justify-center py-10 text-base-content"
 		data-pagefind-ignore="all"
@@ -17,4 +19,19 @@ const description =
 			<PageFind />
 		</div>
 	</div>
+</SearchLayout> -->
+<SearchLayout pageTitle={pageTitle} description={description}>
+	<div class="flex flex-col items-center">
+		<div class="container prose max-w-4xl text-center">
+			<h1 class="my-0">Search for Posts, Projects & Resources</h1>
+			<PageFind />
+		</div>
+	</div>
+	<div
+		class="container prose mx-auto mb-4 max-w-5xl px-6 py-0 text-base-content"
+		data-pagefind-ignore="all"
+	>
+		<SearchMenu />
+	</div>
+	<HeroButtons />
 </SearchLayout>
