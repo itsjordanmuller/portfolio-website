@@ -1,19 +1,21 @@
 ---
 import TagList from "./TagList.astro";
 const { contentType, uniqueTags, tag } = Astro.props;
+const displayTag = tag.replace(/-/g, " ");
 ---
 
 <div class="flex justify-center">
 	<div class="card max-w-3xl bg-base-300 p-2">
 		<div class="card bg-base-100 p-2 pt-4">
-			<h2 class="my-0 text-center text-lg font-bold leading-8">
-				Tagged with <span class="btn btn-outline btn-sm px-1 font-bold uppercase">{tag}</span>
+			<h2 class="mb-2 mt-0 text-center text-lg font-bold leading-8">
+				Tagged with <span class="btn btn-outline btn-sm px-1 font-bold uppercase">{displayTag}</span
+				>
 			</h2>
 			<TagList tags={uniqueTags} contentType={contentType} />
 			<a
 				href="/blog"
 				title="Remove Filter to View All Blog Posts"
-				class="btn btn-outline btn-sm mx-4 mb-2 mt-0 h-auto text-center font-bold"
+				class="btn btn-outline btn-sm mb-0 mt-2 h-auto text-center font-bold"
 				>Clear Filter to View All Posts</a
 			>
 		</div>
