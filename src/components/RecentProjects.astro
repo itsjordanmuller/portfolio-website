@@ -52,8 +52,11 @@ const uniqueProjectTags = [...new Set(allProjects.map((project) => project.data.
 						<option value="All Project Tags" selected>All Project Tags</option>
 						{
 							uniqueProjectTags.map((tag) => (
-								<option title={"Filter by " + tag + " Tag"} value={tag}>
-									{tag.charAt(0).toUpperCase() + tag.slice(1)}
+								<option
+									title={"Filter by " + tag.replace(/-/g, " ").toUpperCase() + " Tag"}
+									value={tag}
+								>
+									{tag.replace(/-/g, " ").toUpperCase()}
 								</option>
 							))
 						}
