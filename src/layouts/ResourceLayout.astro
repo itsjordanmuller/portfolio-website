@@ -13,8 +13,8 @@ const showPDF = frontmatter.pdf !== "N/A";
 <Layout pageTitle={frontmatter.title} description={frontmatter.description}>
 	<article class="container prose mx-auto max-w-4xl px-8 py-10">
 		<div class="flex flex-col items-center">
-			<h1 class="mb-0 max-w-2xl text-center text-3xl">{frontmatter.title}</h1>
-			<figure class="gradient-card-bg mb-4 mt-8 max-w-lg rounded-3xl p-2">
+			<h1 class="mb-8 max-w-2xl text-center text-3xl">{frontmatter.title}</h1>
+			<figure class="gradient-card-bg mb-4 mt-0 max-w-lg rounded-3xl p-2">
 				<Image
 					src={frontmatter.cover}
 					alt={frontmatter.coverAlt}
