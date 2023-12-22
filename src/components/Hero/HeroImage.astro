@@ -3,15 +3,13 @@ import { Image } from "astro:assets";
 import AvatarImage from "../../assets/images/Jordan-Muller-Portrait.jpg";
 ---
 
-<div class="gradient-img-bg max-w-xs rounded-2xl p-2 lg:mb-12">
-	<figure class="gradient-bg rounded-2xl p-1">
-		<Image
-			src={AvatarImage}
-			alt="Jordan Muller Portrait"
-			title="Jordan Muller Portrait"
-			class="rounded-2xl"
-			loading="eager"
-			quality="mid"
-		/>
-	</figure>
-</div>
+<figure class="gradient-img-bg my-0 max-w-xs rounded-2xl p-2 lg:mb-12">
+	<Image
+		src={AvatarImage}
+		alt="Jordan Muller Portrait"
+		title="Jordan Muller Portrait"
+		class="gradient-bg rounded-2xl p-1"
+		loading="eager"
+		quality="mid"
+	/>
+</figure>
