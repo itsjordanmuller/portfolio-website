@@ -4,6 +4,12 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 interface Props {
+	isHomePage?: boolean;
+}
+
+const { isHomePage = false } = Astro.props;
+
+interface Props {
 	pageTitle: string;
 	description: string;
 }
@@ -11,7 +17,7 @@ interface Props {
 const { pageTitle, description } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dracula-light" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
@@ -25,6 +31,35 @@ const { pageTitle, description } = Astro.props;
 		<link rel="shortcut icon" href="/favicon.ico?v=1" />
 		<meta name="msapplication-TileColor" content="#b91d47" />
 		<meta name="theme-color" content="#ffffff" />
+		{
+			isHomePage && (
+				<>
+					<meta property="og:url" content="https://jordanmuller.com/" />
+					<meta property="og:type" content="website" />
+					<meta
+						property="og:title"
+						content="Jordan Muller's Portfolio - Projects, Posts & Resources"
+					/>
+					<meta
+						property="og:description"
+						content="Explore my newly created portfolio website. Discover my latest blog posts and programming projects. Browse to learn more about me and my current work."
+					/>
+					<meta property="og:image" content="https://jordanmuller.com/og-preview.png" />
+					<meta name="twitter:card" content="summary_large_image" />
+					<meta property="twitter:domain" content="jordanmuller.com" />
+					<meta property="twitter:url" content="https://jordanmuller.com/" />
+					<meta
+						name="twitter:title"
+						content="Jordan Muller's Portfolio - Projects, Posts & Resources"
+					/>
+					<meta
+						name="twitter:description"
+						content="Explore my newly created portfolio website. Discover my latest blog posts and programming projects. Browse to learn more about me and my current work."
+					/>
+					<meta name="twitter:image" content="https://jordanmuller.com/tc-preview.png" />
+				</>
+			)
+		}
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		<title>{pageTitle}</title>
