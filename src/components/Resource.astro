@@ -6,7 +6,13 @@ const { title, url, description, type, cover, coverAlt, loadingMode } = Astro.pr
 <li class="gradient-card-bg relative my-0 h-full rounded-2xl p-2 shadow-2xl">
 	<article class="mt-0 h-full rounded-2xl bg-base-100 pb-16">
 		<figure class="m-0 w-full">
-			<Image src={cover} alt={coverAlt} loading={loadingMode} class="rounded-t-2xl" quality="mid" />
+			<Image
+				src={cover}
+				alt={coverAlt}
+				loading={loadingMode}
+				class="aspect-[5/4] rounded-t-2xl object-cover object-top"
+				quality="mid"
+			/>
 		</figure>
 		<h3 class="mt-4 px-4">{title}</h3>
 		<p class="px-4 text-lg">{description}</p>
