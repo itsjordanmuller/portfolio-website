@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 const { title, url, description, type, cover, coverAlt, loadingMode } = Astro.props;
 ---
 
-<li class="gradient-card-bg relative my-0 h-full rounded-2xl p-2 shadow-2xl">
+<li class="list-none m-0 gradient-card-bg relative h-full rounded-2xl p-2 shadow-2xl">
 	<article class="mt-0 h-full rounded-2xl bg-base-100 pb-16">
 		<figure class="mx-0 mb-4 mt-0 w-full">
 			<Image
@@ -23,10 +23,3 @@ const { title, url, description, type, cover, coverAlt, loadingMode } = Astro.pr
 		>
 	</article>
 </li>
-<style>
-	li {
-		display: block;
-		list-style: none;
-		margin: 0;
-	}
-</style>

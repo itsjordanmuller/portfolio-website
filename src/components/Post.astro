@@ -3,10 +3,16 @@ import { Image } from "astro:assets";
 const { title, url, description, cover, coverAlt, loadingMode } = Astro.props;
 ---
 
-<li class="gradient-card-bg relative my-0 h-full rounded-2xl p-2 shadow-2xl">
+<li class="gradient-card-bg relative m-0 h-full list-none rounded-2xl p-2 shadow-2xl">
 	<article class="mt-0 h-full rounded-2xl bg-base-100 pb-16">
 		<figure class="mx-0 mb-4 mt-0 w-full">
-			<Image src={cover} alt={coverAlt} loading={loadingMode} class="rounded-t-2xl" quality="mid" />
+			<Image
+				src={cover}
+				alt={coverAlt}
+				loading={loadingMode}
+				class="aspect-[5/3] rounded-t-2xl bg-cover object-cover"
+				quality="mid"
+			/>
 		</figure>
 		<h3 class="mt-0 px-4">{title}</h3>
 		<p class="px-4 text-lg">{description}</p>
@@ -19,16 +25,3 @@ const { title, url, description, cover, coverAlt, loadingMode } = Astro.props;
 		>
 	</article>
 </li>
-<style>
-	li {
-		display: block;
-		list-style: none;
-		margin: 0;
-	}
-	img {
-		margin: 0;
-		aspect-ratio: 5/3;
-		background-size: cover;
-		object-fit: cover;
-	}
-</style>
