@@ -8,7 +8,6 @@ export default {
 	daisyui: {
 		themes: [
 			"dracula",
-			"fantasy",
 			{
 				"dracula-light": {
 					primary: "#FF79C6",
