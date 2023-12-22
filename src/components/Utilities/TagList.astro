@@ -109,11 +109,20 @@ const tagDetails: TagDetails = {
 	"machine-learning": {
 		displayText: "Machine Learning",
 	},
-	"convolutional-neural-networks": {
-		displayText: "Convolutional Neural Networks",
+	"neural-networks": {
+		displayText: "Neural Networks",
+	},
+	cnns: {
+		displayText: "CNNs",
 	},
 	"scrum-org": {
 		displayText: "Scrum.org",
+	},
+	tailwind: {
+		displayText: "Tailwind CSS",
+	},
+	daisyui: {
+		displayText: "daisyUI",
 	},
 };
 
@@ -172,8 +181,8 @@ const visibleTags = tags.slice(0, 10);
 const hiddenTags = tags.slice(10);
 ---
 
-<div class="rounded-2xl bg-base-100 p-4">
-	<div class="flex flex-wrap justify-center gap-2" data-pagefind-ignore="all">
+<div class="rounded-2xl bg-base-100 p-0">
+	<div class="flex flex-wrap justify-center gap-2 p-2" data-pagefind-ignore="all">
 		{
 			visibleTags.map((tag: string) => {
 				const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);
@@ -183,7 +192,7 @@ const hiddenTags = tags.slice(10);
 					<a
 						href={`${urlPrefix}${tag}`}
 						title={`Filter by ${tag} Tag`}
-						class={`btn ${btnClasses} btn-sm text-base`}
+						class={`btn ${btnClasses} btn-xs h-auto text-base md:btn-sm md:text-base`}
 					>
 						{IconComponent && <IconComponent size="16" fill={fill} />}
 						{displayText}
