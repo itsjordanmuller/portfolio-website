@@ -4,17 +4,12 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 interface Props {
-	isHomePage?: boolean;
-}
-
-const { isHomePage = false } = Astro.props;
-
-interface Props {
+	type?: "home" | "search"; // Add other types as needed
 	pageTitle: string;
 	description: string;
 }
 
-const { pageTitle, description } = Astro.props;
+const { pageTitle, description, type } = Astro.props;
 ---
 
 <!doctype html>
@@ -23,6 +18,9 @@ const { pageTitle, description } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
+		<title>{pageTitle}</title>
+		<meta name="description" content={description} />
+		<meta name="generator" content={Astro.generator} />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1" />
@@ -32,7 +30,7 @@ const { pageTitle, description } = Astro.props;
 		<meta name="msapplication-TileColor" content="#b91d47" />
 		<meta name="theme-color" content="#ffffff" />
 		{
-			isHomePage && (
+			type === "home" && (
 				<>
 					<meta property="og:url" content="https://jordanmuller.com/" />
 					<meta property="og:type" content="website" />
@@ -60,9 +58,14 @@ const { pageTitle, description } = Astro.props;
 				</>
 			)
 		}
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content={description} />
-		<title>{pageTitle}</title>
+		{
+			type === "search" && (
+				<>
+					<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+					<script src="/pagefind/pagefind-ui.js" is:inline />
+				</>
+			)
+		}
 	</head>
 	<body>
 		<Header />

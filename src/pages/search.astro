@@ -1,7 +1,7 @@
 ---
 import HeroButtons from "../components/Hero/HeroButtons.astro";
 import PageFind from "../components/PageFind.astro";
-import SearchLayout from "../layouts/SearchLayout.astro";
+import Layout from "../layouts/Layout.astro";
 import SearchMenu from "../components/Search/SearchMenu.astro";
 
 const pageTitle = "Search Jordan's Portfolio - Show Projects, Posts & Resources";
@@ -9,18 +9,20 @@ const description =
 	"Looking for something specific? Easily navigate my site with this search feature. Search for blog posts, portfolio projects, resources & more at the same time.";
 ---
 
-<SearchLayout pageTitle={pageTitle} description={description}>
-	<section class="flex flex-col items-center px-6">
-		<div class="container prose max-w-4xl text-center">
-			<h1 class="my-0">Search for Posts, Projects & Resources</h1>
-			<PageFind />
+<Layout pageTitle={pageTitle} description={description} type="search">
+	<div class="px-6 py-10">
+		<section class="flex flex-col items-center px-6">
+			<div class="container prose max-w-4xl text-center">
+				<h1 class="my-0">Search for Posts, Projects & Resources</h1>
+				<PageFind />
+			</div>
+		</section>
+		<div
+			class="container prose mx-auto mb-4 max-w-5xl px-6 py-0 text-base-content"
+			data-pagefind-ignore="all"
+		>
+			<SearchMenu />
 		</div>
-	</section>
-	<div
-		class="container prose mx-auto mb-4 max-w-5xl px-6 py-0 text-base-content"
-		data-pagefind-ignore="all"
-	>
-		<SearchMenu />
+		<HeroButtons />
 	</div>
-	<HeroButtons />
-</SearchLayout>
+</Layout>

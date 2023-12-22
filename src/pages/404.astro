@@ -1,6 +1,6 @@
 ---
 import PageFind from "../components/PageFind.astro";
-import SearchLayout from "../layouts/SearchLayout.astro";
+import Layout from "../layouts/Layout.astro";
 import ErrorMenu from "../components/Error/ErrorMenu.astro";
 import HeroButtons from "../components/Hero/HeroButtons.astro";
 import ErrorBouncingSearch from "../components/Error/ErrorBouncingSearch.astro";
@@ -10,7 +10,7 @@ const description =
 	"The page you are looking for wasn't found. You can easily navigate back to the main site or use the search to find what you need.";
 ---
 
-<SearchLayout pageTitle={pageTitle} description={description}>
+<Layout pageTitle={pageTitle} description={description} type="search">
 	<div
 		class="container prose mx-auto mb-4 max-w-5xl px-6 pt-10 text-base-content"
 		data-pagefind-ignore="all"
@@ -25,4 +25,4 @@ const description =
 			<PageFind />
 		</div>
 	</div>
-</SearchLayout>
+</Layout>
