@@ -181,7 +181,7 @@ const visibleTags = tags.slice(0, 10);
 const hiddenTags = tags.slice(10);
 ---
 
-<div class="rounded-2xl bg-base-100 p-0">
+<div class="rounded-2xl bg-base-100 p-2">
 	<div class="flex flex-wrap justify-center gap-2 p-2" data-pagefind-ignore="all">
 		{
 			visibleTags.map((tag: string) => {
@@ -205,36 +205,37 @@ const hiddenTags = tags.slice(10);
 		hiddenTags.length > 0 && (
 			<>
 				<hr class="mx-8 my-4" />
-				<div class="flex justify-center">
-					<details class="collapse bg-base-200">
-						<summary
-							title="Open/Close Dropdown to View All Other Tags"
-							class="font-semi-bold h-auto cursor-pointer bg-base-300 py-4 text-center text-lg text-base-content"
-						>
-							View All Other Tags
-						</summary>
-						<div class="collapse-content p-4">
-							<div class="flex flex-wrap justify-center gap-2">
-								{hiddenTags.map((tag: string) => {
-									const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);
-									const IconComponent = iconComponents[tag.toLowerCase()];
-									const urlPrefix = getUrlPrefix(contentType);
+				<details class="collapse bg-base-200">
+					<summary
+						title="Open/Close Dropdown to View All Other Tags"
+						class="h-auto cursor-pointer bg-base-300 py-4 text-center text-xl font-semibold text-base-content 
+							focus-visible:bg-[#44475A]
+							focus-visible:text-[#F8F8F2] active:bg-[#44475A] active:text-[#F8F8F2]"
+						tabindex="0"
+					>
+						View All Other Tags
+					</summary>
+					<div class="collapse-content p-4">
+						<div class="flex flex-wrap justify-center gap-2">
+							{hiddenTags.map((tag: string) => {
+								const { displayText, btnClasses, fill } = getTagDisplayAndClass(tag);
+								const IconComponent = iconComponents[tag.toLowerCase()];
+								const urlPrefix = getUrlPrefix(contentType);
 
-									return (
-										<a
-											href={`${urlPrefix}${tag}`}
-											title={`Filter by ${tag} Tag`}
-											class={`btn ${btnClasses} btn-xs h-auto text-base`}
-										>
-											{IconComponent && <IconComponent size="16" fill={fill} />}
-											{displayText}
-										</a>
-									);
-								})}
-							</div>
+								return (
+									<a
+										href={`${urlPrefix}${tag}`}
+										title={`Filter by ${tag} Tag`}
+										class={`btn ${btnClasses} btn-xs h-auto text-base`}
+									>
+										{IconComponent && <IconComponent size="16" fill={fill} />}
+										{displayText}
+									</a>
+								);
+							})}
 						</div>
-					</details>
-				</div>
+					</div>
+				</details>
 			</>
 		)
 	}

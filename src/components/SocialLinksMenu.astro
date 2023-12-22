@@ -17,7 +17,7 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 	<div class="card bg-base-100 p-2 pt-4">
 		<h2 class="my-0 text-center text-xl">Professional Social Accounts</h2>
 		<ul class="menu my-0 w-full p-4">
-			<li class="my-[0.25rem] pl-0">
+			<li class="my-1 pl-0">
 				<a
 					href="https://github.com/itsjordanmuller"
 					title="View GitHub Profile"
@@ -26,7 +26,7 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 					<GitHubLogo size="28" />GitHub Portfolio
 				</a>
 			</li>
-			<li class="my-[0.25rem] pl-0">
+			<li class="my-1 pl-0">
 				<a
 					href="https://www.linkedin.com/in/itsjordanmuller"
 					title="View LinkedIn Profile"
@@ -35,7 +35,7 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 					<LinkedInLogo size="28" />Connect on LinkedIn
 				</a>
 			</li>
-			<li class="my-[0.25rem] pl-0">
+			<li class="my-1 pl-0">
 				<a
 					href="https://codepen.io/itsjordanmuller"
 					title="View CodePen Profile"
@@ -44,10 +44,11 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 					<CodePenLogo size="28" />CodePen Snippets
 				</a>
 			</li>
-			<li class="mb-0 mt-4 p-0">
+			<div class="mb-0 mt-4 p-0">
 				<details class="rounded-xl bg-base-200">
-					<summary class="rounded-xl bg-base-300 py-4 text-center text-lg font-bold"
-						>Browse My Personal Social Media</summary
+					<summary
+						class="h-auto cursor-pointer rounded-xl bg-base-300 py-4 text-center text-lg font-bold text-base-content focus-visible:bg-[#44475A] focus-visible:text-[#F8F8F2] active:bg-[#44475A] active:text-[#F8F8F2]"
+						tabindex="0">Browse My Personal Social Media</summary
 					>
 					<p class="mx-6 text-center">
 						I have a variety of hobbies and interests that I stay updated on using my personal
@@ -55,7 +56,7 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 						connecting with me!
 					</p>
 					<ul class="mr-7">
-						<li class="my-[0.25rem] pl-0">
+						<li class="my-1 pl-0">
 							<a
 								href="https://mastodon.social/@itsjordanmuller"
 								title="View Mastodon Profile"
@@ -64,7 +65,7 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 								<MastodonLogo size="28" />Mastodon Account
 							</a>
 						</li>
-						<li class="my-[0.25rem] pl-0">
+						<li class="my-1 pl-0">
 							<a
 								href="https://twitter.com/itsjordanmuller"
 								title="View Twitter Profile"
@@ -75,7 +76,7 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 								</div>Twitter Account
 							</a>
 						</li>
-						<li class="my-[0.25rem] pl-0">
+						<li class="my-1 pl-0">
 							<a
 								href="https://www.reddit.com/user/itsjordanmuller"
 								title="View Reddit Profile"
@@ -84,7 +85,7 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 								<RedditLogo size="28" />Reddit Account
 							</a>
 						</li>
-						<li class="my-[0.25rem] pl-0">
+						<li class="my-1 pl-0">
 							<a
 								href="https://www.pinterest.com/itsjordanmuller/"
 								title="View Pinterest Profile"
@@ -93,7 +94,7 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 								<PinterestLogo size="28" />Pinterest Account
 							</a>
 						</li>
-						<!-- <li class="my-[0.25rem] pl-0">
+						<!-- <li class="my-1 pl-0">
 						<a
 							href="https://www.tumblr.com/blog/itsjordanmuller"
 							title="View Tumblr Profile"
@@ -102,8 +103,7 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 							<TumblrLogo size="28" />Tumblr Account
 						</a>
 					</li>
-
-					<li class="my-[0.25rem] pl-0">
+					<li class="my-1 pl-0">
 						<a
 							href="https://www.youtube.com/@itsjordanmuller"
 							title="View YouTube Profile"
@@ -112,7 +112,7 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 							<YouTubeLogo size="28" />YouTube Channel
 						</a>
 					</li>
-					<li class="my-[0.25rem] pl-0">
+					<li class="my-1 pl-0">
 						<a
 							href="#"
 							title="View Threads Profile"
@@ -121,7 +121,7 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 							<TumblrLogo size="28" />Threads Account
 						</a>
 					</li>
-					<li class="my-[0.25rem] pl-0">
+					<li class="my-1 pl-0">
 						<a
 							href="#"
 							title="View Instagram Profile"
@@ -132,7 +132,12 @@ import InstagramLogo from "../icons/logos/social/InstagramLogo.astro";
 					</li> -->
 					</ul>
 				</details>
-			</li>
+			</div>
 		</ul>
 	</div>
 </section>
+<style>
+	details > summary {
+		list-style-type: none;
+	}
+</style>
