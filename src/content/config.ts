@@ -48,6 +48,7 @@ const resourcesCollection = defineCollection({
 			}),
 			coverAlt: z.string(),
 			type: z.string(),
+			pdf: z.string(),
 			tags: z.array(z.string()),
 		}),
 });
