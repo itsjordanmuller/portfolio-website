@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 import ContactFormImage from "../../../src/assets/images/contact-form.jpg";
 ---
 
-<div class="hero my-0 rounded-2xl bg-base-300 p-2">
+<section class="hero my-0 rounded-2xl bg-base-300 p-2">
 	<div class="card hero-content flex-col bg-base-100 p-8">
 		<div>
 			<h3 class="mt-0">Have a common question?</h3>
@@ -34,12 +34,16 @@ import ContactFormImage from "../../../src/assets/images/contact-form.jpg";
 				/>
 			</div>
 
-			<a href="#contact-form" class="btn btn-primary btn-lg mb-2 mt-0 h-auto w-full text-base"
-				><Form size="28" />Back to Contact Form</a
+			<a
+				href="#contact-form"
+				class="btn btn-primary btn-lg mb-2 mt-0 h-auto w-full text-base"
+				title="Scroll Back Up to My Contact Form"><Form size="28" />Back to Contact Form</a
 			>
-			<a href="#" class="btn btn-accent btn-lg h-auto w-full text-base"
-				><UpArrow size="28" />Scroll Back to Top</a
+			<a
+				href="#"
+				class="btn btn-accent btn-lg h-auto w-full text-base"
+				title="Scroll Back Up to Top of Page"><UpArrow size="28" />Scroll Back to Top</a
 			>
 		</div>
 	</div>
-</div>
+</section>

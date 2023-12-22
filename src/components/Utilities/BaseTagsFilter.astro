@@ -3,7 +3,7 @@ import TagList from "./TagList.astro";
 const { contentType, uniqueTags } = Astro.props;
 ---
 
-<div class="flex justify-center">
+<section class="flex justify-center">
 	<div class="card max-w-3xl bg-base-300 p-2">
 		<div class="card bg-base-100 p-2 pt-4">
 			<h2 class="mb-2 mt-0 text-center text-lg font-bold leading-8">
@@ -12,4 +12,4 @@ const { contentType, uniqueTags } = Astro.props;
 			<TagList tags={uniqueTags} contentType={contentType} />
 		</div>
 	</div>
-</div>
+</section>
