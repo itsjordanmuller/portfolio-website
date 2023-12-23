@@ -36,7 +36,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 
 ## Contact Information
 
-Please feel free to reach out if you have any suggestions or run into any issues with viewing this project. I'm always looking for feedback from other people! I'd be more than happy to answer any questions you may have as well as assist with getting the project working on your machine.<br/>
+Please feel free to reach out if you have any suggestions or run into any issues with viewing this project. I am always looking for feedback from other people! I'd be more than happy to answer any questions you may have as well as assist with getting the project working on your machine.<br/>
 
 Be sure to view the setup guide in the README, as well as any specific README files for that specific project as they contain more details and may already have the answer to your question(s)!
 
