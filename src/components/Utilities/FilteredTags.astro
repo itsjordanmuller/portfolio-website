@@ -1,6 +1,6 @@
 ---
 import TagList from "./TagList.astro";
-const { contentType, uniqueTags, tag } = Astro.props;
+const { contentType, uniqueTags, tag, route } = Astro.props;
 const displayTag = tag.replace(/-/g, " ");
 ---
 
@@ -13,10 +13,10 @@ const displayTag = tag.replace(/-/g, " ");
 			</h2>
 			<TagList tags={uniqueTags} contentType={contentType} />
 			<a
-				href="/blog"
+				href={route}
 				title="Remove Filter to View All Blog Posts"
-				class="btn btn-outline btn-sm mb-0 mt-2 h-auto text-center font-bold"
-				>Clear Filter to View All Posts</a
+				class="btn btn-outline btn-sm mb-0 mt-2 h-auto text-center font-bold capitalize"
+				>Clear Filter to View All {contentType}</a
 			>
 		</div>
 	</div>

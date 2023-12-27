@@ -34,7 +34,7 @@ const uniqueTags = [...new Set(allResources.map((resource) => resource.data.tags
 		data-pagefind-ignore="all"
 	>
 		<h1 class="mb-8 text-center">Resources & Documents</h1>
-		<FilteredTags contentType="resources" uniqueTags={uniqueTags} tag={tag} />
+		<FilteredTags contentType="resources" uniqueTags={uniqueTags} tag={tag} route="/resources" />
 		<hr class="mx-8" />
 		<ul class="my-8 grid w-full grid-cols-1 gap-8 pl-0 md:grid-cols-2 lg:grid-cols-3">
 			{
