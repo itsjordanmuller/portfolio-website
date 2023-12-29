@@ -81,9 +81,9 @@ const iconComponents: { [key: string]: any } = {
 	plotly: PlotlyLogo,
 	"scikit-learn": SciKitLearnLogo,
 	sqlite: SQLiteLogo,
-	sqlalchemy: SQLAlchemyLogo,
-	"dot-env": DotEnvLogo,
-	pypi: PyPILogo,
+	"sql-alchemy": SQLAlchemyLogo,
+	dotenv: DotEnvLogo,
+	"py-pi": PyPILogo,
 	"es-lint": ESLintLogo,
 	prettier: PrettierLogo,
 	"vs-code": VSCodeLogo,
@@ -100,7 +100,7 @@ const iconComponents: { [key: string]: any } = {
 	"tailwind-css": TailwindCSSLogo,
 	"daisy-ui": DaisyUILogo,
 	"nano-id": NanoIDLogo,
-	"page-find": PagefindLogo,
+	pagefind: PagefindLogo,
 	"post-css": PostCSSLogo,
 	linux: LinuxLogo,
 	debian: DebianLogo,
@@ -120,7 +120,7 @@ const iconComponents: { [key: string]: any } = {
 	"redux-toolkit": ReduxLogo,
 	"create-react-app": ReactLogo,
 	contentful: ContentfulLogo,
-	numpy: NumPyLogo,
+	"num-py": NumPyLogo,
 	pandas: PandasLogo,
 };
 
@@ -253,16 +253,16 @@ const tagDetails: TagDetails = {
 		displayText: "SQLite",
 		btnClasses: "bg-[#003B57] text-[#ffffff] border-[#003B57]",
 	},
-	sqlalchemy: {
+	"sql-alchemy": {
 		displayText: "SQLAlchemy",
 		btnClasses: "bg-[#D71F00] text-[#ffffff] border-[#D71F00]",
 	},
-	numpy: {
+	"num-py": {
 		displayText: "NumPy",
 		importance: 8,
 		btnClasses: "bg-[#013243] text-[#ffffff] border-[#013243]",
 	},
-	pypi: {
+	"py-pi": {
 		displayText: "PyPI",
 		btnClasses: "bg-[#3775A9] text-[#ffffff] border-[#3775A9]",
 	},
@@ -282,11 +282,12 @@ const tagDetails: TagDetails = {
 		displayText: "GitHub",
 		btnClasses: "bg-[#181717] text-[#ffffff] border-[#181717]",
 	},
-	"dot-env": {
+	dotenv: {
 		displayText: ".env",
+		importance: 10,
 		btnClasses: "bg-[#F7DF1E] text-[#000000] border-[#F7DF1E]",
 	},
-	"page-find": {
+	pagefind: {
 		displayText: "Pagefind",
 		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
 	},
@@ -376,6 +377,21 @@ const tagDetails: TagDetails = {
 		displayText: "pandas",
 		importance: 9,
 		btnClasses: "bg-[#150458] text-[#ffffff] border-[#150458]",
+	},
+	codepen: {
+		displayText: "CodePen",
+	},
+	"sci-py": {
+		displayText: "SciPy",
+	},
+	"pillow-pil": {
+		displayText: "Pillow (PIL)",
+	},
+	"mongo-db": {
+		displayText: "MongoDB",
+	},
+	"swiper-js": {
+		displayText: "Swiper.js",
 	},
 };
 
