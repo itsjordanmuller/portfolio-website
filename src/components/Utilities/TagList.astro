@@ -7,6 +7,52 @@ import ReactLogo from "../../icons/logos/ReactLogo.astro";
 import PythonLogo from "../../icons/logos/PythonLogo.astro";
 import JupyterLogo from "../../icons/logos/JupyterLogo.astro";
 import TypeScriptLogo from "../../icons/logos/TypeScriptLogo.astro";
+import FlaskLogo from "../../icons/logos/FlaskLogo.astro";
+import MatplotlibLogo from "../../icons/logos/MatplotlibLogo.astro";
+import PlotlyLogo from "../../icons/logos/PlotlyLogo.astro";
+import SciKitLearnLogo from "../../icons/logos/SciKitLearn-Logo.astro";
+import SQLiteLogo from "../../icons/logos/SQLiteLogo.astro";
+import SQLAlchemyLogo from "../../icons/logos/SQLAlchemyLogo.astro";
+import DotEnvLogo from "../../icons/logos/DotEnvLogo.astro";
+import PyPILogo from "../../icons/logos/PyPILogo.astro";
+import ESLintLogo from "../../icons/logos/ESLintLogo.astro";
+import PrettierLogo from "../../icons/logos/PrettierLogo.astro";
+import VSCodeLogo from "../../icons/logos/VSCodeLogo.astro";
+import GitLogo from "../../icons/logos/GitLogo.astro";
+import GitHubLogo from "../../icons/logos/social/GitHubLogo.astro";
+import NodeJSLogo from "../../icons/logos/NodeJSLogo.astro";
+import JestLogo from "../../icons/logos/JestLogo.astro";
+import WebpackLogo from "../../icons/logos/WebpackLogo.astro";
+import JSONLogo from "../../icons/logos/JSONLogo.astro";
+import MarkdownLogo from "../../icons/logos/MarkdownLogo.astro";
+import MDXLogo from "../../icons/logos/MDXLogo.astro";
+import PWALogo from "../../icons/logos/PWALogo.astro";
+import JamstackLogo from "../../icons/logos/JamstackLogo.astro";
+import TailwindCSSLogo from "../../icons/logos/TailwindCSSLogo.astro";
+import DaisyUILogo from "../../icons/logos/DaisyUILogo.astro";
+import NanoIDLogo from "../../icons/logos/NanoIDLogo.astro";
+import PagefindLogo from "../../icons/logos/PagefindLogo.astro";
+import PostCSSLogo from "../../icons/logos/PostCSSLogo.astro";
+import LinuxLogo from "../../icons/logos/LinuxLogo.astro";
+import DebianLogo from "../../icons/logos/DebianLogo.astro";
+import UbuntuLogo from "../../icons/logos/UbuntuLogo.astro";
+import KubuntuLogo from "../../icons/logos/KubuntuLogo.astro";
+import KDELogo from "../../icons/logos/KDELogo.astro";
+import NPMLogo from "../../icons/logos/NPMLogo.astro";
+import ViteLogo from "../../icons/logos/ViteLogo.astro";
+import AutoprefixerLogo from "../../icons/logos/AutoprefixerLogo.astro";
+import BashLogo from "../../icons/logos/BashLogo.astro";
+import IconifyLogo from "../../icons/logos/IconifyLogo.astro";
+import NetlifyLogo from "../../icons/logos/NetlifyLogo.astro";
+import UnsplashLogo from "../../icons/logos/UnsplashLogo.astro";
+import AxiosLogo from "../../icons/logos/AxiosLogo.astro";
+import ReactRouterLogo from "../../icons/logos/ReactRouterLogo.astro";
+import ReactQueryLogo from "../../icons/logos/ReactQueryLogo.astro";
+import ReduxLogo from "../../icons/logos/ReduxLogo.astro";
+import CreateReactAppLogo from "../../icons/logos/CreateReactAppLogo.astro";
+import ContentfulLogo from "../../icons/logos/ContentfulLogo.astro";
+import NumPyLogo from "../../icons/logos/NumPyLogo.astro";
+import PandasLogo from "../../icons/logos/PandasLogo.astro";
 
 const { tags, contentType } = Astro.props;
 
@@ -30,40 +76,94 @@ const iconComponents: { [key: string]: any } = {
 	typescript: TypeScriptLogo,
 	react: ReactLogo,
 	python: PythonLogo,
-	"jupyter notebook": JupyterLogo,
+	jupyter: JupyterLogo,
+	flask: FlaskLogo,
+	matplotlib: MatplotlibLogo,
+	plotly: PlotlyLogo,
+	"scikit-learn": SciKitLearnLogo,
+	sqlite: SQLiteLogo,
+	sqlalchemy: SQLAlchemyLogo,
+	"dot-env": DotEnvLogo,
+	pypi: PyPILogo,
+	eslint: ESLintLogo,
+	prettier: PrettierLogo,
+	"vs-code": VSCodeLogo,
+	git: GitLogo,
+	github: GitHubLogo,
+	"node-js": NodeJSLogo,
+	jest: JestLogo,
+	webpack: WebpackLogo,
+	json: JSONLogo,
+	markdown: MarkdownLogo,
+	mdx: MDXLogo,
+	pwa: PWALogo,
+	jamstack: JamstackLogo,
+	"tailwind-css": TailwindCSSLogo,
+	daisyui: DaisyUILogo,
+	"nano-id": NanoIDLogo,
+	"page-find": PagefindLogo,
+	"post-css": PostCSSLogo,
+	linux: LinuxLogo,
+	debian: DebianLogo,
+	ubuntu: UbuntuLogo,
+	kubuntu: KubuntuLogo,
+	kde: KDELogo,
+	npm: NPMLogo,
+	vite: ViteLogo,
+	autoprefixer: AutoprefixerLogo,
+	bash: BashLogo,
+	iconify: IconifyLogo,
+	netlify: NetlifyLogo,
+	unsplash: UnsplashLogo,
+	axios: AxiosLogo,
+	"react-router": ReactRouterLogo,
+	"react-query": ReactQueryLogo,
+	"redux-toolkit": ReduxLogo,
+	"create-react-app": CreateReactAppLogo,
+	contentful: ContentfulLogo,
+	numpy: NumPyLogo,
+	pandas: PandasLogo,
 };
 
 const tagDetails: TagDetails = {
 	astro: {
-		btnClasses: "bg-[#3f4252] text-[#ffffff]",
+		btnClasses: "bg-[#3f4252] text-[#ffffff] border-[#3f4252]",
 		importance: 5,
 	},
+	flask: {
+		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
+	},
+	matplotlib: {
+		btnClasses: "bg-[#185A80] text-[#ffffff] border-[#185A80]",
+	},
+	plotly: {
+		btnClasses: "bg-[#3F4F75] text-[#ffffff] border-[#3F4F75]",
+	},
 	html: {
-		fill: "#E34F26",
-		btnClasses: "bg-[#F8F8F2] text-[#000000] btn-outline border-[#E34F26] border-4",
+		btnClasses: "bg-[#E34F26] text-[#ffffff] btn-outline border-[#E34F26]",
 		importance: 10,
 	},
 	javascript: {
 		displayText: "JavaScript",
-		btnClasses: "bg-[#F7DF1E] text-[#000000]",
+		btnClasses: "bg-[#F7DF1E] text-[#000000] border-[#F7DF1E] hover:text-base-content",
 		importance: 10,
 	},
 	typescript: {
 		displayText: "TypeScript",
-		btnClasses: "bg-[#007ACC] text-[#ffffff]",
+		btnClasses: "bg-[#007ACC] text-[#ffffff] border-[#007ACC]",
 		importance: 10,
 	},
 	css: {
-		btnClasses: "bg-[#1572B6] text-[#ffffff]",
+		btnClasses: "bg-[#1572B6] text-[#ffffff] border-[#1572B6]",
 		importance: 10,
 	},
 	python: {
 		fill: "#FFDD54",
-		btnClasses: "bg-[#1572B6] text-[#ffffff]",
+		btnClasses: "bg-[#1572B6] text-[#ffffff] border-[#1572B6]",
 		importance: 10,
 	},
 	react: {
-		btnClasses: "bg-[#61DAFB] text-[#000000]",
+		btnClasses: "bg-[#61DAFB] text-[#000000] border-[#61DAFB]",
 		importance: 9,
 	},
 	resume: {
@@ -76,6 +176,7 @@ const tagDetails: TagDetails = {
 	},
 	pdf: {
 		displayText: "PDF",
+		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
 		importance: 8,
 	},
 	documents: {
@@ -98,9 +199,10 @@ const tagDetails: TagDetails = {
 		displayText: "PSM 1",
 		importance: 5,
 	},
-	"jupyter-notebook": {
+	jupyter: {
 		fill: "#F37726",
-		btnClasses: "bg-[#44475A] text-[#ffffff]",
+		importance: 8,
+		btnClasses: "bg-[#44475A] text-[#ffffff] border-[#44475A]",
 	},
 	"e-commerce": {
 		displayText: "E-Commerce",
@@ -122,54 +224,159 @@ const tagDetails: TagDetails = {
 	},
 	"tailwind-css": {
 		displayText: "Tailwind CSS",
+		btnClasses: "bg-[#06B6D4] text-[#ffffff] border-[#06B6D4]",
 	},
-	daisyui: {
+	"daisy-ui": {
 		displayText: "daisyUI",
+		btnClasses: "bg-[#5A0EF8] text-[#ffffff] border-[#5A0EF8]",
 	},
-	nodejs: {
+	"node-js": {
 		displayText: "Node.js",
+		btnClasses: "bg-[#339933] text-[#ffffff] border-[#339933]",
 	},
 	npm: {
 		displayText: "npm",
+		btnClasses: "bg-[#CB3837] text-[#ffffff] border-[#CB3837]",
 	},
 	vite: {
 		displayText: "Vite",
-	},
-	"contentful-cms": {
-		displayText: "Contentful CMS",
+		btnClasses: "bg-[#646CFF] text-[#ffffff] border-[#646CFF]",
 	},
 	jest: {
 		displayText: "Jest",
+		btnClasses: "bg-[#C21325] text-[#ffffff] border-[#C21325]",
 	},
 	"scikit-learn": {
 		displayText: "scikit-learn",
+		btnClasses: "bg-[#F7931E] text-[#ffffff] border-[#F7931E]",
 	},
 	sqlite: {
 		displayText: "SQLite",
+		btnClasses: "bg-[#003B57] text-[#ffffff] border-[#003B57]",
 	},
 	sqlalchemy: {
 		displayText: "SQLAlchemy",
+		btnClasses: "bg-[#D71F00] text-[#ffffff] border-[#D71F00]",
 	},
 	numpy: {
 		displayText: "NumPy",
+		importance: 8,
+		btnClasses: "bg-[#013243] text-[#ffffff] border-[#013243]",
 	},
 	pypi: {
 		displayText: "PyPI",
+		btnClasses: "bg-[#3775A9] text-[#ffffff] border-[#3775A9]",
 	},
 	eslint: {
 		displayText: "ESLint",
+		btnClasses: "bg-[#4B32C3] text-[#ffffff] border-[#4B32C3]",
 	},
 	git: {
 		displayText: "git",
+		btnClasses: "bg-[#F05032] text-[#ffffff] border-[#F05032]",
 	},
 	"vs-code": {
 		displayText: "VS Code",
+		btnClasses: "bg-[#007ACC] text-[#ffffff] border-[#007ACC]",
 	},
 	github: {
 		displayText: "GitHub",
+		btnClasses: "bg-[#181717] text-[#ffffff] border-[#181717]",
 	},
 	"dot-env": {
 		displayText: ".env",
+		btnClasses: "bg-[#F7DF1E] text-[#000000] border-[#F7DF1E]",
+	},
+	"page-find": {
+		displayText: "Pagefind",
+		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
+	},
+	"post-css": {
+		displayText: "PostCSS",
+		btnClasses: "bg-[#DD3A0A] text-[#ffffff] border-[#DD3A0A]",
+	},
+	bash: {
+		displayText: "Bash",
+		btnClasses: "bg-[#4EAA25] text-[#000000] border-[#4EAA25]",
+	},
+	"nano-id": {
+		displayText: "nanoid",
+		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
+	},
+	prettier: {
+		btnClasses: "bg-[#F7B93E] text-[#000000] border-[#F7B93E]",
+	},
+	"black-formatter": {
+		displayText: "Black Formatter",
+		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
+	},
+	webpack: {
+		btnClasses: "bg-[#8DD6F9] text-[#000000] border-[#8DD6F9]",
+	},
+	json: {
+		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
+	},
+	markdown: {
+		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
+	},
+	mdx: {
+		btnClasses: "bg-[#1B1F24] text-[#ffffff] border-[#1B1F24]",
+	},
+	pwa: {
+		btnClasses: "bg-[#5A0FC8] text-[#ffffff] border-[#5A0FC8]",
+	},
+	jamstack: {
+		btnClasses: "bg-[#F0047F] text-[#ffffff] border-[#F0047F]",
+	},
+	linux: {
+		btnClasses: "bg-[#FCC624] text-[#000000] border-[#FCC624]",
+	},
+	debian: {
+		btnClasses: "bg-[#A81D33] text-[#ffffff] border-[#A81D33]",
+	},
+	ubuntu: {
+		btnClasses: "bg-[#E95420] text-[#ffffff] border-[#E95420]",
+	},
+	kubuntu: {
+		btnClasses: "bg-[#0079C1] text-[#ffffff] border-[#0079C1]",
+	},
+	kde: {
+		btnClasses: "bg-[#1D99F3] text-[#ffffff] border-[#1D99F3]",
+	},
+	autoprefixer: {
+		btnClasses: "bg-[#DD3735] text-[#ffffff] border-[#DD3735]",
+	},
+	iconify: {
+		btnClasses: "bg-[#1769AA] text-[#ffffff] border-[#1769AA]",
+	},
+	netlify: {
+		btnClasses: "bg-[#00C7B7] text-[#ffffff] border-[#00C7B7]",
+	},
+	unsplash: {
+		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
+	},
+	axios: {
+		btnClasses: "bg-[#5A29E4] text-[#ffffff] border-[#5A29E4]",
+	},
+	"react-router": {
+		btnClasses: "bg-[#CA4245] text-[#ffffff] border-[#CA4245]",
+	},
+	"react-query": {
+		btnClasses: "bg-[#FF4154] text-[#ffffff] border-[#FF4154]",
+	},
+	"redux-toolkit": {
+		btnClasses: "bg-[#764ABC] text-[#ffffff] border-[#764ABC]",
+	},
+	"create-react-app": {
+		btnClasses: "bg-[#09D3AC] text-[#ffffff] border-[#09D3AC]",
+	},
+	contentful: {
+		btnClasses: "bg-[#F8F8F2] text-[#000000] border-[#F8F8F2]",
+	},
+	pandas: {
+		displayText: "pandas",
+		importance: 9,
+		btnClasses: "bg-[#150458] text-[#ffffff] border-[#150458]",
 	},
 };
 
@@ -239,7 +446,7 @@ const hiddenTags = tags.slice(10);
 					<a
 						href={`${urlPrefix}${tag}`}
 						title={`Filter by ${tag} Tag`}
-						class={`btn ${btnClasses} btn-xs h-auto text-base md:btn-sm md:text-base`}
+						class={`btn h-auto ${btnClasses} btn-xs text-base md:btn-sm md:text-base`}
 					>
 						{IconComponent && <IconComponent size="16" fill={fill} />}
 						{displayText}
@@ -255,7 +462,7 @@ const hiddenTags = tags.slice(10);
 				<details class="collapse bg-base-200">
 					<summary
 						title="Open/Close Dropdown to View All Other Tags"
-						class="h-auto cursor-pointer bg-base-300 py-4 text-center text-xl font-semibold text-base-content 
+						class="cursor-pointer bg-base-300 py-4 text-center text-xl font-semibold text-base-content 
 							focus-visible:bg-[#44475A]
 							focus-visible:text-[#F8F8F2] active:bg-[#44475A] active:text-[#F8F8F2]"
 						tabindex="0"
@@ -273,7 +480,7 @@ const hiddenTags = tags.slice(10);
 									<a
 										href={`${urlPrefix}${tag}`}
 										title={`Filter by ${tag} Tag`}
-										class={`btn ${btnClasses} btn-xs h-auto text-base`}
+										class={`btn h-auto ${btnClasses} btn-xs text-base`}
 									>
 										{IconComponent && <IconComponent size="16" fill={fill} />}
 										{displayText}
