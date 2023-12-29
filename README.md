@@ -20,7 +20,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 [![Netlify](https://img.shields.io/badge/Netlify-00C7B7.svg?style=for-the-badge&logo=Netlify&logoColor=white)](https://jordanmuller.com/portfolio/tags/netlify/)
 
 <details>
-<summary>More Technologies</summary>
+<summary>More Technologies 📀</summary>
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)](https://jordanmuller.com/portfolio/tags/javascript/)
 [![Bash](https://img.shields.io/badge/Bash-4EAA25.svg?style=for-the-badge&logo=GNU-Bash&logoColor=white)](https://jordanmuller.com/portfolio/tags/bash/)
