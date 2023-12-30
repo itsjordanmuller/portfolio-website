@@ -91,6 +91,7 @@ import Shopping from "../../icons/topics/Shopping.astro";
 import Tasks from "../../icons/topics/Tasks.astro";
 import Video from "../../icons/topics/Video.astro";
 import Food from "../../icons/topics/Food.astro";
+import CreateReactAppLogo from "../../icons/logos/CreateReactAppLogo.astro";
 
 const { tags, contentType } = Astro.props;
 
@@ -157,7 +158,7 @@ const iconComponents: { [key: string]: any } = {
 	"react-router": ReactRouterLogo,
 	"react-query": ReactQueryLogo,
 	"redux-toolkit": ReduxLogo,
-	"create-react-app": ReactLogo,
+	"create-react-app": CreateReactAppLogo,
 	contentful: ContentfulLogo,
 	"num-py": NumPyLogo,
 	pandas: PandasLogo,
@@ -212,8 +213,8 @@ const iconComponents: { [key: string]: any } = {
 
 const tagDetails: TagDetails = {
 	astro: {
-		btnClasses: "bg-[#3f4252] text-[#ffffff] border-[#3f4252]",
-		importance: 5,
+		btnClasses: "bg-[#FF5D01] text-[#ffffff] border-[#FF5D01]",
+		importance: 6,
 	},
 	bootstrap: {
 		btnClasses: "bg-[#7952B3] text-[#ffffff] border-[#7952B3]",
@@ -228,13 +229,13 @@ const tagDetails: TagDetails = {
 		btnClasses: "bg-[#DC382D] text-[#ffffff] border-[#DC382D]",
 	},
 	seaborn: {
-		btnClasses: "bg-[#F8F8F2] text-[#000000] border-[#F8F8F2]",
+		btnClasses: "bg-[#78AAB7] text-[#ffffff] border-[#78AAB7]",
 	},
 	flask: {
 		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
 	},
 	"beautiful-soup": {
-		btnClasses: "bg-[#ffffff] text-[#000000] border-[#ffffff]",
+		btnClasses: "bg-[#F8F8F2] text-[#000000] border-[#F8F8F2]",
 	},
 	"styled-components": {
 		btnClasses: "bg-[#DB7093] text-[#ffffff] border-[#DB7093]",
@@ -252,7 +253,7 @@ const tagDetails: TagDetails = {
 		btnClasses: "bg-[#FF6C37] text-[#ffffff] border-[#FF6C37]",
 	},
 	colorgram: {
-		btnClasses: "bg-[#FD79A8] text-[#000000] border-[#FD79A8]",
+		btnClasses: "bg-[#FFC0CB] text-[#000000] border-[#FFC0CB]",
 	},
 	matplotlib: {
 		btnClasses: "bg-[#185A80] text-[#ffffff] border-[#185A80]",
@@ -267,16 +268,16 @@ const tagDetails: TagDetails = {
 	javascript: {
 		displayText: "JavaScript",
 		btnClasses: "bg-[#F7DF1E] text-[#000000] border-[#F7DF1E] hover:text-base-content",
-		importance: 10,
+		importance: 8,
 	},
 	typescript: {
 		displayText: "TypeScript",
 		btnClasses: "bg-[#007ACC] text-[#ffffff] border-[#007ACC]",
-		importance: 10,
+		importance: 7,
 	},
 	css: {
 		btnClasses: "bg-[#1572B6] text-[#ffffff] border-[#1572B6]",
-		importance: 10,
+		importance: 9,
 	},
 	python: {
 		fill: "#FFDD54",
@@ -285,7 +286,7 @@ const tagDetails: TagDetails = {
 	},
 	react: {
 		btnClasses: "bg-[#61DAFB] text-[#000000] border-[#61DAFB]",
-		importance: 9,
+		importance: 6,
 	},
 	resume: {
 		displayText: "Resume",
@@ -321,9 +322,7 @@ const tagDetails: TagDetails = {
 		importance: 5,
 	},
 	jupyter: {
-		fill: "#F37726",
-		importance: 8,
-		btnClasses: "bg-[#44475A] text-[#ffffff] border-[#44475A]",
+		btnClasses: "bg-[#F37626] text-[#ffffff] border-[#F37626]",
 	},
 	"e-commerce": {
 		displayText: "E-Commerce",
@@ -381,7 +380,7 @@ const tagDetails: TagDetails = {
 	},
 	"num-py": {
 		displayText: "NumPy",
-		importance: 8,
+		importance: 6,
 		btnClasses: "bg-[#013243] text-[#ffffff] border-[#013243]",
 	},
 	"py-pi": {
@@ -406,7 +405,7 @@ const tagDetails: TagDetails = {
 	},
 	dotenv: {
 		displayText: ".env",
-		importance: 10,
+		importance: 5,
 		btnClasses: "bg-[#F7DF1E] text-[#000000] border-[#F7DF1E]",
 	},
 	pagefind: {
@@ -419,7 +418,7 @@ const tagDetails: TagDetails = {
 	},
 	bash: {
 		displayText: "Bash",
-		btnClasses: "bg-[#4EAA25] text-[#000000] border-[#4EAA25]",
+		btnClasses: "bg-[#8edf6a] text-[#000000] border-[#8edf6a]",
 	},
 	"nano-id": {
 		displayText: "nanoid",
@@ -502,14 +501,15 @@ const tagDetails: TagDetails = {
 		btnClasses: "bg-[#7147B5] text-[#ffffff] border-[#7147B5]",
 	},
 	"create-react-app": {
-		btnClasses: "bg-[#09D3AC] text-[#ffffff] border-[#09D3AC]",
+		fill: "#11D4AF",
+		btnClasses: "bg-[#2F333A] text-[#ffffff] border-[#2F333A]",
 	},
 	contentful: {
 		btnClasses: "bg-[#F8F8F2] text-[#000000] border-[#F8F8F2]",
 	},
 	pandas: {
 		displayText: "pandas",
-		importance: 9,
+		importance: 6,
 		btnClasses: "bg-[#150458] text-[#ffffff] border-[#150458]",
 	},
 	codepen: {
@@ -521,7 +521,7 @@ const tagDetails: TagDetails = {
 	},
 	"sci-py": {
 		displayText: "SciPy",
-		btnClasses: "bg-[#8CAAE6] text-[#000000] border-[#8CAAE6]",
+		btnClasses: "bg-[#8CAAE6] text-[#ffffff] border-[#8CAAE6]",
 	},
 	"pillow-pil": {
 		displayText: "Pillow (PIL)",
@@ -555,6 +555,9 @@ const tagDetails: TagDetails = {
 	"swiper-js": {
 		displayText: "Swiper.js",
 		btnClasses: "bg-[#6332F6] text-[#ffffff] border-[#6332F6]",
+	},
+	uuid: {
+		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
 	},
 };
 
