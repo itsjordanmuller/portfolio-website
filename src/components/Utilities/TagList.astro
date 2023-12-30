@@ -92,6 +92,8 @@ import Tasks from "../../icons/topics/Tasks.astro";
 import Video from "../../icons/topics/Video.astro";
 import Food from "../../icons/topics/Food.astro";
 import CreateReactAppLogo from "../../icons/logos/CreateReactAppLogo.astro";
+import MacOSLogo from "../../icons/logos/MacOSLogo.astro";
+import WindowsLogo from "../../icons/logos/WindowsLogo.astro";
 
 const { tags, contentType } = Astro.props;
 
@@ -209,6 +211,8 @@ const iconComponents: { [key: string]: any } = {
 	"food-menu": Food,
 	"calorie-tracker": Food,
 	morgan: RequestsLogo,
+	"mac-os": MacOSLogo,
+	windows: WindowsLogo,
 };
 
 const tagDetails: TagDetails = {
@@ -558,6 +562,13 @@ const tagDetails: TagDetails = {
 	},
 	uuid: {
 		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
+	},
+	"mac-os": {
+		displayText: "macOS",
+		btnClasses: "bg-[#000000] text-[#ffffff] border-[#000000]",
+	},
+	windows: {
+		btnClasses: "bg-[#0078D4] text-[#ffffff] border-[#0078D4]",
 	},
 };
 
