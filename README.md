@@ -49,7 +49,6 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 
 </details>
 
-
 <details>
 <summary>Glossary - Overview of Tools & Tech 💻</summary>
 
@@ -95,7 +94,183 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 
 </details>
 
+<hr>
+
+<h2>Portfolio Pages & Sections</h2>
+<table width="50%">
+<tbody>
+  <tr>
+    <td align="center"><br><a href="https://jordanmuller.com/"><img src="https://custom-icon-badges.demolab.com/badge/Home-FFCD98.svg?logo=home&logoColor=000000" height="32px" alt="Home Badge" /></a> <a href="https://jordanmuller.com/portfolio/"><img src="https://custom-icon-badges.demolab.com/badge/Portfolio-FFC4A5.svg?logo=briefcase&logoColor=000000" height="32px" alt="Portfolio Badge" /></a> <a href="https://jordanmuller.com/blog/"><img src="https://custom-icon-badges.demolab.com/badge/Blog-FFBBB1.svg?logo=note&logoColor=000000" height="32px" alt="Blog Badge" /></a> <a href="https://jordanmuller.com/resources/"><img src="https://custom-icon-badges.demolab.com/badge/Resources-FFB3BE.svg?logo=archive&logoColor=000000" height="32px" alt="Resources Badge" /></a> <a href="https://jordanmuller.com/social/"><img src="https://custom-icon-badges.demolab.com/badge/Social-FFAACA.svg?logo=person&logoColor=000000" height="32px" alt="Social Badge" /></a> <a href="https://jordanmuller.com/about/"><img src="https://custom-icon-badges.demolab.com/badge/About-FFA1D7.svg?logo=info&logoColor=000000" height="32px" alt="About Badge" /></a> <a href="https://jordanmuller.com/contact/"><img src="https://custom-icon-badges.demolab.com/badge/Contact-F8A5DD.svg?logo=phone&logoColor=000000" height="32px" alt="Contact Badge" /></a> <a href="https://jordanmuller.com/search/"><img src="https://custom-icon-badges.demolab.com/badge/Search-F1A9E3.svg?logo=search&logoColor=000000" height="32px" alt="Search Badge" /></a> <a href="https://jordanmuller.com/resources/resume/"><img src="https://custom-icon-badges.demolab.com/badge/Resume-EAADE9.svg?logo=file&logoColor=000000" height="32px" alt="Resume Badge" /></a> <a href="https://jordanmuller.com/resources/tags/certificates/"><img src="https://custom-icon-badges.demolab.com/badge/Certificates-E2B1EF.svg?logo=file-badge&logoColor=000000" height="32px" alt="Certificates Badge" /></a> <a href="https://jordanmuller.com/about/#faqs"><img src="https://custom-icon-badges.demolab.com/badge/FAQs-DBB5F5.svg?logo=question&logoColor=000000" height="32px" alt="Frequently Asked Questions Badge" /></a> <a href="https://jordanmuller.com/contact/#contact-form"><img src="https://custom-icon-badges.demolab.com/badge/Contact%20Form-D4B9FB.svg?logo=mail&logoColor=000000" height="32px" alt="Contact Form Badge" /></a><br><br></td>
+  </tr>
+</tbody>
+</table>
+<hr>
+
 </div>
+
+<details open><summary><h2>Table of Contents 🗃️</h2></summary><blockquote>
+
+<details><summary>📖 - About The Project</summary><blockquote>
+
+<details><summary>Built With</summary><blockquote>
+
+~~~
+a
+b
+c
+~~~
+</blockquote></details>
+<details><summary> nest2 </summary><blockquote>
+
+a
+b
+c
+</blockquote></details>
+
+~~~
+a
+b
+c
+~~~
+</blockquote></details>
+
+<details><summary>🖼️ - Image Gallery</summary><blockquote>
+<br>
+
+a
+b
+c
+</blockquote></details>
+
+<details><summary>🛠️ - Setup Guide & Instructions</summary><blockquote>
+
+a
+b
+c
+</blockquote></details>
+
+<details><summary>💡 - Usage, Tips & Notes</summary><blockquote>
+
+a
+b
+c
+</blockquote></details>
+
+<details><summary>🔍 - Overview of Main Sections</summary><blockquote>
+
+- Pages & Routes
+    * <a href="https://jordanmuller.com/">Home</a>
+    * <a href="https://jordanmuller.com/portfolio/">Portfolio</a>
+    * <a href="https://jordanmuller.com/blog/">Blog</a>
+    * <a href="https://jordanmuller.com/resources/">Resources</a>
+    * <a href="https://jordanmuller.com/social/">Social</a>
+    * <a href="https://jordanmuller.com/about/">About</a>
+    * <a href="https://jordanmuller.com/contact/">Contact</a>
+    * <a href="https://jordanmuller.com/search/">Search</a>
+    * <a href="https://jordanmuller.com/resources/resume/">Resume</a>
+    * <a href="https://jordanmuller.com/resources/tags/certificates/">Certificates</a>
+    * <a href="https://jordanmuller.com/about/#faqs">FAQs</a>
+    * <a href="https://jordanmuller.com/contact/#contact-form">Contact Form</a>
+
+</blockquote></details>
+
+<details><summary>💌 - Acknowledgements</summary><blockquote>
+
+a
+b
+c
+</blockquote></details>
+
+<details><summary>📬 - Contact Information</summary><blockquote>
+
+a
+b
+c
+</blockquote></details>
+
+<details><summary>📜 - License Information</summary><blockquote>
+
+a
+b
+c
+</blockquote></details>
+
+<details><summary>🔗 - Resources, Links & Citations</summary><blockquote>
+
+a
+b
+c
+</blockquote></details>
+
+</blockquote></details>
+
+<hr>
+
+<details open>
+<summary><h2>🔍 Overview of Main Sections</h2></summary>
+<h3><a href="https://jordanmuller.com/">Home Page</a></h3>
+<a href="https://jordanmuller.com/"><img src="https://custom-icon-badges.demolab.com/badge/Home-FFCD98.svg?style=for-the-badge&logo=home&logoColor=000000" width="100%" alt="Home Page Banner" /></a>
+
+<a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-dark.png" alt="Portfolio Website Cover - Dark Mode Desktop & Mobile" width="100%"></a> 
+<a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-light.png" alt="Portfolio Website Cover - Light Mode Mobile & Desktop" width="100%"></a>
+
+<hr>
+
+<h3><a href="https://jordanmuller.com/portfolio/">Portfolio Page</a></h3>
+<img src="https://custom-icon-badges.demolab.com/badge/Portfolio-FFC4A5.svg?style=for-the-badge&logo=briefcase&logoColor=000000" width="100%" alt="Portfolio Page Banner" />
+
+<hr>
+
+<h3><a href="https://jordanmuller.com/blog/">Blog Page</a></h3>
+<img src="https://custom-icon-badges.demolab.com/badge/Blog-FFBBB1.svg?style=for-the-badge&logo=note&logoColor=000000" width="100%" alt="Blog Page Banner" />
+
+<hr>
+
+<h3><a href="https://jordanmuller.com/resources/">Resources Page</a></h3>
+<img src="https://custom-icon-badges.demolab.com/badge/Resources-FFB3BE.svg?style=for-the-badge&logo=archive&logoColor=000000" width="100%" alt="Resources Page Banner" />
+
+<hr>
+
+<h3><a href="https://jordanmuller.com/social/">Social Page</a></h3>
+<img src="https://custom-icon-badges.demolab.com/badge/Social-FFAACA.svg?style=for-the-badge&logo=person&logoColor=000000" width="100%" alt="Social Page Banner" />
+
+<hr>
+
+<h3><a href="https://jordanmuller.com/about/">About Page</a></h3>
+<img src="https://custom-icon-badges.demolab.com/badge/About-FFA1D7.svg?style=for-the-badge&logo=info&logoColor=000000" width="100%" alt="About Page Banner" />
+
+<hr>
+
+<h3><a href="https://jordanmuller.com/contact/">Contact Page</a></h3>
+<img src="https://custom-icon-badges.demolab.com/badge/Contact-F8A5DD.svg?style=for-the-badge&logo=phone&logoColor=000000" width="100%" alt="Contact Page Banner" />
+
+<hr>
+
+<h3><a href="https://jordanmuller.com/search/">Search Page</a></h3>
+<img src="https://custom-icon-badges.demolab.com/badge/Search-F1A9E3.svg?style=for-the-badge&logo=search&logoColor=000000" width="100%" alt="Search Page Banner" />
+
+<hr>
+
+<h3><a href="https://jordanmuller.com/resources/resume/">Resume Page</a></h3>
+<img src="https://custom-icon-badges.demolab.com/badge/Resume-EAADE9.svg?style=for-the-badge&logo=file&logoColor=000000" width="100%" alt="Resume Page Banner" />
+
+<hr>
+
+<h3><a href="https://jordanmuller.com/resources/tags/certificates/">Certificates Page</a></h3>
+<img src="https://custom-icon-badges.demolab.com/badge/Certificates-E2B1EF.svg?style=for-the-badge&logo=file-badge&logoColor=000000" width="100%" alt="Certificates Page Banner" />
+
+<hr>
+
+<h3><a href="https://jordanmuller.com/about/#faqs">FAQs Page</a></h3>
+<img src="https://custom-icon-badges.demolab.com/badge/FAQs-DBB5F5.svg?style=for-the-badge&logo=question&logoColor=000000" width="100%" alt="FAQs Page Banner" />
+
+<hr>
+
+<h3><a href="https://jordanmuller.com/contact/#contact-form">Contact Form Page</a></h3>
+<img src="https://custom-icon-badges.demolab.com/badge/Contact%20Form-D4B9FB.svg?style=for-the-badge&logo=mail&logoColor=000000" width="100%" alt="Contact Form Page Banner" />
+</details>
+
+<hr>
 
 ## Contact Information
 
