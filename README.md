@@ -1,5 +1,8 @@
 <div align="center">
 
+<a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-dark.png" alt="Portfolio Website Cover - Dark Mode Desktop & Mobile" height="200px"></a> 
+<a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-light.png" alt="Portfolio Website Cover - Light Mode Mobile & Desktop" height="200px"></a><br>
+
 # Portfolio Website
 
 <a href="https://jordanmuller.com/"><img src="https://custom-icon-badges.demolab.com/badge/Portfolio%20Website-282A36.svg?style=for-the-badge&logo=file-badge&logoColor=FF79C6" width="100%"/></a>
