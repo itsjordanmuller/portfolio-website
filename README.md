@@ -1,7 +1,7 @@
 <div align="center">
 
-<a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-dark.png" alt="Portfolio Website Cover - Dark Mode Desktop & Mobile" height="200px"></a> 
-<a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-light.png" alt="Portfolio Website Cover - Light Mode Mobile & Desktop" height="200px"></a><br>
+<a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-dark.png" alt="Portfolio Website Cover - Dark Mode Desktop & Mobile" height="180px"></a> 
+<a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-light.png" alt="Portfolio Website Cover - Light Mode Mobile & Desktop" height="180px"></a><br>
 
 # Portfolio Website
 
