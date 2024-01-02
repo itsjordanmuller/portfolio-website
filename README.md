@@ -24,7 +24,7 @@
 [![Netlify](https://img.shields.io/badge/Netlify-00C7B7.svg?style=for-the-badge&logo=Netlify&logoColor=white)](https://jordanmuller.com/portfolio/tags/netlify/)
 
 <details>
-<summary>More Technologies 📀</summary>
+<summary>More Technologies 📀</summary><br>
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)](https://jordanmuller.com/portfolio/tags/javascript/)
 [![Bash](https://img.shields.io/badge/Bash-8edf6a.svg?style=for-the-badge&logo=GNU-Bash&logoColor=black)](https://jordanmuller.com/portfolio/tags/bash/)
