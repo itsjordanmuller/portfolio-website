@@ -112,13 +112,13 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 
 📖 <a href="#about-section"><strong>About The Project</strong></h3></a>
 
-🖼️ <a href="#gallery-section">Image Gallery</a>
+🖼️ <a href="#gallery-section"><strong>Image Gallery</strong></a>
 
-🛠️ <a href="#setup-section">Setup Instructions</a>
+🛠️ <a href="#setup-section"><strong>Setup Instructions</strong></a>
 
-💡 <a href="#usage-section">Usage, Tips & Notes</a>
+💡 <a href="#usage-section"><strong>Usage, Tips & Notes</strong></a>
 
-<details open><summary>🔍 <a href="#overview-section">Pages & Sections</a></summary><blockquote>
+<details open><summary>🔍 <a href="#overview-section"><strong>Pages & Sections</strong></a></summary><blockquote>
 
 - <a href="https://jordanmuller.com/">Home Page</a>
 - <a href="https://jordanmuller.com/portfolio/">Portfolio Page</a>
@@ -136,7 +136,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 </blockquote>
 </details>
 
-<details open><summary>🌟 <a href="#acknowledgements-section">Acknowledgements</a></summary>
+<details open><summary>🌟 <a href="#acknowledgements-section"><strong>Acknowledgements</strong></a></summary>
 <blockquote>
 
 - 💌 <a href="#special-thanks">Special Thanks</a>
@@ -144,11 +144,11 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 </blockquote>
 </details>
 
-📬 <a href="#contact-section">Contact Information</a>
+📬 <a href="#contact-section"><strong>Contact Information</strong></a>
 
-📜 <a href="#license-section">License Information</a>
+📜 <a href="#license-section"><strong>License Information</strong></a>
 
-🔗 <a href="#resources-section">Resources & Citations</a>
+🔗 <a href="#resources-section"><strong>Resources & Citations</strong></a>
 
 </blockquote></details>
 
@@ -249,7 +249,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 
 <hr>
 
-<a id="acknowledgments-section"></a>
+<a id="acknowledgements-section"></a>
 <details open>
 <summary><h2>🌟 Acknowledgements</h2></summary>
 
