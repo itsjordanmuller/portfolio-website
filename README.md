@@ -4,11 +4,11 @@
 <a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-dark.png" alt="Portfolio Website Cover - Dark Mode Desktop & Mobile" height="180px"></a> 
 <a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-light.png" alt="Portfolio Website Cover - Light Mode Mobile & Desktop" height="180px"></a><br>
 
-# Portfolio Website
+<h1>Portfolio Website</h1>
 
 <a href="https://jordanmuller.com/"><img src="https://custom-icon-badges.demolab.com/badge/Portfolio%20Website-282A36.svg?style=for-the-badge&logo=file-badge&logoColor=FF79C6" width="100%"/></a>
 
-My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy UI, HTML, CSS, JavaScript and Node.js
+<p>My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy UI, HTML, CSS, JavaScript and Node.js</p>
 
 [![Astro](https://img.shields.io/badge/Astro-FF5D01.svg?style=for-the-badge&logo=Astro&logoColor=white)](https://jordanmuller.com/portfolio/tags/astro/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white)](https://jordanmuller.com/portfolio/tags/typescript/)
@@ -54,6 +54,8 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 <summary>Glossary - Overview of Tools & Tech 💻</summary>
 
 <div align="left">
+
+<h2>Overview of Technologies</h2>
 
 | **Technology** | **Overview** | **Release Year** |
 |:---:|:---:|:---:|
@@ -137,7 +139,8 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 </blockquote>
 </details>
 
-<details open><summary>🌟 <a href="#acknowledgements-section"><strong>Acknowledgements</strong></a></summary>
+<details open>
+<summary>🌟 <a href="#acknowledgements-section"><strong>Acknowledgements</strong></a></summary>
 <blockquote>
 
 - 💌 <a href="#special-thanks">Special Thanks</a>
@@ -156,7 +159,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 <hr>
 
 <a id="about-section"></a>
-<details>
+<details open>
 <summary><h2>📖 About The Project</h2></summary>
 </details>
 
@@ -164,7 +167,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 <hr>
 
 <a id="gallery-section"></a>
-<details>
+<details open>
 <summary><h2>🖼️ Image Gallery</h2></summary>
 </details>
 
@@ -284,13 +287,25 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 <details open>
 <summary><h2>📬 Contact Information</h2></summary>
 
-Please feel free to reach out if you have any suggestions or run into any issues with viewing this project. I am always looking for feedback from other people! I'd be more than happy to answer any questions you may have as well as assist with getting the project working on your machine.<br/>
+<div align="center">
 
-Be sure to view the setup guide in the README, as well as any specific README files for that specific project as they contain more details and may already have the answer to your question(s)!
+<blockquote>
+<img src="https://github.com/itsjordanmuller.png" width="160px"/><br>
+<em>If you have questions/feedback, I would love to hear from you. Thanks for stopping by! - <strong>Jordan Muller</strong></em>
 
-[![LinkedIn](https://img.shields.io/badge/connect%20on%20linkedin-@itsjordanmuller-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itsjordanmuller)<br/>
-[![Email Address](https://custom-icon-badges.demolab.com/badge/e--mail%20me-itsjordanmuller@gmail.com-red?style=for-the-badge&logo=mention&logoColor=white)](mailto:itsjordanmuller@gmail.com)<br/>
+</blockquote>
+
+[![LinkedIn](https://img.shields.io/badge/connect%20on%20linkedin-@itsjordanmuller-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itsjordanmuller)
+[![Email Address](https://custom-icon-badges.demolab.com/badge/e--mail%20me-itsjordanmuller@gmail.com-red?style=for-the-badge&logo=mention&logoColor=white)](mailto:itsjordanmuller@gmail.com)
 [![Portfolio Website](https://custom-icon-badges.demolab.com/badge/Portfolio%20Website-www.jordanmuller.com-a61168?style=for-the-badge&logoColor=white&logo=globe)](https://jordanmuller.com/)
+
+</div>
+
+Please feel free to reach out if you have any suggestions or run into any issues with viewing this project.<br>
+
+I am always looking for feedback from other people! I'd be more than happy to answer any questions you may have as well as assist with getting the project working on your machine.<br>
+
+Be sure to view the <a href="#setup-section"><strong><em>Setup Instructions</em></strong></a> in the README, as well as any specific README files for that specific project as they contain more details and may already have the answer to your question(s)!
 
 </details>
 
@@ -301,17 +316,16 @@ Be sure to view the setup guide in the README, as well as any specific README fi
 <details open>
 <summary><h2>📜 License Information</h2></summary>
 
-The content within this repository was created for my personal portfolio website. This repository is intended for personal use only and serves as my own personal portfolio website. This repository & the content within it are not intended for commercial use, distribution, or replication. All rights to the original content belong to the respective copyright holders.
+The content within this repository was created for my personal portfolio website. This repository is intended for personal use only and serves as my web development portfolio & website for programming & other personal projects. This repository & the content within it are not intended for commercial use, distribution, or replication. All rights to the original content belong to the respective copyright holders.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
-Copyright © 2023 Jordan Muller. All Rights Reserved.
+Copyright © 2024 Jordan Muller. All Rights Reserved.
 
 </details>
 
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
-
 
 <a id="resources-section"></a>
 <details open>
@@ -319,4 +333,3 @@ Copyright © 2023 Jordan Muller. All Rights Reserved.
 </details>
 
 <div align="right"><a href="#top">(back to top)</a></div>
-<hr>
