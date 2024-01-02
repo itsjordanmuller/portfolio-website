@@ -1,3 +1,4 @@
+<a id="top"></a>
 <div align="center">
 
 <a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-dark.png" alt="Portfolio Website Cover - Dark Mode Desktop & Mobile" height="180px"></a> 
@@ -159,6 +160,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 <summary><h2>📖 About The Project</h2></summary>
 </details>
 
+<div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
 <a id="gallery-section"></a>
@@ -166,6 +168,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 <summary><h2>🖼️ Image Gallery</h2></summary>
 </details>
 
+<div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
 <a id="setup-section"></a>
@@ -173,6 +176,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 <summary><h2>🛠️ Setup Instructions</h2></summary>
 </details>
 
+<div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
 <a id="usage-section"></a>
@@ -180,6 +184,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 <summary><h2>💡 Usage, Tips & Notes</h2></summary>
 </details>
 
+<div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
 <a id="overview-section"></a>
@@ -191,6 +196,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 <a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-dark.png" alt="Portfolio Website Cover - Dark Mode Desktop & Mobile" width="100%"></a> 
 <a href="https://jordanmuller.com/"><img src="https://github.com/itsjordanmuller/portfolio-website/blob/main/public/portfolio-cover-light.png" alt="Portfolio Website Cover - Light Mode Mobile & Desktop" width="100%"></a>
 
+<div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
 <h3><a href="https://jordanmuller.com/portfolio/">Portfolio Page</a></h3>
@@ -247,6 +253,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 <img src="https://custom-icon-badges.demolab.com/badge/Contact%20Form-D4B9FB.svg?style=for-the-badge&logo=mail&logoColor=000000" width="100%" alt="Contact Form Page Banner" />
 </details>
 
+<div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
 <a id="acknowledgements-section"></a>
@@ -269,6 +276,9 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 </div>
 
 </details>
+
+<br>
+<div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
 <a id="contact-section"></a>
@@ -285,6 +295,7 @@ Be sure to view the setup guide in the README, as well as any specific README fi
 
 </details>
 
+<div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
 <a id="license-section"></a>
@@ -299,6 +310,8 @@ Copyright © 2023 Jordan Muller. All Rights Reserved.
 
 </details>
 
+<br>
+<div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
 
@@ -307,4 +320,5 @@ Copyright © 2023 Jordan Muller. All Rights Reserved.
 <summary><h2>🔗 Resources & Citations</h2></summary>
 </details>
 
+<div align="right"><a href="#top">(back to top)</a></div>
 <hr>
