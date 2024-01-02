@@ -110,13 +110,13 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 
 <details open><summary><h2>Table of Contents 🗃️</h2></summary><blockquote>
 
-📖 <a id="about-section"><strong>About The Project</strong></h3></a>
+📖 <a href="#about-section"><strong>About The Project</strong></h3></a>
 
-🖼️ <a id="gallery-section">Image Gallery</a>
+🖼️ <a href="#gallery-section">Image Gallery</a>
 
-🛠️ <a id="setup-section">Setup Instructions</a>
+🛠️ <a href="#setup-section">Setup Instructions</a>
 
-💡 <a id="usage-section">Usage, Tips & Notes</a>
+💡 <a href="#usage-section">Usage, Tips & Notes</a>
 
 <details open><summary>🔍 <a href="#overview-section">Pages & Sections</a></summary><blockquote>
 
@@ -154,35 +154,35 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 
 <hr>
 
-<a id="#about-section"></a>
+<a id="about-section"></a>
 <details>
 <summary><h2>📖 About The Project</h2></summary>
 </details>
 
 <hr>
 
-<a id="#gallery-section"></a>
+<a id="gallery-section"></a>
 <details>
 <summary><h2>🖼️ Image Gallery</h2></summary>
 </details>
 
 <hr>
 
-<a id="#setup-section"></a>
+<a id="setup-section"></a>
 <details>
 <summary><h2>🛠️ Setup Instructions</h2></summary>
 </details>
 
 <hr>
 
-<a id="#usage-section"></a>
+<a id="usage-section"></a>
 <details>
 <summary><h2>💡 Usage, Tips & Notes</h2></summary>
 </details>
 
 <hr>
 
-<a id="#overview-section"></a>
+<a id="overview-section"></a>
 <details open>
 <summary><h2>🔍 Pages & Sections</h2></summary>
 <h3><a href="https://jordanmuller.com/">Home Page</a></h3>
@@ -249,11 +249,11 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 
 <hr>
 
-<a id="#acknowledgments-section"></a>
+<a id="acknowledgments-section"></a>
 <details open>
 <summary><h2>🌟 Acknowledgements</h2></summary>
 
-<a id="#special-thanks"></a>
+<a id="special-thanks"></a>
 
 <div align="left">
 
@@ -271,7 +271,7 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 </details>
 <hr>
 
-<a id="#contact-section"></a>
+<a id="contact-section"></a>
 <details open>
 <summary><h2>📬 Contact Information</h2></summary>
 
@@ -287,7 +287,7 @@ Be sure to view the setup guide in the README, as well as any specific README fi
 
 <hr>
 
-<a id="#license-section"></a>
+<a id="license-section"></a>
 <details open>
 <summary><h2>📜 License Information</h2></summary>
 
@@ -302,7 +302,7 @@ Copyright © 2023 Jordan Muller. All Rights Reserved.
 <hr>
 
 
-<a id="#resources-section"></a>
+<a id="resources-section"></a>
 <details open>
 <summary><h2>🔗 Resources & Citations</h2></summary>
 </details>
