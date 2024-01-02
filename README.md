@@ -110,104 +110,81 @@ My Personal Portfolio Website. Built with Astro, TypeScript, Tailwind CSS, daisy
 
 <details open><summary><h2>Table of Contents 🗃️</h2></summary><blockquote>
 
-<details><summary>📖 - About The Project</summary><blockquote>
+📖 <a id="about-section"><strong>About The Project</strong></h3></a>
 
-<details><summary>Built With</summary><blockquote>
+🖼️ <a id="gallery-section">Image Gallery</a>
 
-~~~
-a
-b
-c
-~~~
-</blockquote></details>
-<details><summary> nest2 </summary><blockquote>
+🛠️ <a id="setup-section">Setup Instructions</a>
 
-a
-b
-c
-</blockquote></details>
+💡 <a id="usage-section">Usage, Tips & Notes</a>
 
-~~~
-a
-b
-c
-~~~
-</blockquote></details>
+<details open><summary>🔍 <a href="#overview-section">Pages & Sections</a></summary><blockquote>
 
-<details><summary>🖼️ - Image Gallery</summary><blockquote>
-<br>
+- <a href="https://jordanmuller.com/">Home Page</a>
+- <a href="https://jordanmuller.com/portfolio/">Portfolio Page</a>
+- <a href="https://jordanmuller.com/blog/">Blog Page</a>
+- <a href="https://jordanmuller.com/resources/">Resources Page</a>
+- <a href="https://jordanmuller.com/social/">Social Page</a>
+- <a href="https://jordanmuller.com/about/">About Page</a>
+- <a href="https://jordanmuller.com/contact/">Contact Page</a>
+- <a href="https://jordanmuller.com/search/">Search Page</a>
+- <a href="https://jordanmuller.com/resources/resume/">Resume Section</a>
+- <a href="https://jordanmuller.com/resources/tags/certificates/">Certificates Section</a>
+- <a href="https://jordanmuller.com/about/#faqs">FAQs Section</a>
+- <a href="https://jordanmuller.com/contact/#contact-form">Contact Form Section</a>
 
-a
-b
-c
-</blockquote></details>
+</blockquote>
+</details>
 
-<details><summary>🛠️ - Setup Guide & Instructions</summary><blockquote>
+<details open><summary>🌟 <a href="#acknowledgements-section">Acknowledgements</a></summary>
+<blockquote>
 
-a
-b
-c
-</blockquote></details>
+- 💌 <a href="#special-thanks">Special Thanks</a>
 
-<details><summary>💡 - Usage, Tips & Notes</summary><blockquote>
+</blockquote>
+</details>
 
-a
-b
-c
-</blockquote></details>
+📬 <a href="#contact-section">Contact Information</a>
 
-<details><summary>🔍 - Overview of Main Sections</summary><blockquote>
+📜 <a href="#license-section">License Information</a>
 
-- Pages & Routes
-    * <a href="https://jordanmuller.com/">Home</a>
-    * <a href="https://jordanmuller.com/portfolio/">Portfolio</a>
-    * <a href="https://jordanmuller.com/blog/">Blog</a>
-    * <a href="https://jordanmuller.com/resources/">Resources</a>
-    * <a href="https://jordanmuller.com/social/">Social</a>
-    * <a href="https://jordanmuller.com/about/">About</a>
-    * <a href="https://jordanmuller.com/contact/">Contact</a>
-    * <a href="https://jordanmuller.com/search/">Search</a>
-    * <a href="https://jordanmuller.com/resources/resume/">Resume</a>
-    * <a href="https://jordanmuller.com/resources/tags/certificates/">Certificates</a>
-    * <a href="https://jordanmuller.com/about/#faqs">FAQs</a>
-    * <a href="https://jordanmuller.com/contact/#contact-form">Contact Form</a>
-
-</blockquote></details>
-
-<details><summary>💌 - Acknowledgements</summary><blockquote>
-
-a
-b
-c
-</blockquote></details>
-
-<details><summary>📬 - Contact Information</summary><blockquote>
-
-a
-b
-c
-</blockquote></details>
-
-<details><summary>📜 - License Information</summary><blockquote>
-
-a
-b
-c
-</blockquote></details>
-
-<details><summary>🔗 - Resources, Links & Citations</summary><blockquote>
-
-a
-b
-c
-</blockquote></details>
+🔗 <a href="#resources-section">Resources & Citations</a>
 
 </blockquote></details>
 
 <hr>
 
+<a id="#about-section"></a>
+<details>
+<summary><h2>📖 About The Project</h2></summary>
+</details>
+
+<hr>
+
+<a id="#gallery-section"></a>
+<details>
+<summary><h2>🖼️ Image Gallery</h2></summary>
+</details>
+
+<hr>
+
+<a id="#setup-section"></a>
+<details>
+<summary><h2>🛠️ Setup Instructions</h2></summary>
+</details>
+
+<hr>
+
+<a id="#usage-section"></a>
+<details>
+<summary><h2>💡 Usage, Tips & Notes</h2></summary>
+</details>
+
+<hr>
+
+<a id="#overview-section"></a>
 <details open>
-<summary><h2>🔍 Overview of Main Sections</h2></summary>
+<summary><h2>🔍 Pages & Sections</h2></summary>
 <h3><a href="https://jordanmuller.com/">Home Page</a></h3>
 <a href="https://jordanmuller.com/"><img src="https://custom-icon-badges.demolab.com/badge/Home-FFCD98.svg?style=for-the-badge&logo=home&logoColor=000000" width="100%" alt="Home Page Banner" /></a>
 
@@ -272,7 +249,31 @@ c
 
 <hr>
 
-## Contact Information
+<a id="#acknowledgments-section"></a>
+<details open>
+<summary><h2>🌟 Acknowledgements</h2></summary>
+
+<a id="#special-thanks"></a>
+
+<div align="left">
+
+<h3>💌 Special Thanks</h3>
+
+<blockquote>
+<p>To My Large Family,</p>
+<p>I'm beyond lucky to have such an amazing & large family. If I stopped to take the time to thank each one of you to tell you how thankful I am, I would never be able to finish this project. Each one of you has played a unique and irreplaceable role in shaping who I am today.</p>
+<p>Thank you for pushing me to be the very best version of myself that I can be. Your support and love have been essential on my journey. You have been my mentors, my pillars of strength, and my greatest supporters for as long as I can remember. I couldn't have done any of this without you.</p>
+<p>With all my love and deepest gratitude,<br><strong><em>Jordan Muller</em></strong></p>
+</blockquote>
+
+</div>
+
+</details>
+<hr>
+
+<a id="#contact-section"></a>
+<details open>
+<summary><h2>📬 Contact Information</h2></summary>
 
 Please feel free to reach out if you have any suggestions or run into any issues with viewing this project. I am always looking for feedback from other people! I'd be more than happy to answer any questions you may have as well as assist with getting the project working on your machine.<br/>
 
@@ -282,10 +283,28 @@ Be sure to view the setup guide in the README, as well as any specific README fi
 [![LinkedIn](https://img.shields.io/badge/connect%20on%20linkedin-@itsjordanmuller-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itsjordanmuller)<br/>
 [![My Website](https://custom-icon-badges.demolab.com/badge/My%20Website-www.jordanmuller.com-210157?style=for-the-badge&logoColor=white&logo=globe)](https://www.linkedin.com/in/itsjordanmuller)
 
-## License Information
+</details>
+
+<hr>
+
+<a id="#license-section"></a>
+<details open>
+<summary><h2>📜 License Information</h2></summary>
 
 The content within this repository was created for my personal portfolio website. This repository is intended for personal use only and serves as my own personal portfolio website. This repository & the content within it are not intended for commercial use, distribution, or replication. All rights to the original content belong to the respective copyright holders.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 Copyright © 2023 Jordan Muller. All Rights Reserved.
+
+</details>
+
+<hr>
+
+
+<a id="#resources-section"></a>
+<details open>
+<summary><h2>🔗 Resources & Citations</h2></summary>
+</details>
+
+<hr>
