@@ -158,7 +158,7 @@
 
 <a id="about-section"></a>
 <details open>
-<summary><h2>📖 About The Project</h2></summary>
+<summary align="center"><h2>📖 About The Project</h2></summary>
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
@@ -166,7 +166,7 @@
 
 <a id="setup-section"></a>
 <details>
-<summary><h2>🛠️ Setup Instructions</h2></summary>
+<summary align="center"><h2>🛠️ Setup Instructions</h2></summary>
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
@@ -174,7 +174,7 @@
 
 <a id="usage-section"></a>
 <details>
-<summary><h2>💡 Usage Guide</h2></summary>
+<summary align="center"><h2>💡 Usage Guide</h2></summary>
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
@@ -182,7 +182,7 @@
 
 <a id="overview-section"></a>
 <details open>
-<summary><h2>🔍 Pages & Sections</h2></summary>
+<summary align="center"><h2>🔍 Pages & Sections</h2></summary>
 <h3><a href="https://jordanmuller.com/">Home Page</a></h3>
 <a href="https://jordanmuller.com/"><img src="https://custom-icon-badges.demolab.com/badge/Home-FFCD98.svg?style=for-the-badge&logo=home&logoColor=000000" width="100%" alt="Home Page Banner" /></a>
 
@@ -251,7 +251,7 @@
 
 <a id="contact-section"></a>
 <details open>
-<summary><h2>📬 Contact Information</h2></summary>
+<summary align="center"><h2>📬 Contact Information</h2></summary>
 
 <div align="center">
 
@@ -280,7 +280,7 @@ Be sure to view the <a href="#setup-section"><strong><em>Setup Instructions</em>
 
 <a id="acknowledgements-section"></a>
 <details open>
-<summary><h2>🌟 Acknowledgements</h2></summary>
+<summary align="center"><h2>🌟 Acknowledgements</h2></summary>
 
 <a id="special-thanks"></a>
 
@@ -304,7 +304,7 @@ Be sure to view the <a href="#setup-section"><strong><em>Setup Instructions</em>
 
 <a id="resources-section"></a>
 <details open>
-<summary><h2>🔗 Links & Citations</h2></summary>
+<summary align="center"><h2>🔗 Links & Citations</h2></summary>
 
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
@@ -313,7 +313,7 @@ Be sure to view the <a href="#setup-section"><strong><em>Setup Instructions</em>
 
 <a id="license-section"></a>
 <details open>
-<summary><h2>📜 License Details</h2></summary>
+<summary align="center"><h2>📜 License Details</h2></summary>
 
 <table>
   <thead>
