@@ -115,11 +115,9 @@
 
 📖 <a href="#about-section"><strong>About The Project</strong></h3></a>
 
-🖼️ <a href="#gallery-section"><strong>Image Gallery</strong></a>
-
 🛠️ <a href="#setup-section"><strong>Setup Instructions</strong></a>
 
-💡 <a href="#usage-section"><strong>Usage, Tips & Notes</strong></a>
+💡 <a href="#usage-section"><strong>Usage Guide</strong></a>
 
 <details open><summary>🔍 <a href="#overview-section"><strong>Pages & Sections</strong></a></summary><blockquote>
 
@@ -139,6 +137,8 @@
 </blockquote>
 </details>
 
+📬 <a href="#contact-section"><strong>Contact Information</strong></a>
+
 <details open>
 <summary>🌟 <a href="#acknowledgements-section"><strong>Acknowledgements</strong></a></summary>
 <blockquote>
@@ -148,11 +148,9 @@
 </blockquote>
 </details>
 
-📬 <a href="#contact-section"><strong>Contact Information</strong></a>
+🔗 <a href="#resources-section"><strong>Links & Citations</strong></a>
 
-📜 <a href="#license-section"><strong>License Information</strong></a>
-
-🔗 <a href="#resources-section"><strong>Resources & Citations</strong></a>
+📜 <a href="#license-section"><strong>License Details</strong></a>
 
 </blockquote></details>
 
@@ -161,14 +159,6 @@
 <a id="about-section"></a>
 <details open>
 <summary><h2>📖 About The Project</h2></summary>
-<div align="right"><a href="#top">(back to top)</a></div>
-<hr>
-
-</details>
-
-<a id="gallery-section"></a>
-<details open>
-<summary><h2>🖼️ Image Gallery</h2></summary>
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
@@ -184,7 +174,7 @@
 
 <a id="usage-section"></a>
 <details>
-<summary><h2>💡 Usage, Tips & Notes</h2></summary>
+<summary><h2>💡 Usage Guide</h2></summary>
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
@@ -259,30 +249,6 @@
 
 </details>
 
-<a id="acknowledgements-section"></a>
-<details open>
-<summary><h2>🌟 Acknowledgements</h2></summary>
-
-<a id="special-thanks"></a>
-
-<div align="left">
-
-<h3>💌 Special Thanks</h3>
-
-<blockquote>
-<p>To My Large Family,</p>
-<p>I'm beyond lucky to have such an amazing & large family. If I stopped to take the time to thank each one of you to tell you how thankful I am, I would never be able to finish this project. Each one of you has played a unique and irreplaceable role in shaping who I am today.</p>
-<p>Thank you for pushing me to be the very best version of myself that I can be. Your support and love have been essential on my journey. You have been my mentors, my pillars of strength, and my greatest supporters for as long as I can remember. I couldn't have done any of this without you.</p>
-<p>With all my love and deepest gratitude,<br><strong><em>Jordan Muller</em></strong></p>
-</blockquote>
-
-</div>
-
-<div align="right"><a href="#top">(back to top)</a></div>
-<hr>
-
-</details>
-
 <a id="contact-section"></a>
 <details open>
 <summary><h2>📬 Contact Information</h2></summary>
@@ -312,15 +278,24 @@ Be sure to view the <a href="#setup-section"><strong><em>Setup Instructions</em>
 
 </details>
 
-<a id="license-section"></a>
+<a id="acknowledgements-section"></a>
 <details open>
-<summary><h2>📜 License Information</h2></summary>
+<summary><h2>🌟 Acknowledgements</h2></summary>
 
-The content within this repository was created for my personal portfolio website. This repository is intended for personal use only and serves as my web development portfolio & website for programming & other personal projects. This repository & the content within it are not intended for commercial use, distribution, or replication. All rights to the original content belong to the respective copyright holders.
+<a id="special-thanks"></a>
 
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+<div align="left">
 
-Copyright © 2024 <a href="https://jordanmuller.com/">Jordan Muller</a>. All Rights Reserved.
+<h3>💌 Special Thanks</h3>
+
+<blockquote>
+<p>To My Large Family,</p>
+<p>I'm beyond lucky to have such an amazing & large family. If I stopped to take the time to thank each one of you to tell you how thankful I am, I would never be able to finish this project. Each one of you has played a unique and irreplaceable role in shaping who I am today.</p>
+<p>Thank you for pushing me to be the very best version of myself that I can be. Your support and love have been essential on my journey. You have been my mentors, my pillars of strength, and my greatest supporters for as long as I can remember. I couldn't have done any of this without you.</p>
+<p>With all my love and deepest gratitude,<br><strong><em>Jordan Muller</em></strong></p>
+</blockquote>
+
+</div>
 
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
@@ -329,7 +304,38 @@ Copyright © 2024 <a href="https://jordanmuller.com/">Jordan Muller</a>. All Rig
 
 <a id="resources-section"></a>
 <details open>
-<summary><h2>🔗 Resources & Citations</h2></summary>
-</details>
+<summary><h2>🔗 Links & Citations</h2></summary>
 
 <div align="right"><a href="#top">(back to top)</a></div>
+<hr>
+
+</details>
+
+<a id="license-section"></a>
+<details open>
+<summary><h2>📜 License Details</h2></summary>
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        <a href="https://github.com/itsjordanmuller/portfolio-website/blob/main/LICENSE.md">LICENSE.md</a>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <blockquote>
+          <p>The content within this repository was created for my personal portfolio website. This repository is intended for personal use only and serves as my web development portfolio & website for programming & other personal projects. This repository & the content within it are not intended for commercial use, distribution, or replication. All rights to the original content belong to the respective copyright holders.</p>
+          <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</p>
+          <p>Copyright © 2024 <a href="https://jordanmuller.com/">Jordan Muller</a>. All Rights Reserved.</p>
+        </blockquote>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div align="right"><a href="#top">(back to top)</a></div>
+
+</details>
